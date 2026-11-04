@@ -1,0 +1,69 @@
+---
+layout: Conceptual
+title: Microsoft Zero Trust Workshop - Devices | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/security/zero-trust/workshop-zero-trust-devices
+uhfHeaderId: MSDocsHeader-Security
+breadcrumb_path: /security/breadcrumb/toc.json
+feedback_system: Standard
+feedback_help_link_type: ''
+ms.author: raynew
+author: rayne-wiselman
+description: Learn about the Devices pillar in the Microsoft Zero Trust Workshop
+ms.date: 2026-05-24T00:00:00.0000000Z
+ms.service: security
+ms.subservice: zero-trust
+ms.topic: concept-article
+locale: en-us
+document_id: d1045259-ac6d-8681-fe99-837111c5e69f
+document_version_independent_id: d1045259-ac6d-8681-fe99-837111c5e69f
+original_content_git_url: https://github.com/MicrosoftDocs/security-pr/blob/live/security-docs/zero-trust/workshop-zero-trust-devices.md
+site_name: Docs
+depot_name: MSDN.security-docs
+page_type: conceptual
+toc_rel: toc.json
+pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/MSDN.security-docs/{branchName}{pdfName}
+feedback_product_url: ''
+feedback_help_link_url: ''
+asset_id: zero-trust/workshop-zero-trust-devices
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: security-docs/zero-trust/workshop-zero-trust-devices.md
+cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/062d60c9-ee0f-402e-a046-b4e67c3572d6
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4b132a0c-342a-42eb-91ff-8159e1ed413d
+spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/17d3b3f6-a66e-4c69-9774-14a73c38e669
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/f2b71146-ce8e-46a8-9965-8aa8b3aa8235
+platformId: 5a644632-ff43-3243-a9a6-439c65d3d800
+---
+
+# Microsoft Zero Trust Workshop - Devices | Microsoft Learn
+
+In a Zero Trust model, devices are a critical part of the trust evaluation. Even when a user’s identity is validated, access decisions also depend on the security health, configuration, and risk state of the device. The Devices pillar focuses on ensuring that devices are managed, continuously assessed, and protected against threats, enabling access decisions based on device posture.
+
+Device pillar workshop guidance focuses on managing device lifecycle and enrollment, enforcing compliance and configuration standards, protecting endpoints from threats, reducing attack surface, and integrating device risk into access and security operations.
+
+## Workshop implementation
+
+The Devices workshop covers the implementation areas summarized in the table.
+
+| **Area** | **Details** |
+| --- | --- |
+| **Manage device enrollment and lifecycle** | Enroll and provision devices using modern management (such as Microsoft Intune and Windows Autopilot). Standardize device onboarding and configuration to ensure devices start in a known, trusted state and remain consistently managed throughout their lifecycle. |
+| **Define and enforce device compliance posture** | Define device compliance policies based on security requirements such as OS version, configuration baseline, and risk level. Continuously assess device health to determine whether devices meet organizational standards. |
+| **Enforce posture-based access with Conditional Access** | Integrate device compliance and risk signals into Conditional Access policies to ensure only healthy and compliant devices can access corporate resources. Apply differentiated access controls for managed, unmanaged, and high-risk devices. |
+| **Secure device configuration and baseline standards** | Apply security baselines and configuration policies to enforce consistent hardening across devices. Standardize settings for operating systems, security controls, and management configurations to reduce misconfigurations. |
+| **Reduce device attack surface and restrict risky behaviors** | Implement controls such as Attack Surface Reduction (ASR) rules, exploit protection, and application control (for example, App Control for Business (formerly Windows Defender Application Control)) to limit exploitable behaviors and restrict untrusted or unauthorized code execution. |
+| **Protect endpoints with threat detection and response** | Deploy endpoint protection and detection capabilities to identify, investigate, and remediate threats on devices.Generate risk signals from endpoint protection systems and use them to drive remediation and inform access decisions. |
+| **Implement least-privilege and administrative control** | Minimize local administrator access and enforce least privilege on devices. Apply role-based access control and administrative segmentation to ensure only authorized personnel can manage device configurations and management policies. |
+| **Secure access for unmanaged and BYOD** | Enable secure access from personally owned *bring your own devices* (BYODs) or unmanaged devices using app protection policies (mobile access management (MAM)), browser-based controls, or virtualization solutions.Enforce data protection controls without requiring full device enrollment, and use Conditional Access to restrict actions. For example, blocking downloads or requiring approved apps. |
+| **Keep devices up-to-date** | Regularly apply operating system and application updates to ensure devices are protected against known vulnerabilities.Enforce update compliance and automate patching processes to maintain a consistent and secure device baseline across the environment. |
+| **Support secure access for diverse device scenarios** | Enable secure use of personally owned, shared, and frontline devices. Apply appropriate controls such as app protection policies, shared device modes, or session-based protections to secure access where full device management is not feasible. |
+| **Integrate device signals into security operations (SecOps)** | Stream device health, compliance, and threat signals into centralized monitoring and response workflows. Correlate these signals with identity, data, and network telemetry to detect and respond to device-based threats. |
+
+## Assess device posture
+
+The Zero Trust Assessment tool can assess your device configuration against a range of security best practices. [Learn more](/en-us/security/zero-trust/assessment/overview).

@@ -1,0 +1,181 @@
+---
+layout: Conceptual
+title: Visibility, automation, and orchestration with Zero Trust | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/security/zero-trust/deploy/visibility-automation-orchestration
+uhfHeaderId: MSDocsHeader-Security
+breadcrumb_path: /security/breadcrumb/toc.json
+feedback_system: Standard
+feedback_help_link_type: ''
+ms.author: raynew
+author: rayne-wiselman
+description: Since Zero Trust doesn't assume that requests are trustworthy, establishing a means to attest to the trustworthiness of the request is critical to proving its point-in-time trustworthiness. This attestation requires the ability to gain visibility into the activities on and around the request.
+ms.service: security
+ms.subservice: zero-trust
+ms.date: 2025-03-12T00:00:00.0000000Z
+ms.topic: concept-article
+ms.collection:
+- zerotrust-pillar
+locale: en-us
+document_id: a0479ee3-2a1a-af65-838e-05b4afe1a078
+document_version_independent_id: 80ed2de5-d2e2-66c5-bb12-795a3ddb13cf
+original_content_git_url: https://github.com/MicrosoftDocs/security-pr/blob/live/security-docs/zero-trust/deploy/visibility-automation-orchestration.md
+site_name: Docs
+depot_name: MSDN.security-docs
+page_type: conceptual
+toc_rel: ../toc.json
+pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/MSDN.security-docs/{branchName}{pdfName}
+feedback_product_url: ''
+feedback_help_link_url: ''
+asset_id: zero-trust/deploy/visibility-automation-orchestration
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: security-docs/zero-trust/deploy/visibility-automation-orchestration.md
+cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/43093068-2dda-408b-b3fe-dfd705c84f78
+- https://authoring-docs-microsoft.poolparty.biz/devrel/8a94907f-2511-4271-b5ca-ec7f2e75067c
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/1577a46d-8446-40bd-bfae-0578362f4d94
+spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/e453d60d-ba7e-43bc-8028-ec38e6b62512
+- https://authoring-docs-microsoft.poolparty.biz/devrel/bffa8e88-f633-409d-a24d-083bdbc68872
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/cdf3f22d-5420-4d59-a2bf-66d6b3d9c828
+platformId: cb261610-a6b1-9817-42ff-b04ad485d850
+---
+
+# Visibility, automation, and orchestration with Zero Trust | Microsoft Learn
+
+![](../media/icon-visibility-automation-orchestration-medium.png)
+
+One of the significant changes in perspectives that are a hallmark of a Zero Trust security frameworks is moving away from trust-by-default toward trust-by-exception. However, you need some reliable way to establish trust once trust is needed. Since you no longer assume that requests are trustworthy, establishing a means to attest to the trustworthiness of the request is critical to proving its point-in-time trustworthiness. This attestation requires the ability to gain visibility into the activities on and around the request.
+
+In our other Zero Trust guides, we defined the approach to implementing an end-to-end Zero Trust approach across [identities](https://aka.ms/ZTIdentity), [endpoints](https://aka.ms/ZTEndpoints) and devices, [data](https://aka.ms/ZTData), [apps](https://aka.ms/ZTApplications), [infrastructure](https://aka.ms/ZTInfrastructure), and [network](https://aka.ms/ZTNetwork). All these investments increase your visibility, which gives you better data for making trust decisions. However, by adopting a Zero Trust approach in these six areas, you necessarily increase the number of incidents Security Operation Centers (SOC) analysts need to mitigate. Your analysts become busier than ever, at a time when there's already a talent shortage. Too many alerts lead to chronic alert fatigue and analysts missing critical alerts.
+
+![Diagram of integrated capabilities to manage threats.](../media/diagram-provide-integrated-capabilities-manage-threats.png)
+
+With each of these individual areas generating their own relevant alerts, we need an integrated security operations (SecOps) capability to manage the resulting influx of data to better defend against threats and validate trust in a transaction.
+
+You want the ability to:
+
+- Detect threats and vulnerabilities.
+- Investigate.
+- Respond.
+- Hunt.
+- Provide additional context through threat analytics.
+- Assess vulnerabilities.
+- Get help from world class experts
+- Prevent or block events from happening across the pillars.
+
+Managing threats includes reactive and proactive detection and requires tools that support both.
+
+**Reactive detection** is when incidents are triggered from one of the six pillars that can be investigated. Additionally, a management product like a security information and event management product (SIEM) will likely support another layer of analytics that will enrich and correlate data, resulting in flagging an incident as bad. The next step would then be to investigate to get the full narrative of the attack.
+
+**Proactive detection** is when you apply hunting to the data to prove a compromised hypothesis. Threat hunting starts with the assumption you have been breached--you hunt for proof that there's indeed a breach.
+
+Threat hunting starts with a hypothesis based on current threats, such as COVID-19 phishing attacks. Analysts start with this hypothetical threat, identify the key indicators of compromise, and hunt through the data to see if there's proof that the environment has been compromised. If indicators exist, hunting scenarios might result in analytics that would notify the organizations if the certain indicators occur again.
+
+Either way, once an incident is detected, you need to investigate it to build out the complete story of the attack. What else did the user do? What other systems were involved? What executables were run?
+
+If an investigation results in actionable learnings, you can take remediation steps. For example, if an investigation uncovers gaps in a Zero Trust deployment, policies can be modified to address these gaps and prevent future unwanted incidents. Whenever possible it's desirable to automate remediation steps, because it reduces the time it takes for a SOC analyst to address the threat and move onto the next incident.
+
+Another key component in the assessment of threats is incorporating known threat intelligence against the ingested data. If an IP, hash, URL, file, executable, etc. are known to be bad, they can be identified, investigated, and remediated.
+
+In the [infrastructure](https://aka.ms/ZTInfrastructure) pillar, time was spent on addressing vulnerabilities. If a system is known to be vulnerable and a threat took advantage of that vulnerability, this is something that could be detected, investigated, and remediated.
+
+In order to use these tactics to manage threats, you should have a central console to allow SOC administrators to detect, investigate, remediate, hunt, utilize threat intelligence, understand known vulnerabilities, lean on threat experts and block threats across any of the six pillars. The tools needed to support these phases work best if converged into a single workflow, providing a seamless experience that increases the effectiveness of the SOC analyst.
+
+Security Operation Centers often deploy a combination of SIEM and SOAR technologies to collect, detect, investigate, and respond to threats. Microsoft offers Microsoft Sentinel as its SIEM-as-a-service offering. Microsoft Sentinel ingests all Microsoft Defender for Identity and third-party data.
+
+Microsoft Defender XDR, a key feed into Microsoft Sentinel, provides a unified enterprise defense suite that brings context-aware protection, detection, and response across all Microsoft 365 components. By being context- aware and coordinated, customers using Microsoft 365 can gain visibility and protection across endpoints, collaboration tools, identities, and applications.
+
+It's through this hierarchy that we enable our customers to maximize their focus. Though context-awareness and automated remediation, Microsoft Defender XDR can detect and stop many threats without adding additional alert-fatigue to already overloaded SOC personnel. Advanced hunting inside of Microsoft Defender XDR brings that context to the hunt to focus on many key attack points. And hunting and orchestration across the entire ecosystem through Microsoft Sentinel provides the ability to gain the right visibility into all aspects of a heterogeneous environment, all while minimizing the cognitive overload of the operator.
+
+## Visibility, automation, and orchestration Zero Trust deployment objectives
+
+| When implementing an end-to-end Zero Trust framework for visibility, automation, and orchestration, we recommend you focus first on these **initial deployment objectives**: |
+| --- |
+| ![List icon with one checkmark.](../media/icon-initial-deployment-small.png) | **I.**Establish visibility.<br><br>**II.**Enable automation. |
+| After these are completed, focus on these **additional deployment objectives**: |
+| ![List icon with two checkmarks.](../media/icon-additional-deployment-small.png) | **III.**Enable additional protection and detection controls. |
+
+## Visibility, automation, and orchestration Zero Trust deployment guide
+
+This guide will walk you through the steps required to manage visibility, automation, and orchestration following the principles of a Zero Trust security framework.
+
+| ![Checklist icon with one checkmark.](../media/icon-initial-deployment.png) | Initial deployment objectives |
+| --- | --- |
+
+### I. Establish visibility
+
+The first step is to establish visibility by enabling [Microsoft Threat Protection](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) (MTP).
+
+Follow these steps:
+
+1. Sign up for one of the Microsoft Defender XDR workloads.
+2. Enable the workloads and establish connectivity.
+3. Configure detection on your devices and infrastructure to bring immediate visibility into activities going on in the environment. This gives you the all-important "dial tone" to start the flow of critical data.
+4. Enable Microsoft Defender XDR to gain cross-workload visibility and incident detection.
+
+### II. Enable automation
+
+The next key step, once you have established visibility, is to enable automation.
+
+#### Automated investigations and remediation
+
+With Microsoft Defender XDR, we have automated both investigations and remediation, which essentially provides an extra Tier 1 SOC analysis.
+
+[Automated Investigation and Remediation](/en-us/microsoft-365/security/mtp/mtp-autoir) (AIR) can be enabled gradually, so that you can develop a comfort level with the actions that are taken.
+
+Follow these steps:
+
+1. Enable AIR for a test group.
+2. Analyze the investigation steps and response actions.
+3. Gradually transition to automatic approval for all devices to reduce the time to detection and response.
+
+#### Link Microsoft Purview Data Connectors and relevant third-party products to Microsoft Sentinel
+
+In order to gain visibility into the incidents that result from deploying a Zero Trust model, it's important to connect Microsoft Defender XDR, Microsoft Purview Data Connectors, and relevant third party products to [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/) in order to provide a centralized platform for incident investigation and response.
+
+As part of the data connection process, relevant analytics can be enabled to trigger incidents and workbooks can be created for a graphical representation of the data over time.
+
+#### Link threat intelligence data to Microsoft Sentinel
+
+Although machine learning and fusion analytics are provided out of the box, it's also beneficial to ingest threat intelligence data into Microsoft Sentinel to help identify events that relate to known bad entities.
+
+| ![Checklist icon with two checkmarks.](../media/icon-additional-deployment.png) | Additional deployment objectives |
+| --- | --- |
+
+### III. Enable additional protection and detection controls
+
+Enabling additional controls improves the signal coming in to Microsoft Defender XDR and Microsoft Sentinel to improve your visibility and ability to orchestrate responses.
+
+[Attack surface reduction](/en-us/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction) controls represent one such opportunity. These protective controls not only block certain activities that are most associated with malware, but also give into attempts to use specific approaches, which can help to detect adversaries leveraging these techniques earlier in the process.
+
+## Products covered in this guide
+
+**Microsoft Azure**
+
+[Microsoft Defender for Identity](https://www.microsoft.com/security/business/threat-protection/identity-defender)
+
+[Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/)
+
+**Microsoft 365**
+
+[Microsoft Threat Protection](https://www.microsoft.com/security/business/threat-protection/microsoft-365-defender)
+
+**The Zero Trust deployment guide series**
+
+[![Icon for the introduction](../media/icon-introduction-navbar.png)](https://aka.ms/ZTDeploymentGuideIntroduction)
+
+[![Icon for identity](../media/icon-identity-navbar.png)](https://aka.ms/ZTIdentity)
+
+[![Icon for endpoints](../media/icon-endpoints-navbar.png)](https://aka.ms/ZTDevices)
+
+[![Icon for applications](../media/icon-applications-navbar.png)](https://aka.ms/ZTApplications)
+
+[![Icon for data](../media/icon-data-navbar.png)](https://aka.ms/ZTData)
+
+[![Icon for infrastructure](../media/icon-infrastructure-navbar.png)](https://aka.ms/ZTInfrastructure)
+
+[![Icon for networks](../media/icon-networks-navbar.png)](https://aka.ms/ZTNetwork)
+
+[![Icon for visibility, automation, orchestration](../media/icon-visibility-automation-orchestration-navbar.png)](https://aka.ms/ZTCrossPillars)
