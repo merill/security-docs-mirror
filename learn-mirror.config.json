@@ -1,0 +1,19 @@
+{
+  "sitemapIndex": "https://learn.microsoft.com/_sitemaps/sitemapindex.xml",
+  "sitemaps": "/_sitemaps/security_en-us_\\d+\\.xml$",
+  "tocs": [
+    "https://learn.microsoft.com/en-us/security/zero-trust/toc.json"
+  ],
+  "extraUrls": [],
+  "include": "^https://learn\\.microsoft\\.com/en-us/security/",
+  "exclude": [
+    "^https://learn\\.microsoft\\.com/en-us/security/benchmark/",
+    "^https://learn\\.microsoft\\.com/en-us/security/store/"
+  ],
+  "trackedPaths": "^security-docs/",
+  "sourceRepos": [
+    "MicrosoftDocs/security-pr"
+  ],
+  "concurrency": 4,
+  "priority": "(whats-new|release-notes|what-s-new|new-features|deprecat|retire)"
+}
