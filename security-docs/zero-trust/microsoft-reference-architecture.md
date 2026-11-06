@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Review Microsoft Cybersecurity Reference Architectures (MCRA) | Microsoft Learn
+title: Microsoft Cybersecurity Reference Architectures (MCRA) | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/security/zero-trust/microsoft-reference-architecture
 uhfHeaderId: MSDocsHeader-Security
 breadcrumb_path: /security/breadcrumb/toc.json
@@ -12,7 +12,7 @@ description: Plan security modernization with the help of the MCRA reference arc
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: overview
-ms.date: 2026-11-02T00:00:00.0000000Z
+ms.date: 2026-11-06T00:00:00.0000000Z
 locale: en-us
 document_id: 9d8a2026-85e2-e89e-c4c5-4eaaa65e50dd
 document_version_independent_id: 9d8a2026-85e2-e89e-c4c5-4eaaa65e50dd
@@ -40,7 +40,7 @@ spProducts:
 platformId: 7607e975-76b9-0aef-8863-0bb6532d8c72
 ---
 
-# Review Microsoft Cybersecurity Reference Architectures (MCRA) | Microsoft Learn
+# Microsoft Cybersecurity Reference Architectures (MCRA) | Microsoft Learn
 
 The Microsoft Cybersecurity Reference Architecture (MCRA) provides an extensive set of technical architectures for use during Zero Trust security adoption and modernization.
 

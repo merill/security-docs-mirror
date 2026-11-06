@@ -8,8 +8,8 @@ feedback_system: Standard
 feedback_help_link_type: ''
 ms.author: mas
 author: MarkSimos
-description: Learn about the adoption model for Microsoft security.
-ms.date: 2026-05-24T00:00:00.0000000Z
+description: Learn how the Microsoft Security Adoption Framework (SAF) connects business priorities, risk, Zero Trust principles, security disciplines, technologies, and implementation guidance.
+ms.date: 2026-11-06T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -38,96 +38,90 @@ platformId: 6696170c-5817-ab69-cc8d-a91ceaec420b
 
 # Microsoft Security Adoption Framework (SAF) | Microsoft Learn
 
-To build effective security foundations and defend against attacks in the age of artificial intelligence (AI) and AI agents, organizations must follow Zero Trust principles.
+The Microsoft Security Adoption Framework (SAF) is a practical operating model for turning business priorities, risk, and Zero Trust principles into coordinated action. It connects business, technology, and security roles across strategy, architecture, implementation, and operations.
 
-**Adopting Zero Trust security principles across your organization** is a complex, multiyear effort that spans business strategy and planning, technical design and architecture, deployment, and operations.
+Use SAF to define shared outcomes, clarify responsibilities, select the disciplines and technologies that matter, implement protections, and measure progress across hybrid, multicloud, and multiplatform environments.
 
-Without a structured adoption approach, security modernization programs can become fragmented, reactive, and difficult to sustain.
+[![Diagram showing the four connected SAF components: business scenarios, security disciplines, technologies, and technical solutions, with roles and Zero Trust principles applying across the framework.](media/adoption-navigation-structure.png)](media/adoption-navigation-structure.png#lightbox)
 
-The Microsoft Security Adoption Framework (SAF) provides you with a structured security adoption model with standardized, repeatable, role-aware processes that help you plan, prioritize, and implement end-to-end security modernization across hybrid, multicloud, and multiplatform environments.
+## Why use SAF?
 
-This framework aligns critical business outcomes, security disciplines, and solution implementations so that business leaders, security managers, architects, and practitioners can move forward together at a controlled and sustainable pace across the organization.
+Use SAF to:
 
-SAF helps you avoid common mistakes, often called [antipatterns](security-adoption-antipatterns), in your security modernization journey.
+- **Align security work to business priorities and risk.** Connect business, technology, and security decisions and investments to the outcomes the organization needs to achieve and protect.
+- **Coordinate shared responsibility.** Clarify how business, technology, and security roles make decisions and deliver outcomes together.
+- **Apply Zero Trust consistently.** Use Zero Trust principles across strategy, governance, architecture, implementation, and operations.
+- **Connect strategy to implementation.** Link desired outcomes to security disciplines, technologies, and technical solutions.
+- **Measure progress and adapt.** Track results and adjust as business needs, technology, threats, and organizational capabilities change.
 
-Tip
+## How SAF works
 
-Microsoft offers a rich set of security adoption workshops - the *Security Adoption Framework (SAF) workshops*. Our structured adoption model guidance aligns with the expert-led guidance from Microsoft Unified delivered in those workshops. Learn more about [SAF workshops](workshop-business-overview).
+SAF connects business priorities and risk to coordinated security work and technology implementation. Four connected components help business, technology, and security teams understand desired outcomes, the security work needed, what must be protected, and how protections are implemented and operated.
 
-## Adoption model structure
+The four components are:
 
-The adoption model is built on three core components that help organizations move from business intent to detailed implementation:
+- **[Business scenarios](security-adoption-business-scenarios-overview)** connect important business or technology initiatives to desired outcomes and risk.
+- **[Security disciplines](security-adoption-discipline-overview)** organize the security work needed to manage risk, make decisions, and improve security capabilities.
+- **[Technologies](deploy/overview)** identify what must be protected, including identities, endpoints, applications, data, infrastructure, networks, and AI.
+- **[Technical solutions](implement-overview)** translate security requirements into implementation and sustainable operations across products and platforms.
 
-- **Business scenarios** define typical business outcomes and how security must be adapted to achieve them.
-- **Security disciplines** define how teams organize, plan, and operate to modernize security and achieve business outcomes.
-- **Technology pillars** describe organizational assets and resources that you want to secure. For example identity, devices, and data.
+Business priorities and risk provide context. Business scenarios describe desired outcomes. Security disciplines organize how teams work. Technologies identify what must be protected. Technical solutions turn this direction into implementation and operations.
 
-[![Diagram showing overall structure of the Microsoft Security Adoption Framework (SAF).](media/adoption-navigation-structure.png)](media/adoption-navigation-structure.png#lightbox)
+Zero Trust principles inform decisions across all four SAF components—from business priorities and governance through architecture, implementation, and operations.
 
-## Why use an adoption model?
+## How roles use SAF
 
-A structured adoption model helps you to:
-
-- **Align with security best practices** - Align with [Zero Trust principles](zero-trust-overview), [Microsoft Secure Future Initiative (SFI) patterns](sfi/secure-future-initiative-overview), [open standards and guidance](security-zero-trust-frameworks), and [other security best practices](security-best-practices-overview).
-- **Maximize existing investments** - Get value from your existing tools before introducing new capabilities.
-- **Deliver an end-to-end security strategy** - Connect business priorities to security architecture, controls, processes, and operations.
-- **Adapt continuously** - Evolve security posture and strategy as threats, business needs, and technologies change.
-- **Prioritize action** - Provide practical role-specific guidance for teams and stakeholders, grounded in best practices, lessons learned, and real-world examples.
-
-This diagram illustrates how SAF brings these elements together into a single adoption model.
-
-[![Diagram showing how the adoption model includes learnings and guidance from Microsoft and external sources.](media/adoption-guidance-context.png)](media/adoption-guidance-context.png#lightbox)
-
-## Enable roles with the adoption model
-
-By organizing this guidance around common business scenarios, disciplines, and implementation steps, the model helps you move from isolated recommendations to a cohesive approach for planning, implementing, and measuring security improvements. Microsoft will continue to enrich the adoption model content over time.
-
-Each component of the adoption model targets a specific audience and role.
-
-| **Section** | **Primary audience** | **Aim** |
+| Role group | How the group uses SAF | Common SAF focus |
 | --- | --- | --- |
-| **[Business scenarios](security-adoption-business-scenarios-overview)** | Business leaders | Identify, define, and communicate critical business outcomes that security must support.Translate business priorities into actionable security goals that guide planning and decision-making.Provide practical, repeatable guidance for business outcomes, with clear paths to the roles and disciplines involved in delivering the outcome. |
-| **[Security disciplines](security-adoption-discipline-overview)** | Security leaders and teams, IT leaders, designers, architects. | Bridge business scenarios and security deployment/implementation. Ensure that security investments and priorities translate into measurable outcomes through clear planning, architecture, and operational practices.Business scenarios usually map to multiple security disciplines. |
-| **[Technology pillars](implement-overview)** | Technical and security implementers and partners. | Define what types of assets must be secured, and where Zero Trust principles and security controls must be applied.Connect security strategy to implementation by grouping related technologies, controls, and capabilities.Business scenarios are likely to cross multiple technology pillars. For example, if our business outcome is to improve security posture across the enterprise, then we must improve posture across devices, data, infrastructure, networks, and more. |
+| **Business leaders and risk owners** | Define desired outcomes, business priorities, risk, accountability, and measures of success. | [Business scenarios](security-adoption-business-scenarios-overview), strategy, and risk |
+| **Technology and product teams** | Translate priorities and security requirements into architecture, engineering, delivery, implementation, and sustainable operations. | [Technologies](deploy/overview) and [technical solutions](implement-overview) |
+| **Security teams** | Provide risk insight, security expertise, governance, architecture, guardrails, validation, detection and response, and security measurement. | [Security disciplines](security-adoption-discipline-overview) and security requirements |
 
-[![Diagram showing how the adoption model serves different roles across the organization.](media/adoption-model-roles.png)](media/adoption-model-roles.png#lightbox)
+These roles contribute to shared outcomes and collaborate to achieve them. SAF provides shared context to help business, technology, and security roles coordinate decisions and responsibilities rather than treating security modernization as the work of a single team. Partners can contribute specialized expertise, implementation, and operational services.
 
-## Adoption guidance
+## Choose where to start
 
-Structured adoption guidance focuses on:
+You don't need to use SAF in a fixed sequence. Choose a starting point that matches your current context:
 
-- End-to-end guidance across the security journey for common business-critical outcomes.
-- Clear guidance for roles and security disciplines.
-- Product-agnostic recommendations based on Zero Trust principles, Microsoft best practices, and external frameworks.
-- Detailed implementation guidance using Microsoft security products and services.
-- Alignment with Zero Trust principles and security best practices.
+- **[Start with strategy and transformation](security-adoption-discipline-strategy)** when there's leadership sponsorship for coordinated modernization and the organization needs shared strategic direction.
+- **[Start with a priority risk or problem](security-adoption-discipline-posture)** when an urgent gap or high-value opportunity needs attention.
+- **[Start with a business or technology initiative](security-adoption-business-scenarios-overview)** when a specific initiative needs coordinated protection across roles, disciplines, and technologies.
+- **[Start with a security standard or framework](security-standards-and-frameworks)** when the organization must align security work to defined objectives or practices.
 
-[![Diagram showing how the Security Adoption Framework (SAF) connects the business with security and technology.](media/adoption-journey.png)](media/adoption-journey.png#lightbox)
+These starting points are common, not required stages. Organizations can combine them or move between them as priorities, risks, and capabilities change.
 
-## Existing guidance integration
+### Guidelines for using SAF effectively
 
-This adoption model brings together Microsoft security guidance that was historically published across multiple frameworks and resources, aligning it into a single, actionable structure.
+Organizations can use SAF in different ways depending on their priorities, risks, and current security maturity. Regardless of where you start:
 
-It integrates and builds on established guidance, including these content sources:
+- **Align work to business priorities and risk.**
+- **Apply Zero Trust principles across business decisions, security practices, technology design, delivery, and operations.**
+- **Coordinate responsibilities across business, technology, and security teams.**
+- **Connect focused improvements to broader security strategy and architecture.**
+- **Measure outcomes and adapt as priorities, risks, and conditions change.**
 
-- [Microsoft Cybersecurity Reference Architecture (MCRA)](microsoft-reference-architecture)
-- [Security Development Lifecycle (SDL)](https://www.microsoft.com/securityengineering/sdl/practices).
-- [Zero Trust](workshop-business-overview) and [CISO](workshop-business-security-leaders) workshops
-- The [Immutable Laws of Security](security-adoption-discipline-architecture-tips)
-- [Privileged access/workstation guidance](security-adoption-discipline-identity-access-privileged-model).
-- [Incident response playbooks](security-operations-playbook-phishing)
+For goal-based and role-based reading paths, see [Using SAF effectively](security-adoption-journey).
 
-[![Diagram showing how the adoption model integrates existing security content.](media/adoption-model-integrate-content.png)](media/adoption-model-integrate-content.png#lightbox)
+## How existing security guidance fits into SAF
 
-## Additional SAF resources
+SAF builds on established Microsoft security guidance rather than replacing it. Some existing guidance is incorporated into the SAF structure, while other resources remain independent and complement SAF with deeper architecture, engineering, assessment, workshop, or operational guidance.
 
-Use these resources to complement the adoption model with focused guidance and workshop material:
+[![Diagram showing how SAF integrates selected guidance and connects to complementary Microsoft security guidance.](media/adoption-guidance-context.png)](media/adoption-guidance-context.png#lightbox)
 
-- [SAF workshops overview](workshop-business-overview)
-- [CISO workshop](workshop-business-security-leaders) and [videos](workshop-business-security-leaders-video)
-- [Microsoft Cybersecurity Reference Architectures (MCRA)](microsoft-reference-architecture)
-- [Avoid common security adoption antipatterns](security-adoption-antipatterns)
-- [Rapidly modernize your security posture for Zero Trust](adopt/rapidly-modernize-security-posture)
-- [Secure remote and hybrid work with Zero Trust](adopt/secure-remote-hybrid-work)
-- [Identify and protect sensitive business data with Zero Trust](adopt/identify-protect-sensitive-business-data)
-- [Meet regulatory and compliance requirements with Zero Trust](adopt/meet-regulatory-compliance-requirements)
+Microsoft provides complementary guidance in several areas:
+
+- **Strategy and architecture:**[CISO workshop](workshop-business-security-leaders) and [Microsoft Cybersecurity Reference Architectures (MCRA)](microsoft-reference-architecture)
+- **Assessment and technology implementation:**[Zero Trust assessment](assessment/overview) and [technology implementation guidance](deploy/overview)
+- **Engineering:**[Microsoft Security Development Lifecycle (SDL)](https://www.microsoft.com/securityengineering/sdl/), [DevSecOps Capability Model](/en-us/devops/devsecops/capability-model), and [Secure Future Initiative (SFI)](sfi/secure-future-initiative-overview)
+- **Operations and response:**[Privileged access guidance](/en-us/security/privileged-access-workstations/overview) and [incident-response playbooks](security-operations-incident-response-playbooks)
+
+For details on how these and other Microsoft security resources relate to SAF, see [How existing security guidance fits into SAF](security-adoption-existing-guidance).
+
+## Explore SAF
+
+- [Using SAF effectively](security-adoption-journey).
+- [Explore business scenarios](security-adoption-business-scenarios-overview).
+- [Explore security disciplines](security-adoption-discipline-overview).
+- [Secure technologies](deploy/overview).
+- [Implement technical solutions](implement-overview).
+- [Use SAF workshops](workshop-business-overview).

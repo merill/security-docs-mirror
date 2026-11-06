@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Microsoft security adoption overview | Microsoft Learn
+title: Using SAF effectively | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/security/zero-trust/security-adoption-journey
 uhfHeaderId: MSDocsHeader-Security
 breadcrumb_path: /security/breadcrumb/toc.json
@@ -8,8 +8,8 @@ feedback_system: Standard
 feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
-description: Learn how to apply a standard model to Microsoft security adoption
-ms.date: 2026-05-24T00:00:00.0000000Z
+description: Learn how to use the Microsoft Security Adoption Framework (SAF) based on what you need to accomplish and your role in the organization.
+ms.date: 2026-11-06T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -31,72 +31,62 @@ item_type: Content
 source_path: security-docs/zero-trust/security-adoption-journey.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d01d0bfd-3c23-4b54-82d6-f9d06ad11cbd
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d7f8710e-fbb0-4d09-b930-11c1b544a877
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/da7889d8-fed4-4c4c-a52d-b6a3ea4ce02a
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/deb137bf-5bfd-48db-9740-aeec6d9667dd
 platformId: 39ee4c41-b0e2-e0ac-32b8-cc81fe657536
 ---
 
-# Microsoft security adoption overview | Microsoft Learn
+# Using SAF effectively | Microsoft Learn
 
-No two organizations are alike, and companies modernize security in different ways depending on their goals and priorities, maturity, culture, and leadership support.
+The Microsoft Security Adoption Framework (SAF) is designed for business, technology, and security roles to use together. You don't need to read SAF in sequence. Start with the decision, outcome, risk, or capability that needs attention, and then connect that work to the relevant roles, disciplines, technologies, and technical solutions.
 
-This article describes three common patterns for starting a Zero Trust security adoption journey.
+Use this article to find a practical entry point based on what you need to accomplish or your role in the organization.
 
-- **Top down** - Start with a high-level strategy. Resolve the strategy into detailed plans, and deliver on those plans.
-- **Build up** - Start with one or more top priority areas to focus on quick wins. Expand to more areas and build out an overall strategy.
-- **Scenario-driven** - Start with a specific business scenario and drive a coherent approach for that scenario across multiple disciplines.
+## Start with what you need
 
-Use this guidance to choose a starting point, rather than a pattern. It's important that your starting point enables progress without disrupting critical business operations.
+| If you need to... | Start with... |
+| --- | --- |
+| Align security with business priorities and risk | [Strategy, integration, and governance](security-adoption-discipline-strategy) |
+| Establish architectural direction and apply Zero Trust | [Security architecture](security-adoption-discipline-architecture) and [Zero Trust guidance](zero-trust-overview) |
+| Improve a specific security capability | [Security disciplines](security-adoption-discipline-overview) |
+| Secure a business or technology initiative | [Business scenarios](security-adoption-business-scenarios-overview) |
+| Plan implementation across technology environments | [Technologies](deploy/overview) and [technical solutions](implement-overview) |
+| Bring stakeholders together to make decisions and build a plan | [SAF workshops](workshop-business-overview) |
+| Understand how existing guidance relates to SAF | [How existing security guidance fits into SAF](security-adoption-existing-guidance) |
 
-Tip
+These entries are common entry points, not required stages. Most efforts use more than one path.
 
-Microsoft offers a rich set of security adoption workshops - the *Security Adoption Framework (SAF) workshops*. Our structured adoption model guidance aligns with the expert-led guidance from Microsoft Unified delivered in those workshops. Learn more about [SAF workshops](workshop-business-overview).
+## Find guidance for your role
 
-## Select a pattern
+| Role group | Start here | Then use |
+| --- | --- | --- |
+| **Business leaders and risk owners** | [Strategy, integration, and governance](security-adoption-discipline-strategy) | [Choose where to start](security-adoption-model#choose-where-to-start) and relevant [business scenarios](security-adoption-business-scenarios-overview) |
+| **Security leaders, program leaders, and governance, risk, and compliance teams** | [Strategy, integration, and governance](security-adoption-discipline-strategy) | [Security posture](security-adoption-discipline-posture) and relevant [security disciplines](security-adoption-discipline-overview) |
+| **Architects and technology leaders** | [Security architecture](security-adoption-discipline-architecture) | [MCRA](microsoft-reference-architecture) and relevant [technologies](deploy/overview) |
+| **Engineering, product, application, data, platform, and operations teams** | Relevant [technologies](deploy/overview) and [security disciplines](security-adoption-discipline-overview) | [Technical solutions](implement-overview) |
+| **SecOps and incident-response teams** | [SecOps discipline](security-adoption-discipline-security-operations) | [Incident-response readiness](security-adoption-discipline-security-operations-incidents) and [incident-response playbooks](security-operations-incident-response-playbooks) |
 
-Before you start note that:
+These reading paths identify common entry points, not exclusive ownership. Most SAF outcomes require business, technology, and security roles to work together.
 
-- Adoption patterns aren't mutually exclusive. You can use one pattern, evolve to another, or blend them over time.
-- Most organizations move through more than one pattern over time, and many adopt a blended approach where they use multiple patterns simultaneously.
-- For example, a buildup or scenario‑driven approach often creates the momentum and insight needed to move toward a more comprehensive, strategy‑led adoption.
+## Connect the guidance
 
-Whatever pattern you choose, we recommend that you:
+Whatever your starting point:
 
-- **Decide how you want to modernize**. Most organizations focus on updating existing processes and technologies. A few build a new security program from scratch.
-- **Align the approach**. Align with your organizational priorities, constraints, risk tolerance, and the ability to absorb change.
-- **Continuously adjust**. Continuously gather data to measure what is working, what isn't, and where adjustment is needed.
-- **Support business as usual**. Ensure that you can perform while you transform. Business operations and threat actors don't pause during security modernization. Teams must do their day jobs while they're transforming their approach.
+1. Define the shared outcome and the risks that could affect it.
+2. Identify accountable owners, decision rights, and contributing teams.
+3. Apply Zero Trust principles across planning, architecture, delivery, and operations.
+4. Select the security disciplines and technologies involved.
+5. Use technical solutions to implement and operate the required protections.
+6. Measure outcomes and adjust as business needs, technology, and threats change.
 
-## Top-down
+You can enter this work at any point. What matters is connecting immediate action to broader business priorities, risk, strategy, and architecture.
 
-Top-down is a strategy-led approach that starts with and end-to-end vision, and drives coordinated delivery across the organization. To use this pattern:
+## Use SAF as a reference, not a checklist
 
-1. Start at the beginning of the adoption path, and establish a clear strategy aligned to business priorities.
-2. Translate that strategy into architecture, roadmaps, and prioritized technical initiatives.
-3. Deliver consistently across security disciplines and technology pillars.
+SAF doesn't prescribe a single security program or transformation sequence. Use the guidance that fits your organization's priorities, risks, technologies, maturity, and ability to absorb change.
 
-This approach works well for organizations where CISOs and security leaders have strong executive sponsorship and understand the importance of driving a coordinated change and active collaboration across business, IT, and security teams.
+Start where you can make meaningful progress, connect focused work to the broader security direction, and expand as priorities and capabilities evolve.
 
-## Build-up
+## Use SAF workshops
 
-Buildup is an incremental approach that starts with targeted improvements and expands over time. To use this pattern:
-
-1. Start with a high-impact quick win that addresses and urgent risk or operational gap. For example focuses on a specific discipline or pillar to begin.
-2. Demonstrate measurable value of the quick win to build credibility and support.
-3. Expand laterally within the same discipline for another win, or transition to a broader, strategy-led top-down approach.
-
-This pattern works well for organizations that currently lack full executive sponsorship for security modernization. Technical and security leaders can use visible wins to reduce risk and build credibility for broader adoption.
-
-## Scenario-driven
-
-Scenario-driven adoption focuses on securing a specific business initiative and uses it to drive cross‑discipline alignment. To use this pattern:
-
-1. Identify a high-priority business scenario.
-2. Secure the scenario across multiple security disciplines.
-3. Use the scenario to exposure dependencies, gaps, and future modernization needs.
-
-This pattern is suitable when there's executive support and funding for a particular security initiative, but not for full security transformation. It helps organizations to connected disconnected programs and siloed efforts, improve collaboration, and defer lower-priority modernization until later.
+[SAF workshops](workshop-business-overview) provide facilitated experiences that help stakeholders align on priorities, make decisions, and build actionable plans. Use them when shared understanding or cross-functional decisions are the main barrier to progress.

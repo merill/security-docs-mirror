@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Microsoft Zero Trust Workshop - Secops | Microsoft Learn
+title: Microsoft Zero Trust Workshop - SecOps | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/security/zero-trust/workshop-zero-trust-security-operations
 uhfHeaderId: MSDocsHeader-Security
 breadcrumb_path: /security/breadcrumb/toc.json
@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Learn about the SecOps pillar in the Microsoft Zero Trust Workshop
-ms.date: 2026-05-24T00:00:00.0000000Z
+ms.date: 2026-11-06T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -36,7 +36,7 @@ spProducts:
 platformId: b5dce5d5-a85d-739b-4c27-ef7534ed2de3
 ---
 
-# Microsoft Zero Trust Workshop - Secops | Microsoft Learn
+# Microsoft Zero Trust Workshop - SecOps | Microsoft Learn
 
 Security operation (SecOps) is foundational to Zero Trust because it ensures not only that threats are prevented, but also that they are continuously detected, investigated, and responded to. In a Zero Trust model, organizations assume breach, making strong SecOps capabilities essential to contain attacks, reduce impact, and maintain resilience.
 
