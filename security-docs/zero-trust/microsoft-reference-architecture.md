@@ -12,7 +12,8 @@ description: Plan security modernization with the help of the MCRA reference arc
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: overview
-ms.date: 2026-11-06T00:00:00.0000000Z
+ms.date: 2026-11-10T00:00:00.0000000Z
+ai-usage: ai-assisted
 locale: en-us
 document_id: 9d8a2026-85e2-e89e-c4c5-4eaaa65e50dd
 document_version_independent_id: 9d8a2026-85e2-e89e-c4c5-4eaaa65e50dd
@@ -60,7 +61,7 @@ The MCRA is a component of the [Microsoft Security Adoption Framework (SAF)](sec
 
 Key changes in the latest release from the earlier April 2025 version.
 
-| \**Change/Update* | **Details** |
+| **Change/update** | **Details** |
 | --- | --- |
 | **Main Menu** | Updated design to align to [security adoption model](security-adoption-model). |
 | **Introduction** | Updated these slides: *Antipatterns*, *Security is hard*Added two assumptions, and Zero Trust description. |
@@ -79,7 +80,7 @@ MCRA illustrates how Microsoft capabilities work together and includes:
 
 - Antipatterns (common mistakes) and best practices.
 - Threat trends and attack patterns.
-- The importance of end-to-end security and ruthlessly security work prioritization.
+- The importance of end-to-end security and ruthless prioritization of security work.
 - Guidance for successful Zero Trust end-to-end security adoption.
 - Mapping Microsoft capabilities to Zero Trust standards and roles.
 

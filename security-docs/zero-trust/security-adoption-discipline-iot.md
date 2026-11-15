@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Use the Microsoft security adoption model to secure OT/IoT assets and resources across the business, based on Zero Trust principles.
-ms.date: 2026-05-24T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -199,12 +199,12 @@ Primary roles include:
 
 Key internal collaborators include:
 
-- **Front line workers (Business operations and engineering teams)** – Maintain production systems and ensure that operational processes run smoothly. They integrate logging and telemetry into security incident and event management (SIEM) and security systems.
-- **Front line workers (vendor management)** – Oversee third-party access to OT systems.
+- **Information Worker / Frontline Worker (business operations and engineering teams)** – Maintain production systems and ensure that operational processes run smoothly. They integrate logging and telemetry into security incident and event management (SIEM) and security systems.
+- **Information Worker / Frontline Worker (vendor management)** – Oversee third-party access to OT systems.
 - **Infrastructure, platform, networking engineering/ops teams** – Coordinate network segmentation and connectivity between IT/OT environments.
 - **SecOps** – Monitor OT/IoT threats and respond to incidents.
-- **Security compliance management, compliance and audit team** – Ensure compliance with industry-specific regulations (NERC CIP, IEC 62443, NIST CSF).
-- **CISO, security directors/managers** – Define strategic priorities, risk tolerance, and compliance objectives for OT/IoT security.
+- **Security Compliance Management and Organizational Compliance and Audit** – Ensure compliance with industry-specific regulations (NERC CIP, IEC 62443, NIST CSF).
+- **CISO, BISO, and Security Director/Manager** – Define strategic priorities, risk tolerance, and compliance objectives for OT/IoT security.
 
 No role operates in isolation. Security professionals must understand cybersecurity principles ***and*** OT/IoT operational requirements.
 

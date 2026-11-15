@@ -126,8 +126,8 @@ Follow this table for the best Zero Trust documentation sets for your needs.
 
 | Documentation set | Helps you... | Roles |
 | --- | --- | --- |
-| [Adoption framework](adopt/zero-trust-adoption-overview) for phase and step guidance for key business solutions and outcomes | Apply Zero Trust protections from the C-suite to the IT implementation. | Security architects, IT teams, and project managers |
-| [Assessment and progress tracking resource](/en-us/security/zero-trust/zero-trust-assessment-progress-tracking-resources) | Assess your infrastructure's readiness and track your progress. | Security architects, IT teams, and project managers |
+| [Security Adoption Framework (SAF)](security-adoption-model) for phase and step guidance for key business outcomes | Apply Zero Trust protections from the C-suite to the IT implementation. | Security architects, IT teams, and project managers |
+| [Zero Trust assessment](assessment/overview) | Assess your infrastructure's readiness and track your progress. | Security architects, IT teams, and project managers |
 | [Zero Trust partner kit](zero-trust-partner-kit) | Co-branded tracking resources, workshop, and architecture illustrations | Partners and security architects |
 | [Concepts and deployment objectives](deploy/overview) for general deployment guidance for technology areas | Apply Zero Trust protections aligned with technology areas. | IT teams and security staff |
 | [Zero Trust for small businesses](guidance-smb-partner) | Apply Zero Trust principles to small business customers. | Customers and partners working with Microsoft 365 for business |

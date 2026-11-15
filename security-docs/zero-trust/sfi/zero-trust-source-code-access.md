@@ -8,8 +8,8 @@ feedback_system: Standard
 feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
-description: Secure all tenants and their resources is part of the Protect engineering systems pillar of the Secure Future Initiative (SFI), which focuses on reducing attack surface and lateral movement risk by enforcing strict tenant governance, modernizing platform dependencies, and isolating production access. It emphasizes Zero Trust by default, ensuring that every tenant, system, and user operates under minimum necessary access and hardened boundaries.
-ms.date: 2025-10-03T00:00:00.0000000Z
+description: Apply Zero Trust principles to source code access by strengthening authentication, verifying developer presence, limiting privilege, and governing changes to critical repositories.
+ms.date: 2026-11-09T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: design-pattern
@@ -34,13 +34,9 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/sfi/zero-trust-source-code-access.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/43093068-2dda-408b-b3fe-dfd705c84f78
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/062d60c9-ee0f-402e-a046-b4e67c3572d6
-- https://authoring-docs-microsoft.poolparty.biz/devrel/9bdc1705-9b40-49d6-8377-caa0b71fda66
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/e453d60d-ba7e-43bc-8028-ec38e6b62512
-- https://authoring-docs-microsoft.poolparty.biz/devrel/17d3b3f6-a66e-4c69-9774-14a73c38e669
-- https://authoring-docs-microsoft.poolparty.biz/devrel/686ed158-d915-41e9-9760-efa46ba88f6d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: 0b867edd-5449-9575-5589-63958279f330
 ---
 
@@ -111,5 +107,3 @@ To track success, measure the following:
 Zero Trust for source code access helps to ensure that Microsoft's most critical intellectual property—its source code—is better protected against insider threats, compromised credentials, and automated attacks. By requiring proof of presence, enforcing branch classification, and scaling Zero Trust protections, Microsoft has strengthened its entire software supply chain.
 
 With the right practices, organizations can apply the same approach: enforce strong identity checks at every code merge, adopt MFA and hardware-backed authentication, and maintain auditable governance. These measures create a resilient engineering system that upholds developer productivity and security.
-
-**Adopt Zero Trust for source code access today and safeguard the integrity of your software development lifecycle.**

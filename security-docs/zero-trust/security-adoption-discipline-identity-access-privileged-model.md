@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Learn how to design an architecture for privileged access within the security adoption Identities and Access discipline
-ms.date: 2026-05-12T00:00:00.0000000Z
+ms.date: 2026-11-05T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -43,6 +43,8 @@ This article describes how to design a privileged access architecture as part of
 It provides guidance for security architects and designers who need to translate the [secure privileged access business outcome](security-adoption-scenario-privileged-access) into an end-to-end architecture that can be implemented and operated.
 
 This guidance is part of the **Microsoft Security Adoption Framework (SAF)** and provides architecture-level implementation guidance within the Access and Identities discipline.
+
+For conceptual context, start with [Overview - privileged access](security-concept-privileged-access). For implementation planning, use [Establish a privileged access strategy](security-adoption-discipline-identity-access-privileged-strategy), then continue to [technical solutions](implement-overview) for product-level implementation guidance.
 
 ## Why a privileged access architecture?
 
@@ -222,4 +224,7 @@ Within a privileged access architecture, this discipline enables the organizatio
 
 ## What's next?
 
-Kick off deployment with [Implement a privileged access architecture](security-adoption-scenario-privileged-access).
+- [Overview - privileged access](security-concept-privileged-access)
+- [Establish a privileged access strategy](security-adoption-discipline-identity-access-privileged-strategy)
+- [Secure and govern privileged access](security-adoption-scenario-privileged-access)
+- [Review technical solutions](implement-overview)

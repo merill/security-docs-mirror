@@ -32,13 +32,11 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/develop/overview.md
 cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 - https://authoring-docs-microsoft.poolparty.biz/devrel/a3955c7b-f5ee-420d-aff5-d7119738f38b
-- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/57eae307-c3a1-4cac-b645-1a899934bac8
 spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 - https://authoring-docs-microsoft.poolparty.biz/devrel/b31948f4-2f38-404b-ac93-c3c8c5b3ae33
-- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ee561821-1ac7-45a8-9409-6ba5eb7a5b97
 platformId: 64714f1c-25c8-1b2c-7de4-e0ea5bbdf98c
 ---
 
@@ -110,10 +108,10 @@ Follow this table for the best Zero Trust documentation sets for your needs.
 
 | Documentation set | Helps you... | Roles |
 | --- | --- | --- |
-| [Adoption framework](../adopt/zero-trust-adoption-overview) for phase and step guidance for key business solutions and outcomes | Apply Zero Trust protections from the C-suite to the IT implementation. | Security architects, IT teams, and project managers |
+| [Security Adoption Framework (SAF)](../security-adoption-model) for phase and step guidance for key business outcomes | Apply Zero Trust protections from the C-suite to the IT implementation. | Security architects, IT teams, and project managers |
 | [Concepts and deployment objectives](../deploy/overview) for general deployment guidance for technology areas | Apply Zero Trust protections aligned with technology areas. | IT teams and security staff |
 | [Zero Trust for small businesses](../guidance-smb-partner) | Apply Zero Trust principles to small business customers. | Customers and partners working with Microsoft 365 for business |
-| [Zero Trust Rapid Modernization Plan (RaMP)](../zero-trust-ramp-overview) for project management guidance and checklists for easy wins | Quickly implement key layers of Zero Trust protection. | Security architects and IT implementers |
+| [Zero Trust Technologies deployment guidance](../deploy/overview) for technology-area deployment objectives and implementation steps | Quickly implement key layers of Zero Trust protection. | Security architects and IT implementers |
 | [Zero Trust deployment plan with Microsoft 365](/en-us/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&amp;toc=%2fsecurity%2fzero-trust%2ftoc.json) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to your Microsoft 365 tenant. | IT teams and security staff |
 | [Zero Trust for Microsoft Copilots](../copilots/apply-zero-trust-copilots-overview) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Microsoft Copilots. | IT teams and security staff |
 | [Zero Trust for Azure services](../azure-infrastructure-overview) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Azure workloads and services. | IT teams and security staff |
@@ -125,10 +123,10 @@ Follow this table for the best documentation sets for your role in your organiza
 
 | Role | Documentation set | Helps you... |
 | --- | --- | --- |
-| Security architect  IT project manager  IT implementer | [Adoption framework](../adopt/zero-trust-adoption-overview) for phase and step guidance for key business solutions and outcomes | Apply Zero Trust protections from the C-suite to the IT implementation. |
+| Security architect  IT project manager  IT implementer | [Security Adoption Framework (SAF)](../security-adoption-model) for phase and step guidance for key business outcomes | Apply Zero Trust protections from the C-suite to the IT implementation. |
 | Member of an IT or security team | [Concepts and deployment objectives](../deploy/overview) for general deployment guidance for technology areas | Apply Zero Trust protections aligned with technology areas. |
 | Customer or partner for Microsoft 365 for business | [Zero Trust for small businesses](../guidance-smb-partner) | Apply Zero Trust principles to small business customers. |
-| Security architect  IT implementer | [Zero Trust Rapid Modernization Plan (RaMP)](../zero-trust-ramp-overview) for project management guidance and checklists for easy wins | Quickly implement key layers of Zero Trust protection. |
+| Security architect  IT implementer | [Zero Trust Technologies deployment guidance](../deploy/overview) for technology-area deployment objectives and implementation steps | Quickly implement key layers of Zero Trust protection. |
 | Member of an IT or security team for Microsoft 365 | [Zero Trust deployment plan with Microsoft 365](/en-us/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&amp;toc=%2fsecurity%2fzero-trust%2ftoc.json) for stepped and detailed design and deployment guidance for Microsoft 365 | Apply Zero Trust protections to your Microsoft 365 tenant. |
 | Member of an IT or security team for Microsoft Copilots | [Zero Trust for Microsoft Copilots](../copilots/apply-zero-trust-copilots-overview) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Microsoft Copilots. |
 | Member of an IT or security team for Azure services | [Zero Trust for Azure services](../azure-infrastructure-overview) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Azure workloads and services. |

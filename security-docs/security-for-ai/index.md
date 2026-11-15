@@ -71,13 +71,13 @@ Build a security posture for AI, including discovering, protecting, and governin
 - [Build AI workloads in Azure](/en-us/azure/cloud-adoption-framework/scenarios/ai/ready)
 - [Govern AI](/en-us/azure/cloud-adoption-framework/scenarios/ai/govern)
 
-## Continue to implement end-to-end security with Zero Trust
+## Continue to implement end-to-end security with SAF
 
 ### Concept
 
-- [Zero Trust adoption framework](/en-us/security/zero-trust/adopt/zero-trust-adoption-overview)
-- [Rapidly modernize your security posture](/en-us/security/zero-trust/adopt/rapidly-modernize-security-posture)
-- [Secure remote and hybrid work](/en-us/security/zero-trust/adopt/secure-remote-hybrid-work)
-- [Identify and protect sensitive business data](/en-us/security/zero-trust/adopt/identify-protect-sensitive-business-data)
-- [Prevent or reduce business damage from a breach](/en-us/security/zero-trust/adopt/prevent-reduce-business-damage-breach)
-- [Meet regulatory and compliance requirements](/en-us/security/zero-trust/adopt/meet-regulatory-compliance-requirements)
+- [Security Adoption Framework (SAF) overview](/en-us/security/zero-trust/security-adoption-model)
+- [Strengthen posture and compliance](/en-us/security/zero-trust/security-adoption-scenario-improve-posture)
+- [Enable and secure remote work](/en-us/security/zero-trust/security-adoption-scenario-remote-work)
+- [Protect critical business assets](/en-us/security/zero-trust/security-adoption-scenario-secure-assets)
+- [Minimize damage from security incidents](/en-us/security/zero-trust/security-adoption-scenario-minimize-impact)
+- [Security posture discipline](/en-us/security/zero-trust/security-adoption-discipline-posture)

@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: mas
 author: MarkSimos
 description: Use the Microsoft security adoption model to secure cloud infrastructure, including networks, based on Zero Trust principles.
-ms.date: 2026-05-24T00:00:00.0000000Z
+ms.date: 2026-11-05T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -47,6 +47,8 @@ This article helps security and technology teams establish and modernize an Infr
 This guidance is part of the **Microsoft Security Adoption Framework (SAF)**, a broader body of guidance for planning, prioritizing, and implementing end-to-end security modernization. SAF connects business scenarios, security disciplines, and technical implementation so that strategy, architecture, operations, and controls work together rather than as isolated recommendations.
 
 Within SAF, Infrastructure Security is a technical strategy discipline focused on secure-by-design operation of foundational platforms and connectivity.
+
+For high-impact admin-risk pathways, pair this discipline with the [privileged access scenario](security-adoption-scenario-privileged-access) and the [privileged access architecture guidance](security-adoption-discipline-identity-access-privileged-model).
 
 ## Why this discipline?
 
@@ -138,7 +140,7 @@ Key internal collaborators include:
 - **Security Strategy, Integration, and Governance** – Provides governance and oversight for security controls, aligning infrastructure security with organizational risk management. Helps prioritize projects and vulnerabilities based on organizational risk and impact.
 - **Developers and Application Teams** – Collaborate to ensure infrastructure supports secure application deployment and data protection.
 - **Development Security** - Secures infrastructure code, deployment pipelines, reusable modules, and other software-defined infrastructure artifacts.
-- **CISO and Security Leadership** – Define strategic priorities, risk tolerance, and compliance objectives for infrastructure security.
+- **CISO, BISO, and Security Director/Manager** – Define strategic priorities, risk tolerance, and compliance objectives for infrastructure security.
 
 Infrastructure architects must understand how identity, network, and platform security intersect to protect workloads effectively.
 
@@ -168,6 +170,15 @@ Infrastructure Security applies to these technology pillars in the following way
 - **Data**: Protect the infrastructure used to store, process, transmit, back up, and recover data. Apply infrastructure controls such as secure configuration, access restrictions, encryption, isolation, resilient architecture, and secure backup and recovery according to the sensitivity, business importance, and security requirements of the data.
 - **Networking**: Protect network infrastructure and connectivity across on-premises, cloud, multicloud, edge, and remote environments. Apply segmentation, filtering, secure connectivity, encryption, threat protection, denial-of-service protections, monitoring, and other network controls to limit unauthorized access and movement while maintaining required business connectivity.
 - **AI**: Protect the infrastructure and platform services used to develop, host, connect, and operate AI applications and agents. Apply infrastructure security controls to AI compute, platform services, network connectivity, data access paths, management interfaces, and the identities used by AI workloads and agents. Apply appropriate controls to AI-enabled automation that can make or initiate infrastructure changes.
+
+## Related SAF guidance
+
+- [Establish an Access and Identities discipline](security-adoption-discipline-identity-access)
+- [Design a privileged access architecture](security-adoption-discipline-identity-access-privileged-model)
+- [Secure and govern privileged access](security-adoption-scenario-privileged-access)
+- [Establish a Security Posture discipline](security-adoption-discipline-posture)
+- [Establish a SecOps discipline](security-adoption-discipline-security-operations)
+- [Map to NIST CSF 2.0 with SAF](/en-us/security/saf/framework-mappings/nist-cybersecurity-framework)
 
 ## Microsoft resources
 

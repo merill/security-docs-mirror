@@ -12,7 +12,7 @@ description: This approach improves shared accountability, enables earlier remed
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
-ms.date: 2026-09-25T00:00:00.0000000Z
+ms.date: 2026-11-09T00:00:00.0000000Z
 ms.custom: msecd-doc-authoring-1028
 ms.collection:
 - highpri

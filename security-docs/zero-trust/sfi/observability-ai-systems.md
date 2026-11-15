@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Learn how to evolve observability for AI systems such as Generative AI and agentic AI for better monitoring, understanding, and security.
-ms.date: 2026-03-17T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: design-pattern
@@ -35,8 +35,10 @@ item_type: Content
 source_path: security-docs/zero-trust/sfi/observability-ai-systems.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/302444b9-4a43-4841-8014-3d9e4251ff15
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/bebd8809-dac1-4c22-83e2-66d98af8a94d
 platformId: 2479c1ea-e2ac-6418-5bd9-2ceab5866969
 ---
 

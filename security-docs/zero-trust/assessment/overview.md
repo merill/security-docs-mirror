@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Zero Trust Assessment Overview | Microsoft Learn
+title: What Is the Zero Trust Assessment? | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/security/zero-trust/assessment/overview
 uhfHeaderId: MSDocsHeader-Security
 breadcrumb_path: /security/breadcrumb/toc.json
@@ -8,12 +8,14 @@ feedback_system: Standard
 feedback_help_link_type: ''
 ms.author: mas
 author: MarkSimos
-description: Explore the Zero Trust Assessment to automate security checks, implement industry standards, and strengthen your organization’s Zero Trust architecture.
+description: Use the Zero Trust Assessment to check Microsoft 365 and Azure configuration across seven pillars, review findings, and plan security improvements.
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: overview
-ms.date: 2025-10-30T00:00:00.0000000Z
+ms.date: 2026-11-11T00:00:00.0000000Z
+ms.custom: msecd-doc-authoring-1032
 ms.reviewer: joflore
+ai-usage: ai-assisted
 locale: en-us
 document_id: 6c83bbaa-56db-1823-ab2e-e4c568aaf992
 document_version_independent_id: 6c83bbaa-56db-1823-ab2e-e4c568aaf992
@@ -31,36 +33,74 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/assessment/overview.md
 cmProducts:
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/57eae307-c3a1-4cac-b645-1a899934bac8
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
 - https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/1dd701e0-441f-4b0a-9806-aa47decc4e35
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ee561821-1ac7-45a8-9409-6ba5eb7a5b97
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
 - https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/0a2fc935-5977-4aa6-9f55-0be03bd2acb8
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: 08b7a66c-3fc0-d7b4-52bb-8faa1001ae6b
 ---
 
-# Zero Trust Assessment Overview | Microsoft Learn
+# What Is the Zero Trust Assessment? | Microsoft Learn
 
-We publish extensive guidance on how to configure [Microsoft Entra](/en-us/entra/fundamentals/configure-security), [Microsoft Intune](/en-us/intune/intune-service/protect/zero-trust-configure-security), [Azure networks](/en-us/azure/networking/security/zero-trust-network-security) and [Microsoft Purview](/en-us/purview/configure-security) for increased security, but manually checking these against a tenant's configuration can be time-consuming and error-prone. The Zero Trust Assessment transforms this process with automation to test for hundreds of security configuration items aligned with the Secure Future Initiative (SFI) and Zero Trust pillars, then guides you through remediation steps to help operationalize Zero Trust principles.
+The Zero Trust Assessment is a community PowerShell module that checks your Microsoft 365 tenant and Azure configuration against security recommendations. Use its reports to review findings and plan improvements across seven Zero Trust pillars.
 
-These tests are drawn from trusted sources in cybersecurity, including:
-
-- Industry standards like those developed by NIST, CISA, and CIS
-- Microsoft's internal security baselines that protect Microsoft's own infrastructure
-- Real-world customer insights from thousands of security implementations
-
-[![Screenshot of a sample report output from the Zero Trust Assessment tool.](media/results-overview.png)](media/results-overview-full.png#lightbox)
+The assessment doesn't apply remediation. It collects configuration data and produces local reports that help you decide what to address.
 
 ## Why run this assessment?
 
-Running this assessment helps you confirm you've configured a strong baseline of security for your tenant. It lets you know where you might need to make investments and where you already align with best practices. From this baseline, you might implement even stronger or more advanced controls.
+Manually comparing tenant configuration with security guidance can be time-consuming. The assessment automates these checks and shows where your configuration aligns with recommendations and where you need to investigate.
+
+The report includes findings, risk and status filters, and supporting guidance. Review skipped checks and errors as well as passed and failed checks: missing access, services, or licenses can leave part of your environment unassessed.
+
+For guidance on interpreting reports, see [Review assessment results](review-results).
+
+[![Screenshot of a synthetic assessment overview with tenant summaries and results across seven pillars.](media/zero-trust-assessment-overview.png)](media/zero-trust-assessment-overview.png#lightbox)
+
+## Supported pillars
+
+The current default run includes all seven pillars. Use the linked guidance and coverage summaries to plan your assessment.
+
+| Pillar | Guidance or coverage |
+| --- | --- |
+| **Identity** | [Configure Microsoft Entra for increased security](/en-us/entra/fundamentals/configure-security). |
+| **Devices** | [Configure Microsoft Intune for increased security](/en-us/intune/intune-service/protect/zero-trust-configure-security). |
+| **Network** | [Apply Zero Trust principles to Azure networks](/en-us/azure/networking/security/zero-trust-network-security). |
+| **Data** | [Configure Microsoft Purview for increased security](/en-us/purview/configure-security). |
+| **Infrastructure** | Infrastructure assessment scope. |
+| **Security operations (SecOps)** | Security operations assessment coverage. |
+| **AI** | [Configure agent identity security](ai-pillar). |
+
+### Infrastructure
+
+Infrastructure findings use Microsoft Defender for Cloud recommendations. The assessment includes only accessible Azure subscriptions tagged with `ZeroTrustAssessment:Infrastructure`. If no matching subscription exists, the assessment skips rather than passes. See [Infrastructure scope](run-assessment#infrastructure-scope).
+
+### Security operations (SecOps)
+
+The default run includes SecOps. Azure connections support SecOps, Infrastructure, and Network assessments, not just audit and sign-in log export checks. Arrange the relevant [service and resource access](permissions) and review skipped checks or authorization errors before treating the run as complete.
+
+## How the assessment works
+
+The assessment separates service connections, assessment execution, and report review:
+
+1. [Connect to the services](connect-services) you intend to assess. Each service has its own authentication and authorization requirements.
+2. [Run the assessment](run-assessment) to collect data and evaluate the selected checks.
+3. [Review the local reports](review-results), investigate incomplete coverage, and use the findings to plan improvements. You can also import the generated JSON into Zero Trust Workshop.
+
+Reports, exports, and diagnostics can contain sensitive tenant configuration and personal information. Review [data handling and telemetry](get-started#protect-assessment-data) before running the assessment.
+
+Before connecting, see [Review permissions and roles](permissions) to identify the access requirements for your assessment.
+
+## Source and package versions
+
+These articles cover the [development source](https://github.com/microsoft/zerotrustassessment/blob/6a304637fc53846fd55182d495b6a2980f30b434/src/powershell/doc/readme.md). Published packages can differ. Check the [release history](https://github.com/microsoft/zerotrustassessment/releases) and the help for your installed version before relying on a version-specific dependency, parameter, or permission.
+
+[Release 2.6.0](https://github.com/microsoft/zerotrustassessment/releases/tag/2.6.0) introduced the redesigned report and all seven default pillars. Later source changes include updated dependencies and the `AttackSimulation.Read.All` scope. Installing a prerelease package and using the assessment's `-Preview` switch are separate choices.
 
 ## Open source and transparent
 
-**See exactly what the assessment does.** The entire codebase is open source and available for review:
+Microsoft employees maintain the assessment as a community project. It isn't an official Microsoft product and Microsoft provides it as-is, without support through a Microsoft support program or service.
 
-- View the source code: [GitHub repository](https://github.com/microsoft/zerotrustassessment/tree/main/src/powershell)
-- Report issues: [GitHub issues](https://github.com/microsoft/zerotrustassessment/issues)
-- Contribute improvements: Community contributions welcome
+Review the [PowerShell source](https://github.com/microsoft/zerotrustassessment/tree/dev/src/powershell) and [support policy](https://github.com/microsoft/zerotrustassessment/blob/dev/SUPPORT.md). For community help, see [Report an issue or provide feedback](troubleshooting#report-an-issue-or-provide-feedback).

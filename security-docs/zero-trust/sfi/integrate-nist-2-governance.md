@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Integrate NIST CSF 2.0 governance into annual cybersecurity assessments touches all pillars of the Secure Future Initiative (SFI). It provides a framework and functions for organizations to structure their annual cybersecurity assessments.
-ms.date: 2025-11-06T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: design-pattern

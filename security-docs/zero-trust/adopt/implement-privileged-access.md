@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Learn how to deploy a privileged access architecture
-ms.date: 2025-05-05T00:00:00.0000000Z
+ms.date: 2026-11-05T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -31,9 +31,9 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/adopt/implement-privileged-access.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: 1a55295e-a747-03a1-8023-a2b7149a9be1
 ---
 
@@ -47,6 +47,8 @@ In the Microsoft security adoption model:
 - Solutions align to [business scenarios](../security-adoption-business-scenarios-overview) that define high priority security outcomes.
 
 Before you begin implementation, learn how a [secure privileged access architecture](../security-adoption-scenario-privileged-access) plays a critical role in the business scenario - *[Protect critical business assets](../security-adoption-scenario-secure-assets)* - by reducing this risk and strengthening control over sensitive systems.
+
+For conceptual and architecture context before deployment details, review [Overview - privileged access](../security-concept-privileged-access), [Establish a privileged access strategy](../security-adoption-discipline-identity-access-privileged-strategy), and [Design a privileged access architecture](../security-adoption-discipline-identity-access-privileged-model).
 
 ## Solution goals
 

@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Learn how to manage AI memory safely in agentic AI systems
-ms.date: 2026-06-03T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: design-pattern
@@ -36,11 +36,11 @@ source_path: security-docs/zero-trust/sfi/manage-agentic-memory-safety.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/062d60c9-ee0f-402e-a046-b4e67c3572d6
 - https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa
-- https://authoring-docs-microsoft.poolparty.biz/devrel/57eae111-0f3b-497e-be07-450fd1409dea
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/37c61750-a5c6-46b8-be1f-24f8a60797db
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/17d3b3f6-a66e-4c69-9774-14a73c38e669
 - https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ac8bf8ab-8134-4c9a-9f2e-58b31575b492
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/903ca71b-804f-4489-8ccc-fa0cd0391d12
 platformId: d8f1274f-dc63-b22f-3625-0eaaf27b8111
 ---
 

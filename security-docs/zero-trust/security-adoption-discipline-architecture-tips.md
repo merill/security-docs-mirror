@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Tips for an effective security architecture | Microsoft Learn
+title: Foundational security laws | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/security/zero-trust/security-adoption-discipline-architecture-tips
 uhfHeaderId: MSDocsHeader-Security
 breadcrumb_path: /security/breadcrumb/toc.json
@@ -8,8 +8,8 @@ feedback_system: Standard
 feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
-description: Use these tips as you modernize security architectures across the business, based on Zero Trust principles.
-ms.date: 2026-05-24T00:00:00.0000000Z
+description: Use these foundational laws to make informed risk and security decisions across SAF.
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -31,22 +31,24 @@ item_type: Content
 source_path: security-docs/zero-trust/security-adoption-discipline-architecture-tips.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
+- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
 platformId: 428c8cbf-69e6-e319-010b-f9b0a0babcd0
 ---
 
-# Tips for an effective security architecture | Microsoft Learn
+# Foundational security laws | Microsoft Learn
 
-As you establish the Security Architecture discipline, this article provides guidance on how to apply 10 immutable laws of security risk as practical tips as you establish and modernize the [Security Architecture discipline](security-adoption-discipline-architecture).
+This article provides 10 immutable laws of security and 10 laws of cybersecurity risk that capture durable realities about security controls, attackers, people, process, and technology.
 
-This guidance is part of the **Microsoft Security Adoption Framework (SAF)** and supports the Security Architecture discipline with practical design and prioritization heuristics.
+These laws are part of the **Microsoft Security Adoption Framework (SAF)** and are used across strategy, governance, architecture, development, engineering, operations, and SecOps to test assumptions, understand recurring constraints and failure patterns, and make informed risk tradeoffs. Historically, these laws were commonly used in security architecture guidance, and architecture continues to apply them, but they are cross-cutting foundations for SAF rather than architecture-owned concepts.
 
 ## Review the immutable laws of security
 
-Architecture exists to identify challenging requirements and translate them into actionable guidance to reduce security risk, limit damage, and keep systems available over time. At the foundation of this work are the immutable laws of security.
+Security work across SAF requires translating requirements into actionable guidance to reduce security risk, limit damage, and keep systems available over time. At the foundation of this work are the immutable laws of security.
 
-These laws describe uncomfortable truths about security that help you to plan effective control, avoid common misconceptions that undermine security architecture, and create organizational risk.
+These laws describe uncomfortable truths about security that help teams plan effective controls, avoid common misconceptions, and make better risk decisions.
 
 | **Immutable law** | **Architecture impact** |
 | --- | --- |
@@ -63,13 +65,13 @@ These laws describe uncomfortable truths about security that help you to plan ef
 
 ## Apply the ten laws of cybersecurity risk
 
-Even after understanding how security control is potentially lost and the impact on security architecture, this isn't enough information to design a system. Security architects must also understand:
+Even after understanding how security control is potentially lost, this isn't enough information to make effective decisions. Teams across SAF also need to understand:
 
 - What are we optimizing for? - Where do we concentrate effort? - What tradeoffs are acceptable?
 
-To figure out these questions, we can apply 10 common laws of cybersecurity risk. Each set of laws deals with different aspects of cybersecurity.
+To answer these questions, we can apply 10 common laws of cybersecurity risk. Each set of laws addresses different aspects of cybersecurity.
 
-| **Law** | **Architecture implication** | **Modernization guidance** |
+| **Law** | **Risk implication across SAF** | **Decision guidance** |
 | --- | --- | --- |
 | **1. Security success is ruining the attacker's ROI** | Design architectures that increase attacker cost and reduce payoff, especially for high‑value assets. | - Concentrate controls around identity, privileged access, and sensitive data.- Reduce flat trust zones; segment systems so compromise doesn’t scale. - Prioritize protections that break common attacker chains, not special cases. |
 | **2. Not keeping up is falling behind** | Static architectures fail. Architecture must assume continuous evolution. | - Security architecture is never done. It must be operationally sustainable and continuously improved.- Design for continuous update (patching, configuration, policy).- Prefer cloud‑native and managed services that evolve faster than on-premises or bespoke systems.- Ensure visibility and inventory are architectural requirements, not afterthoughts. |
@@ -82,11 +84,11 @@ To figure out these questions, we can apply 10 common laws of cybersecurity risk
 | **9. Encryption alone isn't a data protection solution** | Cryptology is only as secure as the keys that unlock it. | - Encryption is important, but is ineffective without secure implementation and operation. - Architect centralized key management and access governance. - Protect decryption paths as aggressively as encrypted storage. - Combine encryption with identity, monitoring, and policy enforcement. |
 | **10. Technology doesn't solve people and process problems** | Architecture must assume imperfect humans and processes. | - Modernize security architecture to reduce the blast radius of human error. Don't let clicking on a single phishing email cause your security posture to fail. - Design systems that are resilient to error. - Automate guardrails where possible. - Avoid architectures that depend on flawless manual operation. |
 
-## Build an architecture
+## Apply both law sets in decision-making
 
-As a security architect you can use these two tables as complementary lenses. One to validate technical soundness and the other to drive risk-based prioritization. When combined, they form a practical decision framework for architectural design and modernization.
+Use these two tables as complementary lenses. One helps validate technical soundness and the other helps drive risk-based prioritization. When combined, they form a practical decision framework for security and risk decisions across SAF, including architecture design and modernization.
 
-| **Laws** | **Aim** | **Architectural use** | **Questions answered** |
+| **Laws** | **Aim** | **SAF decision use** | **Questions answered** |
 | --- | --- | --- | --- |
 | **Immutable laws of security** | Capture technical truths that always hold. | Ensure architectures don't violate technical reality.Test assumptionsValidate trust boundaries.Avoid false confidence. | *Is the architecture fundamentally sound*?*Does the design rely on something that can easily be bypassed*?*Are we assuming technology can make up for untrusted admins, weak passwords, or physical access methods*?*Are we mistaking encryption, isolation, or tools for actual control*? |
 | **Laws of cybersecurity risk** | Decide what matters most. | Identify where to invest architecture effort.Shape modernization roadmaps.Justify tradeoffs to business leaders. | *Where do attackers get the biggest payoff for least effort*?*Which controls actually change attacker behavior*?*What work is no longer worth doing*? |

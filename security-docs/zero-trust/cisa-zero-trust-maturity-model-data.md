@@ -11,7 +11,7 @@ author: jricketts
 description: For the data pillar, enable Zero Trust capabilities with integrated security tools for a secure and resilient cybersecurity framework.
 ms.service: security
 ms.topic: best-practice
-ms.date: 2024-12-16T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.subservice: zero-trust
 manager: martinco
 ms.reviewer: kbrewer
@@ -32,13 +32,13 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/cisa-zero-trust-maturity-model-data.md
 cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 - https://authoring-docs-microsoft.poolparty.biz/devrel/57eae111-0f3b-497e-be07-450fd1409dea
 - https://authoring-docs-microsoft.poolparty.biz/devrel/1dd701e0-441f-4b0a-9806-aa47decc4e35
-- https://authoring-docs-microsoft.poolparty.biz/devrel/3f837592-9b7c-422c-82fa-3523042264d7
 spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ac8bf8ab-8134-4c9a-9f2e-58b31575b492
 - https://authoring-docs-microsoft.poolparty.biz/devrel/0a2fc935-5977-4aa6-9f55-0be03bd2acb8
-- https://authoring-docs-microsoft.poolparty.biz/devrel/f37b967c-efb8-47e1-9b0d-0ab7670e3db4
 platformId: 42775291-6575-31ee-314a-b7d5fa9a3f6e
 ---
 

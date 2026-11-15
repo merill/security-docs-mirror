@@ -9,7 +9,8 @@ feedback_help_link_type: ''
 ms.author: mas
 author: MarkSimos
 description: Learn how to use the Microsoft Security Adoption Framework (SAF) to align security work with security standards and frameworks and connect it to practical security guidance and technology implementation.
-ms.date: 2026-11-06T00:00:00.0000000Z
+ms.date: 2026-11-10T00:00:00.0000000Z
+ai-usage: ai-assisted
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -31,14 +32,16 @@ item_type: Content
 source_path: security-docs/zero-trust/security-standards-and-frameworks.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
+- https://authoring-docs-microsoft.poolparty.biz/devrel/0661002d-4d3e-4257-b5a8-1276befa15d4
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
+- https://authoring-docs-microsoft.poolparty.biz/devrel/05df39fb-4203-4146-99d8-5ff1e833520c
 platformId: d11afc9b-2e3f-b03f-815a-8e5a2af64e65
 ---
 
 # Security standards and frameworks | Microsoft Learn
 
-Security standards and frameworks help organizations define security objectives, practices, and requirements. The Microsoft Security Adoption Framework (SAF) helps translate these standards and frameworks into coordinated security work across business, technology, and security roles and connects that work to technology implementation.
+Security standards and frameworks help organizations define security objectives, practices, and requirements. The Microsoft Security Adoption Framework (SAF) helps translate these standards and frameworks into coordinated security work across business, technology, and security roles and connects that work to technology implementation. You don't need to adopt SAF instead of an existing standard or framework. SAF can help translate the objectives and requirements you already use into coordinated security work and technology implementation.
 
 This guidance helps organizations understand how established security standards and frameworks relate to SAF and Microsoft security technologies. The framework mappings provide more detailed alignment where available.
 
@@ -51,6 +54,8 @@ Organizations can use this guidance and the mappings to:
 
 These mappings help organizations apply standards and frameworks using SAF and Microsoft security technologies. They don't replace authoritative standards, frameworks, or requirements, and they don't by themselves demonstrate compliance.
 
+Security and compliance have different purposes, but they reinforce each other. Effective, risk-driven security establishes repeatable controls, clear ownership, operational processes, and measurable evidence. Organizations can map applicable regulatory, contractual, and industry requirements to those security practices and controls. Good security makes compliance easier to achieve, demonstrate, and sustain, but it doesn't automatically satisfy every compliance obligation.
+
 ## Zero Trust
 
 Zero Trust provides the security principles that underpin SAF. SAF helps organizations apply these principles across business decisions, security practices, technology design, implementation, and operations.
@@ -62,29 +67,58 @@ Use these resources to understand Zero Trust and connect it to SAF:
 
 ## Framework mappings
 
-Use these mappings to connect objectives from established security frameworks and strategies to SAF guidance, security capabilities, technology implementation, and relevant Microsoft product guidance. This helps organizations align security work with framework objectives and requirements.
+Use these mappings to connect objectives from established security frameworks and strategies to SAF security disciplines and technologies. From there, use technical solutions and Microsoft product guidance to support implementation. **This connects each framework to SAF while preserving its original structure, terminology, and intent.**
+
+### NIST Cybersecurity Framework 2.0
+
+Use the [NIST Cybersecurity Framework 2.0 mapping](/en-us/security/saf/framework-mappings/nist-cybersecurity-framework) to connect the CSF Core, Organizational Profiles, and Tiers to SAF disciplines, current role actions, technologies, technical solutions, and relevant Microsoft implementation guidance.
+
+### CIS Controls and CIS Benchmarks
+
+Use the [CIS Controls and CIS Benchmarks mapping](/en-us/security/saf/framework-mappings/cis-controls-benchmarks) to distinguish organization-level CIS Controls and Implementation Groups from technology-specific CIS Benchmarks, assign role actions, and connect the work to SAF and implementation guidance.
+
+### The Open Group Zero Trust model
+
+Use [The Open Group Zero Trust model mapping](/en-us/security/saf/framework-mappings/open-group-zero-trust) to connect current Zero Trust capabilities, security roles, and Architecture Building Blocks (ABBs) to SAF and selected Microsoft technology examples. The page distinguishes published Open Group material from evolving draft and Snapshot material.
 
 ### CISA Zero Trust Maturity Model
 
-Use the [CISA Zero Trust Maturity Model overview](cisa-zero-trust-maturity-model-intro) to connect CISA Zero Trust capabilities and maturity objectives to SAF guidance, technologies, and related Microsoft implementation guidance.
+Use the [CISA Zero Trust Maturity Model mapping and implementation guidance](cisa-zero-trust-maturity-model-intro) to connect CISA's five pillars and three cross-cutting capabilities to relevant SAF security disciplines and technologies, then continue to Microsoft implementation guidance.
 
 ### DoD Zero Trust Strategy
 
-Use the [DoD Zero Trust Strategy overview](dod-zero-trust-strategy-intro) to connect DoD Zero Trust capabilities and activities to SAF guidance, technologies, and related Microsoft implementation guidance.
+Use the [DoD Zero Trust Strategy mapping and implementation guidance](dod-zero-trust-strategy-intro) to navigate from DoD Zero Trust pillars and capability areas to relevant SAF security disciplines and technologies, then continue to Microsoft implementation guidance.
 
 ## Use a standard or framework as a SAF starting point
 
-The mappings show how objectives, practices, and requirements from standards and frameworks connect to SAF guidance and technology implementation. You can also use a standard or framework as a practical starting point for security adoption. This approach is useful when your organization already uses a framework, must meet specific requirements, or wants to use an established framework to structure security improvements.
+Build security around business and security risk, then map applicable compliance requirements to the resulting practices and controls. You can also use a standard or framework as a practical starting point when your organization already uses it, must meet specific requirements, or wants established structure for security improvements.
 
 To use a standard or framework as a SAF starting point:
 
-1. **Identify relevant objectives, practices, or requirements** from the standard or framework.
-2. **Connect them to SAF guidance and security disciplines** to understand the security work needed.
-3. **Identify the technologies that you must protect** and the roles involved.
-4. **Identify implementation options** by using relevant technical solutions and Microsoft product guidance.
-5. **Assess progress and alignment** against organizational outcomes and applicable framework or standard objectives.
+1. **Identify business and security risks and the outcomes that matter.**
+2. **Identify relevant objectives, practices, or requirements** from the applicable standard or framework.
+3. **Connect them to SAF security disciplines** to understand the work, ownership, and operational processes needed.
+4. **Identify the technologies that must be protected** and the roles involved.
+5. **Use technical solutions and Microsoft product guidance** to select implementation options.
+6. **Map applicable compliance requirements to the resulting practices and controls**, and collect measurable evidence through normal operations.
+7. **Assess progress and alignment** against organizational outcomes and applicable framework or standard objectives.
 
-Standards and frameworks can provide important structure and requirements for security programs, but alignment or compliance alone doesn't define security success. SAF helps organizations connect framework-driven work to broader security outcomes, strategy, architecture, implementation, and operations.
+Security does not equal compliance. Alignment or compliance alone doesn't define security success, and effective security doesn't automatically establish compliance. SAF helps organizations connect framework-driven work to broader security outcomes, strategy, architecture, implementation, and operations while reusing consistent controls, ownership, processes, and evidence across applicable requirements.
+
+## Choose your path
+
+### Security leaders and governance teams
+
+- [Organize the security improvement program with SAF](security-adoption-model).
+- [Use SAF effectively across the adoption journey](security-adoption-journey).
+- Continue to the framework mappings to connect requirements and objectives to security work, roles, and technologies.
+
+### Architects and practitioners
+
+- [Plan integrated capabilities with MCRA](microsoft-reference-architecture).
+- [Modernize end-to-end security architecture](security-adoption-discipline-architecture).
+- [Connect Microsoft security products and platforms to outcomes](security-platform).
+- [Continue from framework objectives to technical solutions](implement-overview).
 
 ## Related SAF guidance
 

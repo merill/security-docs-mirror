@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Phishing-resistant multifactor authentication (MFA) is part of the protect identities and secrets pillar of the Secure Future Initiative (SFI), focusing on hardening authentication, eliminating unmanaged credentials, enforcing Zero Trust principles, and protecting cryptographic keys.
-ms.date: 2025-08-05T00:00:00.0000000Z
+ms.date: 2026-11-09T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -34,13 +34,9 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/sfi/phishing-resistant-mfa.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/5686b492-7c45-4088-8291-ecc0458747d3
-- https://authoring-docs-microsoft.poolparty.biz/devrel/43093068-2dda-408b-b3fe-dfd705c84f78
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/798bd9d1-9cc5-4fc7-b0e5-8699d1f6ce2a
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/838f4f15-80c1-4d49-b873-501fe4ed2d28
-- https://authoring-docs-microsoft.poolparty.biz/devrel/e453d60d-ba7e-43bc-8028-ec38e6b62512
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/b5dc5f65-34a8-4bfc-9917-97d1e20c88b2
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: c48b7d9e-9a6b-7b16-f05f-80a539df060c
 ---
 
@@ -67,9 +63,8 @@ This transformation was implemented through a phased rollout built on:
 - Identifying and migrating user-based automation (service accounts) to workload identities, depending on the scenario and requirements
 - Strong onboarding protections, including Temporary Access Pass (TAP) and video-based identity verification aligned with NIST SP 800-63-4
 
-Microsoft also incorporated phishing-resistant MFA into every stage of the employee lifecycle, embedding it in onboarding, transitions, and deactivation workflows resulting in:
+Microsoft also incorporated phishing-resistant MFA into every stage of the employee lifecycle, embedding it in onboarding, transitions, and deactivation workflows. This approach supports the following outcomes:
 
-- 92% of employee productivity accounts are protected by phishing-resistant authentication methods
 - External user access is secured via phishing-resistant credentials.
 - Remote onboarding at scale is achieved with high-assurance identity proofing.
 
@@ -116,6 +111,4 @@ To track success, measure the following:
 
 ## Summary
 
-Phishing-resistant MFA is no longer optional—it is essential for reducing the risk of credential-based attacks. By replacing vulnerable MFA methods with phishing-resistant solutions, Microsoft is advancing both identity security and user trust. Organizations can replicate this model to protect their own environments from today’s most common identity threats.
-
-**By implementing phishing-resistant MFA, you can reduce your organization’s exposure to credential-based attacks.**
+Phishing-resistant MFA is an important control for reducing the risk of credential-based attacks. By replacing vulnerable MFA methods with phishing-resistant solutions, Microsoft is advancing both identity security and user trust. Organizations can adapt this model to protect their own environments from common identity threats.

@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: duau
 author: duongau
 description: Learn how to apply Zero Trust principles to encrypting Azure-based network communication.
-ms.date: 2025-05-07T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.reviewer: adtork, maroja, maalgeba
@@ -37,12 +37,12 @@ item_type: Content
 source_path: security-docs/zero-trust/azure-networking-encryption.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 - https://authoring-docs-microsoft.poolparty.biz/devrel/e2c04606-9985-4e10-b018-2943639291c7
-- https://authoring-docs-microsoft.poolparty.biz/devrel/1f65811f-19b7-4374-b6b1-7dab3f416544
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 - https://authoring-docs-microsoft.poolparty.biz/devrel/f257d737-c427-4ae9-949f-35f6148166cf
-- https://authoring-docs-microsoft.poolparty.biz/devrel/70626ef6-54d7-4e8b-8405-9b018e6f8179
 platformId: 222f0959-b6b5-0ddf-336e-194d1ed732be
 ---
 

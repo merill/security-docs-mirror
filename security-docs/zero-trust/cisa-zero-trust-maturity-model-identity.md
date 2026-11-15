@@ -11,7 +11,7 @@ author: jricketts
 description: For the identity pillar, enable Zero Trust capabilities with integrated security tools for a secure and resilient cybersecurity framework.
 ms.service: security
 ms.topic: best-practice
-ms.date: 2024-12-16T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.subservice: zero-trust
 manager: martinco
 ms.reviewer: kbrewer
@@ -46,7 +46,7 @@ platformId: 009be953-60e3-03e7-9547-b115e9b2779d
 
 A unified identity provider (IdP) is crucial to manage access effectively; it ensures users and entities have the right access to resources without excessive permissions. Integrating identity, credential, and access management solutions create strong authentication, tailored context-based authorization, and identity risk assessment.
 
-The Office of Management and Budget (OMB) [Memorandum-22-09](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf), released in support of [Executive Order 14028: Improving the Nation's Cybersecurity](https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/), mandates federal agencies employ centralized identity management systems for their users. These systems can integrate into applications and common platforms, ensuring a unified approach to identity management. This requirement is part of the Zero Trust strategy that enhances cybersecurity and data privacy. We recommend consolidation of IdPs, identity stores, and identity management systems by adopting [Microsoft Entra ID](/en-us/entra/identity) as the IdP.
+The Office of Management and Budget (OMB) [Memorandum-22-09](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf), released in support of [Executive Order 14028: Improving the Nation's Cybersecurity](https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity), mandates federal agencies employ centralized identity management systems for their users. These systems can integrate into applications and common platforms, ensuring a unified approach to identity management. This requirement is part of the Zero Trust strategy that enhances cybersecurity and data privacy. We recommend consolidation of IdPs, identity stores, and identity management systems by adopting [Microsoft Entra ID](/en-us/entra/identity) as the IdP.
 
 For more information, see [Meet identity requirements of M-22-09 with Microsoft Entra ID](/en-us/entra/standards/memo-22-09-meet-identity-requirements).
 

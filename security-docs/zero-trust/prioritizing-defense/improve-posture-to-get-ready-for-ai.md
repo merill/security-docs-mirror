@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Microsoft Security Exposure Management for AI | Microsoft Learn
+title: Improve posture to get ready for AI | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/security/zero-trust/prioritizing-defense/improve-posture-to-get-ready-for-ai
 uhfHeaderId: MSDocsHeader-Security
 breadcrumb_path: /security/breadcrumb/toc.json
@@ -8,8 +8,8 @@ feedback_system: Standard
 feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
-description: Learn how security practitioners can improve security posture for AI readiness by managing devices, reducing exposure, and securing software.
-ms.date: 2026-10-23T00:00:00.0000000Z
+description: Improve AI readiness by managing devices, reducing reachable exposure, securing software, and connecting prioritized implementation work to SAF.
+ms.date: 2026-11-06T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -32,77 +32,78 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/prioritizing-defense/improve-posture-to-get-ready-for-ai.md
 cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 - https://authoring-docs-microsoft.poolparty.biz/devrel/e9e4163d-5abc-4b31-8602-bd8826f5d740
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/062d60c9-ee0f-402e-a046-b4e67c3572d6
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
 spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 - https://authoring-docs-microsoft.poolparty.biz/devrel/a225912b-c498-48b4-a85f-d3e64981cbdc
 - https://authoring-docs-microsoft.poolparty.biz/devrel/17d3b3f6-a66e-4c69-9774-14a73c38e669
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
 platformId: 9468f777-9d7a-e6c6-ecd3-0912a652c45d
 ---
 
-# Microsoft Security Exposure Management for AI | Microsoft Learn
+# Improve posture to get ready for AI | Microsoft Learn
 
-**Security imperative: Get ready for AI** **Job to be done: Improve posture**
+Improving posture to get ready for AI means establishing a defensible device, application, data, software, and infrastructure baseline before AI systems and agents inherit the environment. The work reduces reachable attack surface, closes common control gaps, and prioritizes remediation where it reduces the most business risk.
 
-Improving posture to get ready for AI focuses on establishing a defensible device baseline, cutting reachable attack surface, and closing gaps across the software estate. It ensures effort lands where it reduces risk, and that controls an AI agent inherits are already governed.
+This guidance provides detailed implementation continuity for work described in the [Secure your foundations](/en-us/security/saf/scenarios/ai-security/security-foundations) AI security transformation theme. Use the [Microsoft Security Adoption Framework (SAF)](../security-adoption-model) to coordinate this work across business scenarios, security disciplines, roles, technologies, and technical solutions.
 
-### Context and problem
+## Why this work matters
 
-AI gives attackers new tools to discover, analyze, and chain vulnerabilities faster, letting them probe more paths and move through environments more quickly. Yet most of the weaknesses they exploit are familiar: unmanaged devices, devices that don't meet compliance requirements, work data that leaves managed apps, unnecessary internet-facing exposure, unpatched software, vulnerable open-source dependencies, and flaws in the code organizations write.
+AI gives attackers new ways to discover, analyze, and chain vulnerabilities at greater speed. Many of the weaknesses they exploit remain familiar:
 
-What's changed is how quickly attackers can link those gaps into a path to critical systems, so one weak spot can lead to a much broader compromise. AI adoption raises the stakes, because AI agents can inherit the posture they're deployed into: the devices they run on, the services they can reach, and the software they depend on. That makes basic security hygiene urgent: organizations need a strong security foundation in place before they adopt AI, and they need to keep it strong as threats evolve.
+- unmanaged or noncompliant devices;
+- organizational data leaving managed applications;
+- unnecessary internet-facing exposure and attack paths to critical assets;
+- unpatched software and operating systems;
+- vulnerable open-source dependencies and software supply chains;
+- weaknesses in application and infrastructure code; and
+- unmanaged identities, credentials, and secrets.
 
-## Solution
+AI adoption raises the stakes because AI systems and agents can inherit the posture of the devices, identities, services, data, software, and infrastructure they can reach. Strengthening these foundations reduces risk before AI increases scale and connectivity.
 
-To help your organization establish a strong security foundation, we have guidance outlined in [Secure Now](https://aka.ms/SecureNow), within [Microsoft Security Exposure Management](/en-us/security-exposure-management/microsoft-security-exposure-management). These initiatives closes one of those familiar gaps:
+## Prioritize posture improvements
 
-- Manage organizational devices brings devices under management in Microsoft Intune.
-- Implement device compliance requirements holds them to a standard enforced through Conditional Access.
-- Protect organizational data in managed applications keeps work data in managed apps, even on devices you don't manage.
-- Internet-Facing Exposure cuts what's reachable from the internet and protects the services that must stay exposed.
-- Patching and vulnerability management keeps software and operating systems current.
-- Software Supply Chain Security secures the open-source dependencies and pipelines you build on.
-- Code scanning and remediation finds and fixes vulnerabilities in the code you write.
+Use [Secure Now](https://aka.ms/SecureNow) and [Microsoft Security Exposure Management](/en-us/security-exposure-management/microsoft-security-exposure-management) to review current recommendations, prioritize work, and track progress. Connect the implementation work to SAF so priorities, ownership, and measures are sustained after an individual initiative is complete.
 
-Together, they help you improve posture to get ready for AI transformation. Secure Now is updated as threats and Microsoft security capabilities evolve, so check it for the latest recommended actions and use [security initiatives](/en-us/security-exposure-management/initiatives) to track progress against your targets.
+| Initiative | Durable outcome | Primary SAF connection | Implementation resource |
+| --- | --- | --- | --- |
+| Manage organizational devices | Devices that access organizational resources are known, managed, monitored, and assigned to accountable owners. | [Security posture management](../security-adoption-discipline-posture), [endpoints](../deploy/endpoints) | [Manage devices with Intune](../manage-devices-with-intune-overview) |
+| Implement device compliance requirements | Access decisions include device health and policy compliance instead of relying on identity alone. | [Access and identities](../security-adoption-discipline-identity-access), [endpoints](../deploy/endpoints) | [Set up compliance policies](../manage-devices-with-intune-compliance-policies) and [require device compliance](../manage-devices-with-intune-require-compliance) |
+| Protect organizational data in managed applications | Work data remains protected in approved applications, including on devices the organization does not manage. | [Data security](../security-adoption-discipline-data), [endpoints](../deploy/endpoints) | [Protect apps](../manage-devices-with-intune-app-protection) and [implement data loss prevention](../manage-devices-with-intune-dlp-mip) |
+| Reduce internet-facing exposure | Unnecessary exposure and reachable attack paths to critical assets are removed or controlled. | [Security posture management](../security-adoption-discipline-posture), [infrastructure](../deploy/infrastructure), [networks](../deploy/networks) | [Microsoft Security Exposure Management](/en-us/security-exposure-management/microsoft-security-exposure-management) |
+| Improve patching and vulnerability management | Remediation is prioritized by asset criticality, reachability, exploitability, and business impact. | [Security posture management](../security-adoption-discipline-posture), [infrastructure security](../security-adoption-discipline-infrastructure) | [Secure Now](https://aka.ms/SecureNow) |
+| Secure the software supply chain | Dependencies, build systems, artifacts, and publishing processes use approved, observable security controls. | [Development security](../security-adoption-discipline-development), [development security implementation patterns](/en-us/security/saf/disciplines/development/implementation-patterns) | [Microsoft Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/) and [protect the software supply chain](../sfi/protect-software-supply-chain) |
+| Scan and remediate code | Security weaknesses are found and fixed through repeatable engineering workflows before and after deployment. | [Development security](../security-adoption-discipline-development), [applications](../deploy/applications) | [Secure source code with GitHub Advanced Security](../sfi/secure-source-code-github-advanced-security) |
 
-## Guidance
+## Coordinate the work through SAF
 
-Security practitioners can improve posture in their organizations by following these initiatives informed by Secure Now. Learn more about how to [prioritize strengthening AI-readiness.](prioritizing-defense-overview)
+Treat the initiatives as connected parts of the security program:
 
-| **Initiatives** | **Resource** |
-| --- | --- |
-| Manage organizational devices | [Secure Now - Manage organizational devices](https://sip.security.microsoft.com/secure-now) |
-| Implement device compliance requirements | [Secure Now - Implement device compliance requirements](https://sip.security.microsoft.com/secure-now) |
-| Protect organizational data in managed applications | [Secure Now - Protect organizational data in managed applications](https://sip.security.microsoft.com/secure-now) |
-| Internet-Facing Exposure | [Secure Now - Internet-Facing Exposure](https://sip.security.microsoft.com/secure-now) |
-| Patching and vulnerability management | [Secure Now - Patching and vulnerability management](https://sip.security.microsoft.com/secure-now) |
-| Software Supply Chain Security | [Secure Now - Software Supply Chain Security](https://sip.security.microsoft.com/secure-now) |
-| Code scanning and remediation | [Secure Now - Code scanning and remediation](https://sip.security.microsoft.com/secure-now) |
+- Use [Strengthen posture and compliance](../security-adoption-scenario-improve-posture) to define the overall business outcome and measures.
+- Use [Adopt and secure AI](../security-adoption-scenario-secure-ai) to connect foundation work to AI adoption and AI-specific risk.
+- Use [Security posture management](../security-adoption-discipline-posture) to maintain inventory, exposure analysis, prioritization, remediation, and verification.
+- Use [Security roles and responsibilities](../security-adoption-roles) to assign accountable owners and cross-team decision rights.
+- Use [technologies](../deploy/overview) and [technical solutions](../implement-overview) to reach canonical implementation guidance.
+- Use the [AI security workshop](../workshop-zero-trust-ai-security) to assess implementation areas and create a roadmap.
 
-## Outcomes
+## Outcomes and measures
 
-- Devices meets a known standard: managed, compliant devices share one security configuration, and helps protect organizational data in managed apps, even on devices you don’t manage.
-- Effort lands where it reduces risk: internet exposure and attack paths to critical assets set the order of work, not severity score alone.
-- Address underlying sources of findings: each step removes a class of finding—an unmanaged device, an exposed endpoint, an outdated component, a leaked secret—rather than one instance at a time.
-- AI agents inherit governed foundations: managed devices, a measured external footprint, and a current, scanned software estate are in place before agents arrive, rather than bolted on after.
+Expected outcomes include:
 
-## Key success factors
+- managed and compliant devices use an approved security baseline;
+- data remains protected in managed applications and approved repositories;
+- attack paths from internet-facing systems to critical assets trend down;
+- vulnerability and patch work is prioritized according to business risk;
+- software dependencies, pipelines, code, and artifacts use repeatable security controls; and
+- AI systems and agents inherit a governed, measured foundation rather than unmanaged exposure.
 
-Consider tracking the following indicators with the tools and reporting your organization already uses, and compare results over time against your own baseline:
+Consider measures such as:
 
-- Percentage of critical assets with a named accountable owner
-- Percentage of corporate devices enrolled in Microsoft Intune and compliant with policy
-- Percentage of Microsoft 365 app users covered by app protection policies, including on devices you don’t manage
-- Number of attack paths from internet-facing assets to a critical asset, trending down
-- Patch compliance against service level agreement, reported by internet exposure and asset criticality
-- Percentage of production builds that automatically produce a software bill of materials
-- Initiative score against target score, with the 14-day drift for each domain
-
-## Summary
-
-The initiatives with recommended actions can help measurably reduce risk. Create a strong foundation, cut the exposed surface, patch what you buy, patch what you borrow, and secure what you build.
-
-**By prioritizing posture initiatives, you can reduce your organization’s exposure before AI agents inherit it.**
+- percentage of critical assets with a named accountable owner;
+- percentage of corporate devices enrolled in management and compliant with policy;
+- percentage of applicable users covered by application protection policies;
+- number of reachable attack paths from internet-facing assets to critical assets;
+- patch and vulnerability remediation performance by asset criticality and service-level objective;
+- percentage of production builds that use approved pipelines, code scanning, dependency controls, and software bills of materials; and
+- Secure Now or exposure-management initiative progress compared with the organization's target and baseline.

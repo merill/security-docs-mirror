@@ -12,7 +12,8 @@ description: Securing privileged access is part of an enterprise access model
 ms.service: security
 ms.subservice: privileged-access
 ms.topic: concept-article
-ms.date: 2026-05-06T00:00:00.0000000Z
+ms.date: 2026-11-10T00:00:00.0000000Z
+ai-usage: ai-assisted
 ms.reviewer: mas
 locale: en-us
 document_id: 0b36b279-1be4-1202-7d28-f00730da46c3
@@ -31,19 +32,17 @@ monikers: []
 item_type: Content
 source_path: security-docs/privileged-access-workstations/privileged-access-access-model.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/b1cfdec6-b0c3-4209-818c-736879856e0e
-- https://authoring-docs-microsoft.poolparty.biz/devrel/540ac133-a371-4dbb-8f94-28d6cc77a70b
-- https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/2d0723c1-cf38-4c30-ab3d-5df787b33270
-- https://authoring-docs-microsoft.poolparty.biz/devrel/60bfc045-f127-4841-9d00-ea35495a5800
-- https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: 5cf17754-4929-65a0-75e9-309686d923ac
 ---
 
 # Securing privileged access Enterprise access model - Privileged access | Microsoft Learn
 
 This document describes an overall enterprise access model that includes context of how a [privileged access strategy](privileged-access-strategy) fits in. For a roadmap on how to adopt a privileged access strategy, see the [rapid modernization plan (RaMP)](security-rapid-modernization-plan). For implementation guidance to deploy this, see [privileged access deployment](privileged-access-deployment)
+
+Use this model with the current Microsoft Security Adoption Framework (SAF) guidance. [Establish an Access and Identities discipline](../zero-trust/security-adoption-discipline-identity-access), [build a privileged-access architecture strategy](../zero-trust/security-adoption-discipline-identity-access-privileged-strategy), and [review the current privileged-access architecture model](../zero-trust/security-adoption-discipline-identity-access-privileged-model).
 
 Privileged access strategy is part of an overall enterprise access control strategy. This enterprise access model shows how privileged access fits into an overall enterprise access model.
 

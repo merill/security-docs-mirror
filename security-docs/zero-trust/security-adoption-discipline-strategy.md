@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Use the Microsoft security adoption model to modernize security strategy, integration, and governance across the enterprise, based on Zero Trust principles.
-ms.date: 2026-05-24T00:00:00.0000000Z
+ms.date: 2026-11-05T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -32,9 +32,11 @@ source_path: security-docs/zero-trust/security-adoption-discipline-strategy.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/540ac133-a371-4dbb-8f94-28d6cc77a70b
 - https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/60bfc045-f127-4841-9d00-ea35495a5800
 - https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: dd1120d5-b6b7-822b-f035-19e1592cd588
 ---
 
@@ -45,6 +47,8 @@ This article helps security and business leaders establish or modernize a Securi
 This guidance is part of the **Microsoft Security Adoption Framework (SAF)**, a broader body of guidance for planning, prioritizing, and implementing end-to-end security modernization. SAF connects business scenarios, security disciplines, and technical implementation so that strategy, architecture, operations, and controls work together rather than as isolated recommendations.
 
 Within SAF, this discipline is a planning and oversight function that aligns security outcomes to business priorities, risk tolerance, and long-term operational sustainability.
+
+For cross-framework traceability, map this discipline to [NIST CSF 2.0 and SAF guidance](/en-us/security/saf/framework-mappings/nist-cybersecurity-framework) and [CIS Controls and Microsoft benchmarks](/en-us/security/saf/framework-mappings/cis-controls-benchmarks). For execution pathways tied to business impact, pair strategy decisions with the [secure critical assets scenario](security-adoption-scenario-secure-assets) and the [privileged access scenario](security-adoption-scenario-privileged-access).
 
 ## Why this discipline?
 
@@ -88,6 +92,8 @@ To apply the Strategy, Integration, and Governance discipline effectively, focus
 4. **Align security efforts across disciplines and initiatives** Ensure that architecture, operations, and engineering efforts work toward shared outcomes rather than operating in isolation.
 5. **Measure progress and continuously improve** Use metrics, risk insights, and operational feedback to track effectiveness, drive prioritization, and refine strategy over time.
 
+Clear decision rights and accountable ownership are required at every step. For role model guidance, see [Security roles and responsibilities in SAF](security-adoption-roles).
+
 ## Manage organizational change
 
 This discipline helps organizations shift from checkbox compliance toward business‑aligned risk management, while still meeting regulatory obligations.
@@ -103,8 +109,8 @@ This discipline is primarily owned by security leadership responsible for settin
 Primary roles commonly include:
 
 - Chief Information Security Officer (CISO)
-- Business Information Security Officers (BISO)
-- Security Directors
+- Business Information Security Officer (BISO)
+- Security Director/Manager
 - Security Architects
 
 These roles are supported by functions such as security strategy, integration and governance, education and engagement, insider risk management, security posture management, and security compliance management.
@@ -124,17 +130,18 @@ The Security Strategy, Integration, and Governance discipline encompasses a broa
 | **Capability** | **Details** |
 | --- | --- |
 | **Continuous prioritization** | Continually prioritize requirements for: - **Business alignment**: Ensure that security is a business enabler. Drive the business changes needed for security.- **Technology alignment**: Align security risk assessment and management with organizational technology.- **Secure by design and by default**: Ensure that security is an integral aspect of all system and process design.- **Ensure privacy by design/default**: Ensure that privacy is an integral aspect of all system and process design.- **Compliant by design/default**: Ensure that compliance is an integral aspect of all system and process design. |
-| **Continuous planning** | Maintain intentional, regularly updated security roadmaps and success metrics. |
+| **Continuous planning** | Maintain intentional, regularly updated security roadmaps and success metrics, including KPI/OKR-style measurement where appropriate. |
 | **Business/technology operating model integration** | Embed security into ideation, business requirements definitions, design, build, and operations rather than applying controls after deployment. |
-| **Enterprise risk integration** | Integrate security into how risk is identified, managed, and reported to leadership, regulators, and stakeholders. |
-| **Lifecycle and technical debt management** | Manage security risk from outdated, unsupported, and legacy technologies. |
+| **Enterprise risk integration** | Integrate security into how risk is identified, managed, and reported to leadership, regulators, and stakeholders, including cyber, brand/reputation, and operational risk dimensions. |
+| **Lifecycle and technical debt management** | Manage security risk from outdated, unsupported, and legacy technologies, and align security debt reduction to [critical assets](security-adoption-scenario-secure-assets) and asset lifecycle decisions. |
+| **Continuous change and problem management** | Establish recurring change and problem-management rhythms so strategic priorities are translated into sustained operational improvements. |
 | **Strategic security simulations** | Strengthen tabletop and crisis‑management processes through regular simulations. |
 | **Core governance components** | Define organizational structure, decision rights, accountability, policies, standards, architectures, guardrails, and compliance management. |
 | **Security intelligence sharing** | Add business context to threat intelligence and share insights across security, business, and technology teams. |
 | **External risk management** | Manage supply chain, partner, open‑source, and merger and acquisition risks. |
 | **Education and engagement** | Ensure roles across the organization understand why security matters, what is required, and how to act. |
 | **Insider risk management** | Manage risks from authorized users who may intentionally or unintentionally cause harm. |
-| **Security operations oversight** | Provide oversight of posture management, operations, and architecture, and measure whether controls are effectively deployed and sustained. |
+| **Security operations oversight** | Provide oversight of [Security Posture Management](security-adoption-discipline-posture), [SecOps](security-adoption-discipline-security-operations), and [SecOps incident operations](security-adoption-discipline-security-operations-incidents), plus architecture outcomes, and measure whether controls are effectively deployed and sustained. |
 
 ## Alignment with other disciplines
 
@@ -145,6 +152,8 @@ The Security Strategy, Integration, and Governance discipline works across all o
 | **End-to-end security architecture** | Translates strategy and policy into a coordinated technical approach. It helps to ensure that strategy is actionable, prioritized, and clearly communicated to technology teams. |
 | **Technical strategy disciplines** | Ensures technical decisions align to business priorities, risk tolerance, and policy, with trade‑offs made intentionally rather than in isolation. |
 | **Operational disciplines** | Connects operational signals—incidents, detections, attacker behavior—back to leadership decisions, enabling continuous improvement of strategy and controls. |
+
+To turn policy and governance decisions into delivery work, connect this discipline with [Security development](security-adoption-discipline-development), [security infrastructure](security-adoption-discipline-infrastructure), and [security data](security-adoption-discipline-data) disciplines.
 
 ## Alignment with technology pillars
 

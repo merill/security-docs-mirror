@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Evaluate Tenant Security with the Zero Trust Assessment | Microsoft Learn
+title: Get Started with the Zero Trust Assessment | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/security/zero-trust/assessment/get-started
 uhfHeaderId: MSDocsHeader-Security
 breadcrumb_path: /security/breadcrumb/toc.json
@@ -8,13 +8,14 @@ feedback_system: Standard
 feedback_help_link_type: ''
 ms.author: jayrusso
 author: HULKsmashGithub
-description: Run an automated Zero Trust Assessment to evaluate your tenant's security configuration. Learn how to install, connect, and review results for improved security.
+description: Prepare your assessment host, install the PowerShell module, connect to your tenant, and run your first Zero Trust Assessment.
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: overview
-ms.date: 2025-11-03T00:00:00.0000000Z
+ms.topic: how-to
+ms.date: 2026-11-11T00:00:00.0000000Z
 ms.reviewer: joflore
-ms.custom: sfi-ga-nochange
+ms.custom: sfi-ga-nochange, msecd-doc-authoring-1032
+ai-usage: ai-assisted
 locale: en-us
 document_id: 66a16d0a-172c-ccba-255d-be8c6873115f
 document_version_independent_id: 66a16d0a-172c-ccba-255d-be8c6873115f
@@ -32,203 +33,183 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/assessment/get-started.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/5fc61396-d075-4560-aece-fdbda73d243f
-- https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/5cf46315-b33f-4e99-8224-a1592697eff9
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/ad9437c1-8cda-4537-ad69-b4b263652e13
-- https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/715d24c3-3683-4219-82c5-1e3c813fb7fc
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
+- https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
 platformId: c9e5a8ad-c78f-d0e2-a9cf-5c91a99d6727
 ---
 
-# Evaluate Tenant Security with the Zero Trust Assessment | Microsoft Learn
+# Get Started with the Zero Trust Assessment | Microsoft Learn
 
-The Zero Trust Assessment checks your tenant configuration and recommends ways to improve security as described in our [overview](overview).
+Install the Zero Trust Assessment PowerShell module, connect to your tenant's services, and run an assessment to review your security configuration.
 
-[![Screenshot of a sample test from the Zero Trust Assessment tool.](media/sample-test.png)](media/sample-test.png#lightbox)
+Before you begin, prepare a supported PowerShell host and arrange access to the services you want to assess. See Prerequisites for the full requirements.
+
+These instructions describe the development source. Published packages can have different requirements and capabilities.
 
 ## Prerequisites
 
-- PowerShell 7. To install it, see [Install PowerShell on Windows, Linux, and macOS](/en-us/powershell/scripting/install/installing-powershell).
-- To connect and consent to the required permissions the first time, you need to be a [Global Administrator](/en-us/entra/identity/role-based-access-control/permissions-reference#global-administrator).
-- Subsequent runs require a user with the following roles:
-    - [Global Reader](/en-us/entra/identity/role-based-access-control/permissions-reference#global-reader)
-    - [Security Reader](/en-us/entra/identity/role-based-access-control/permissions-reference#security-reader)
-    - [Exchange Administrator](/en-us/entra/identity/role-based-access-control/permissions-reference#exchange-administrator)
-    - [SharePoint Administrator](/en-us/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator)
-- If you installed a previous version of the Zero Trust Assessment, uninstall it before continuing.
+- Access to the tenant and services you want to assess, including the [permissions and roles](permissions). Initial consent and runtime access are separate requirements.
+- PowerShell 7.6 or later for the current development dependency set. The pinned ExchangeOnlineManagement 3.10.1 uses .NET 10 and requires PowerShell 7.6+. Older packages can differ. See [Exchange module prerequisites](/en-us/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) and [Install PowerShell on Windows](/en-us/powershell/scripting/install/installing-powershell-on-windows). Windows PowerShell 5.1 isn't the assessment host.
+- Windows for full service coverage. SharePoint Online and Azure Information Protection (AIP) use Windows PowerShell compatibility sessions. On other platforms, these services are unavailable and their related tests are skipped.
+- The [Microsoft Visual C++ Redistributable (x64)](/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-microsoft-visual-c-redistributable-version) for the native DuckDB dependency on Windows.
+- A clean PowerShell process, preferably on a dedicated Windows virtual machine (VM), before importing other modules.
+- Applicable service subscriptions and licenses. Missing services, licenses, or data access can produce skipped checks, not evidence that the tenant meets a recommendation.
+- A protected output directory with sufficient disk space. Use a new directory for each fresh assessment.
+
+## Protect assessment data
+
+Decide how to protect local assessment data and whether to send assessment telemetry before you run the module.
+
+1. Limit access to the output directory. Reports, exports, and diagnostics can contain tenant configuration and personal information. Remove them when no longer needed. Importing Workshop JSON or sharing diagnostics is a separate action you control.
+2. Review the telemetry behavior. Telemetry is enabled by default; use `Invoke-ZtAssessment -DisableTelemetry` to disable the assessment telemetry event.
+
+The telemetry event's only tenant-specific custom property is the tenant ID. It also includes a name, timestamp, instrumentation key, and fixed anonymized IP address and operating system (OS) tags. Assessment results aren't included. Network services can process standard connection metadata, such as the source IP address. See the [telemetry implementation](https://github.com/microsoft/zerotrustassessment/blob/6a304637fc53846fd55182d495b6a2980f30b434/src/powershell/private/Send-ZtAppInsightsTelemetry.ps1).
 
 ## Install the PowerShell modules
 
-Follow these steps to install or update the assessment and connect to Microsoft Graph and your tenant.
+Install a published package in a clean process so that unrelated modules don't load conflicting assemblies first.
 
-1. Open a new PowerShell 7 window.
-2. Run the following command to install the `ZeroTrustAssessment` module:
+1. Open a fresh PowerShell 7 process, preferably with `pwsh -NoProfile`.
+2. Install the stable assessment package for your user:
 
     ```powershell
-    Install-Module ZeroTrustAssessment -Scope CurrentUser
+    Install-PSResource -Name ZeroTrustAssessment -Scope CurrentUser
     ```
+3. Review repository trust prompts before accepting them. Let the assessment initialize its dependencies when imported or first used.
+
+To opt into a prerelease package instead, use:
+
+```powershell
+Install-PSResource -Name ZeroTrustAssessment -Prerelease -Scope CurrentUser
+```
+
+Installing a prerelease selects a package version. The assessment's `-Preview` switch enables preview-only features when present; it isn't required for the seven current pillars. Neither option means every repository change has been published.
+
+To update an existing stable installation, run `Update-PSResource -Name ZeroTrustAssessment`, then start a fresh PowerShell process. You don't need to remove unrelated modules to update the assessment.
+
+### Bundled PowerShell modules
+
+The [development module manifest](https://github.com/microsoft/zerotrustassessment/blob/6a304637fc53846fd55182d495b6a2980f30b434/src/powershell/ZeroTrustAssessment.psd1) pins these versions. They describe the source snapshot, not necessarily the latest stable Gallery package.
+
+| Module | Required version | Service | Platform |
+| --- | --- | --- | --- |
+| **`PSFramework`** | `1.14.457` | Logging, configuration, and runspaces. | All. |
+| **`Microsoft.Graph.Authentication`** | `2.40.0` | Microsoft Graph. | All. |
+| **`Microsoft.Graph.Beta.Teams`** | `2.40.0` | Teams beta APIs. | All. |
+| **`Az.Accounts`** | `5.5.3` | Azure. | All. |
+| **`ExchangeOnlineManagement`** | `3.10.1` | Exchange Online and Security & Compliance. | All, where supported by the service. |
+| **`Microsoft.Online.SharePoint.PowerShell`** | `16.0.27612.12000` | SharePoint Online. | Windows. |
+| **`AipService`** | `3.1.0.0` | Azure Information Protection. | Windows. |
+
+The [dependency initializer](https://github.com/microsoft/zerotrustassessment/blob/6a304637fc53846fd55182d495b6a2980f30b434/src/powershell/Initialize-Dependencies.ps1) resolves these versions into `%APPDATA%\ZeroTrustAssessment\Modules` on Windows or `~/.cache/ZeroTrustAssessment/Modules` on macOS/Linux. It prepends that cache to `$env:PSModulePath`. Don't substitute arbitrary dependency versions.
+
+### Use a clean assessment host
+
+A dedicated Windows VM with PowerShell 7, the Visual C++ Redistributable, and the assessment's dependencies minimizes assembly conflicts.
+
+An installed module isn't automatically a conflict. Profiles, automatic imports, or earlier commands can load incompatible assemblies into the same process. Removing or reimporting a module doesn't reliably unload those assemblies. Retry in a fresh `pwsh -NoProfile` process rather than uninstalling shared modules.
 
 ## Connect to Microsoft Graph and Microsoft Azure
 
-To run the Zero Trust Assessment module, you connect to multiple Microsoft cloud services including Microsoft Graph, Microsoft Azure, Microsoft Exchange, Microsoft SharePoint and Azure Information Protection.
+The connector establishes separate connections to Microsoft Graph, Azure, Exchange Online, Security & Compliance, SharePoint Online, and AIP.
 
-Run this command to connect to all the services.
+1. Arrange the [interactive user access](permissions#interactive-user-access) for the services you intend to assess. Activate eligible roles through Microsoft Entra Privileged Identity Management before connecting.
+2. Connect to the intended tenant. Replace the example domain with your tenant's verified domain:
 
-```powershell
-Connect-ZtAssessment
-```
+    ```powershell
+    Connect-ZtAssessment -Tenant contoso.onmicrosoft.com
+    ```
+3. Complete the service prompts and review each connection status. Cached sessions and single sign-on can reduce prompts; there's no guaranteed prompt count. Reconnect after changing access.
 
-When you connect by using Microsoft Graph PowerShell, it requests these permissions:
-
-- AuditLog.Read.All
-- CrossTenantInformation.ReadBasic.All
-- DeviceManagementApps.Read.All
-- DeviceManagementConfiguration.Read.All
-- DeviceManagementManagedDevices.Read.All
-- DeviceManagementRBAC.Read.All
-- DeviceManagementServiceConfig.Read.All
-- Directory.Read.All
-- DirectoryRecommendations.Read.All
-- EntitlementManagement.Read.All
-- IdentityRiskEvent.Read.All
-- IdentityRiskyUser.Read.All
-- IdentityRiskyServicePrincipal.Read.All
-- NetworkAccess.Read.All
-- Policy.Read.All
-- Policy.Read.ConditionalAccess
-- Policy.Read.PermissionGrant
-- PrivilegedAccess.Read.AzureAD
-- Reports.Read.All
-- RoleManagement.Read.All
-- UserAuthenticationMethod.Read.All
-
-Note
-
-The consent prompt appears only if the Microsoft Graph PowerShell app doesn't already have these permissions. The next time you connect, you don't need to consent to the permissions again.
+For service selection, connection options, and certificate-based unattended access, see [Connect to assessment services](connect-services).
 
 ### Sign in to Microsoft Graph
 
-1. Sign in to Microsoft Graph as a Global Administrator.
-2. Select **Accept**.
+Use the assessment account's runtime roles, preferably Global Reader, after an authorized administrator arranges consent. Consent doesn't assign runtime roles. New scopes can require consent again; see [Permissions and roles](permissions).
 
 ### Sign in to Microsoft Azure
 
-A second window opens for the Microsoft Azure sign-in. When you're prompted, sign in to Microsoft Azure as a Global Administrator.
-
-The Microsoft Azure sign-in is required to check for the export of audit and sign-in logs. If you don't have Microsoft Azure, close the window without signing in, and ignore the warning. The assessment skips the test that relies on Microsoft Azure.
-
-If you have multiple subscriptions, select a tenant and a subscription when prompted.
-
-A sign-in prompt appears for each cloud service, including Microsoft SharePoint and Microsoft Exchange.
-
-![Screenshot of the Azure subscription selection options in the PowerShell 7 console.](media/subscription-options.png)
+Use an account with Reader access, or equivalent read permissions, at the intended subscription/resource scopes. Select the intended tenant and subscription if prompted. Azure access is separate from Microsoft Entra ID directory roles. Skipping Azure limits Infrastructure, Network, and security operations (SecOps) coverage as well as log export checks.
 
 ## Run the assessment
 
-The Zero Trust Assessment is read-only. It runs and stores all data locally on the desktop. It's a good practice to store the assessment report securely and delete the generated folder and its contents from the local drive once the assessment is complete.
+Run the assessment in the same PowerShell session after checking the service connections. The assessment doesn't apply tenant remediation.
 
-After you provide Global Administrator consent to the permissions in the first run, subsequent runs can be performed as a Global Reader.
+Warning
 
-To run the assessment, use this command:
+A fresh, non-resume run against a nonempty output directory prompts to delete its contents. In a detected continuous integration (CI) environment, the current implementation cleans it automatically. Use a dedicated new directory, never a folder containing unrelated files.
 
-```powershell
-Invoke-ZtAssessment
-```
+1. Choose a working directory where the default `.\ZeroTrustReport` output folder is new. For a custom path or a selected pillar, see [Run and resume assessments](run-assessment).
+2. Run the assessment:
 
-The assessment saves the results in the current working folder `.\ZeroTrustReport\ZeroTrustAssessmentReport.html`. After the assessment completes, the report opens automatically in the default browser.
-
-Caution
-
-The report and the export folder contain sensitive tenant information that threat actors might use to their advantage. Share the report and folder only with authorized personnel in your organization.
-
-Use the `-Path` parameter to provide a custom location to store the assessment report. For example, the following command saves the report in the folder `C:/MyAssessment01/ZeroTrustAssessmentReport.html`:
-
-```powershell
-Invoke-ZtAssessment -Path C:\MyAssessment01
-```
-
-Tip
-
-For large tenants, the Zero Trust Assessment might take more than 24 hours to run. Don't stop the assessment while it's running, even if the assessment logs warnings or errors.
+    ```powershell
+    Invoke-ZtAssessment
+    ```
+3. Follow the progress dashboard and review warnings or errors. Runtime varies with tenant size, service response times, throttling, and selected tests. Use the [diagnostic files](troubleshooting#logs-and-diagnostic-files) to distinguish active work from a failure.
 
 ## Review assessment results
 
-After the assessment runs, the report opens the **Overview** tab in your default browser. The **Overview** tab shows key Zero Trust information about the tenant.
+The redesigned report opens by default at `.\ZeroTrustReport\ZeroTrustAssessmentReport.html`. Review all seven pillars, including skipped checks and errors, before drawing conclusions. See [Review results and import into Workshop](review-results).
 
-[![Screenshot of assessment results on the Overview tab.](media/results-overview.png)](media/results-overview-full.png#lightbox)
+## Turn assessment results into action
 
-The **Identity**, **Devices**, **Network**, and **Data** tabs show a list of results from the tests run against the tenant. The results show the [**Risk**](glossary#risk-level) and result **Status** of each test.
+Use the **Risk**, **Status**, and recommended remediation for each result to build a prioritized improvement backlog. Assign each item to the team that owns the affected technology, and track the security outcome rather than treating assessment completion as the end of the work.
 
-[![Screenshot of assessment results on the Identity tab.](media/results-identity.png)](media/results-identity.png#lightbox)
+### Identity, endpoint, network, and data owners
 
-To see more details about a test, select a result. The details describe what was tested and list recommended remediation actions to address the tenant configuration. For more detail about some of the terms used in each check see our [glossary](glossary).
+Use the assessment tabs to continue into the corresponding implementation guidance:
 
-[![Screenshot of a sample test from the Zero Trust Assessment tool.](media/sample-test.png)](media/sample-test.png#lightbox)
+- **Identity:**[Implement Zero Trust for identity](../deploy/identity).
+- **Devices:**[Implement Zero Trust for endpoints](../deploy/endpoints).
+- **Network:**[Implement Zero Trust for networks](../deploy/networks).
+- **Data:**[Implement Zero Trust for data](../deploy/data).
+
+### Security leaders and architects
+
+Use these paths to coordinate remediation across teams and connect findings to the broader security program:
+
+- [Prioritize remediation with security posture management](../security-adoption-discipline-posture).
+- [Organize security improvements with the Microsoft Security Adoption Framework](../security-adoption-model).
+- [Map findings to security standards and frameworks](../security-standards-and-frameworks).
+- [Plan integrated security capabilities with MCRA](../microsoft-reference-architecture).
 
 ## Remove the Zero Trust Assessment module
 
-To remove the Zero Trust Assessment module:
-
-1. Remove the PowerShell module.
-2. Delete the folder that the Zero Trust Assessment module created.
+When you no longer need the module or its data, follow [Remove the assessment](uninstall). Remove only the outputs and diagnostic packages you intend to delete; extended PSFramework logs are stored separately.
 
 ## FAQs
 
+These links preserve access to procedures that now have dedicated articles.
+
 ### Export troubleshooting logs
 
-If an issue occurs, export a log using these instructions.
-
-Run the following command in the same session where you ran the assessment to create the export package (update the date to reflect the date of your run).
-
-```powershell
-New-PSFSupportPackage -Path C:\AssessmentLog_2025_01_01 -Force
-```
-
-Zip this folder along with the folder that was created by `Invoke-ZtAssessment` (default is `ZeroTrustAssessment`).
+Capture diagnostics in the same PowerShell session and review them before sharing. See [Capture a support package](troubleshooting#capture-a-support-package).
 
 ### Viewing logs during test execution
 
-To view the progress of long running tests, open the `/zt-export/logs` folder found inside your assessment folder.
+For per-run progress logs, collector and test details, and extended PSFramework logs, see [Logs and diagnostic files](troubleshooting#logs-and-diagnostic-files).
 
 ### Uninstall previous versions
 
-Run the following commands to ensure all versions of the past modules are uninstalled
-
-```powershell
-Uninstall-Module ZeroTrustAssessment -Force -AllVersions
-```
-
-Restart PowerShell and install the latest version.
+For current and legacy package cleanup, see [Remove assessment packages](uninstall#remove-assessment-packages). For a routine stable update, use the installation guidance.
 
 ### Could not load file or assembly Microsoft.Graph.Authentication
 
-This error happens when you have conflicting versions of Microsoft Graph PowerShell installed.
-
-To fix this error we recommend uninstalling all Microsoft Graph PowerShell modules installed on your system. You can use a helper module like [uninstall-graph.merill.net](https://uninstall-graph.merill.net/) to run the cleanup.
-
-When uninstalling Microsoft Graph you should also uninstall all versions of the Zero Trust Assessment, restart PowerShell and then install the latest version.
-
-```powershell
-Install-Module Uninstall-Graph
-Uninstall-Module ZeroTrustAssessment -Force -AllVersions
-Uninstall-Graph
-```
+Start with a clean process and the assessment's pinned dependencies, not blanket removal of shared modules. See [Resolve Graph assembly conflicts](troubleshooting#resolve-graph-assembly-conflicts).
 
 ### How can I know what the script does?
 
-The code for this assessment is open source. Review it at `https://github.com/microsoft/zerotrustassessment/tree/psnext/src/powershell`.
+Review the source, progress dashboard, and [assessment diagnostics](troubleshooting#inspect-assessment-activity).
 
 ### Why did I get the exception error, "The type initializer for 'DuckDB.NET.Data.DuckDBConnectionStringBuilder' threw an exception."?
 
-On a new installation of Windows, you might see the following error:
-
-> 
-> The type initializer for 'DuckDB.NET.Data.DuckDBConnectionStringBuilder' threw an exception. Inner exception: Unable to load DLL 'duckdb' or one of its dependencies: The specified module could not be found. (0x8007007E) Inner exception type: DllNotFoundException
-
-This error occurs because you're running on a system that doesn't include `Microsoft Visual C++ 2015-2022 Redistributable (x64) - Microsoft.VCRedist.2015+.x64`. VCRedist usually installs when you install Microsoft products such as Microsoft Office or Microsoft Entra Connect Sync. If you're using a new device, you might need to install this component manually. See [Latest Microsoft Visual C++ Redistributable version](/en-us/cpp/windows/latest-supported-vc-redist).
-
-Support for Windows on ARM64 devices is not available at this time.
+Inspect the inner exception before choosing a remedy. See [Resolve DuckDB initialization errors](troubleshooting#resolve-duckdb-initialization-errors).
 
 ### How do I get support?
 
-Raise support issues on the [Zero Trust Assessment GitHub repo](https://github.com/microsoft/zerotrustassessment/issues).
+The assessment has community help, not official Microsoft product support. See [Report an issue or provide feedback](troubleshooting#report-an-issue-or-provide-feedback).

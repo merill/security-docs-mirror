@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Eliminate identity lateral movement is part of the protect tenants and isolate production systems pillar of the Secure Future Initiative (SFI), focusing on minimizing the potential impact of security incidents through strong tenant isolation, segmentation, and attack surface reduction.
-ms.date: 2025-08-05T00:00:00.0000000Z
+ms.date: 2026-11-09T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: best-practice
@@ -34,13 +34,11 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/sfi/eliminate-identity-lateral-movement.md
 cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/57eae307-c3a1-4cac-b645-1a899934bac8
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/062d60c9-ee0f-402e-a046-b4e67c3572d6
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/1433a524-c01f-4b87-beab-670c040dea4f
 spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ee561821-1ac7-45a8-9409-6ba5eb7a5b97
-- https://authoring-docs-microsoft.poolparty.biz/devrel/17d3b3f6-a66e-4c69-9774-14a73c38e669
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/312f1f05-a431-4193-8a4d-e6245d5966de
 platformId: a8bfd619-cf1b-1d8b-758d-7390e3b281ad
 ---
 
@@ -119,5 +117,3 @@ Monitor the following KPIs:
 ## Summary
 
 When threat actors can move laterally across the network, they can access sensitive digital assets, breach data, and disrupt operations. Using stolen credentials, they can elevate their privileges and manipulate backend systems for malicious purposes. This kind of lateral movement is difficult to detect because it looks like standard user behavior.
-
-**Begin eliminating the pathways for identity lateral movement today—and secure every access path, application, and account against silent intrusions.**

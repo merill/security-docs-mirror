@@ -12,7 +12,7 @@ description: Eliminate credential-based risk by removing all unmanaged service-t
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
-ms.date: 2026-09-25T00:00:00.0000000Z
+ms.date: 2026-11-09T00:00:00.0000000Z
 ms.custom: msecd-doc-authoring-1028
 ms.collection:
 - highpri
@@ -37,11 +37,11 @@ item_type: Content
 source_path: security-docs/zero-trust/sfi/safe-secrets-standard.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/f488294d-f483-456e-94e3-755f933b811b
-- https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/1433a524-c01f-4b87-beab-670c040dea4f
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/02662057-0b9b-40f4-a3c7-537125b6d283
-- https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/312f1f05-a431-4193-8a4d-e6245d5966de
 platformId: 57e4e275-6792-5938-bb64-3caa5fadf3f1
 ---

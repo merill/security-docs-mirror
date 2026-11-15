@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Complete production infrastructure inventory is part of the monitor and detect threats pillar of the Secure Future Initiative (SFI), focusing on maintaining a complete, accurate, and close to real-time inventory of all production assets.
-ms.date: 2025-08-05T00:00:00.0000000Z
+ms.date: 2026-11-09T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: design-pattern
@@ -139,6 +139,4 @@ To track success, measure the following:
 
 A complete production infrastructure inventory is a foundational enabler of Secure by Design, Secure by Default, and Secure Operations in Microsoft’s Secure Future Initiative.
 
-Organizations that commit to real-time asset visibility and telemetry standardization can strengthen their security posture, reduce operational risk, and enable faster, more effective response. Building a complete infrastructure inventory isn't only the best practice; it’s a critical requirement for resilient, scalable cybersecurity in the modern enterprise.
-
-**Start building your inventory today—and enable threat detection that works with clarity, consistency, and confidence.**
+Organizations that commit to real-time asset visibility and telemetry standardization can strengthen their security posture, reduce operational risk, and enable faster, more effective response. A complete infrastructure inventory is a foundational practice for resilient, scalable cybersecurity in the modern enterprise.

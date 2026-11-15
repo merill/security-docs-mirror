@@ -12,7 +12,7 @@ description: Learn how governed Azure DevOps pipeline templates standardize secu
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
-ms.date: 2026-09-24T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.custom: msecd-doc-authoring-1028
 ai-usage: ai-assisted
 locale: en-us

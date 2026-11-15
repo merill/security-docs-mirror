@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: duau
 author: duongau
 description: Learn how to apply Zero Trust principles to segmenting Azure-based network communication.
-ms.date: 2024-05-29T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.reviewer: adtork, maroja, maalgeba
@@ -37,9 +37,11 @@ item_type: Content
 source_path: security-docs/zero-trust/azure-networking-segmentation.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 - https://authoring-docs-microsoft.poolparty.biz/devrel/85ee13c4-5d0b-41b0-895d-b7e834668123
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 - https://authoring-docs-microsoft.poolparty.biz/devrel/7e79a0d4-3b49-4899-aac2-fbdd26ca15a8
 platformId: 20d77685-95f3-4f73-bd36-4b5a282e78dd
 ---

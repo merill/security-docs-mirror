@@ -11,7 +11,7 @@ author: jricketts
 description: Minimize organizational attack surface, reduce risks, safeguard data, enable collaboration, and disrupt potential adversaries.
 ms.service: security
 ms.topic: best-practice
-ms.date: 2024-04-10T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.subservice: zero-trust
 manager: martinco
 ms.reviewer: andrmass

@@ -15,7 +15,7 @@ ms.service: security
 ms.subservice: zero-trust
 ms.workload: identity
 ms.topic: solution-overview
-ms.date: 2023-07-28T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.reviewer: jricketts
 ms.custom: it-pro
 ms.collection: 
@@ -186,7 +186,7 @@ After you identify potentially compromised user account(s), verify the suspiciou
 
 Learn more:
 
-- [Incident response overview, technical response best practices](security-adoption-discipline-security-operations-incidents#technical-response-best-practices)
+- [Incident response overview, detect and investigate](security-adoption-discipline-security-operations-incidents#detect-and-investigate)
 
 ### User and/or device investigation
 

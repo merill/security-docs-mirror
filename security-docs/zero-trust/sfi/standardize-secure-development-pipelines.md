@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Standardize secure development pipelines is part of the protect engineering systems  pillar of the Secure Future Initiative (SFI), focusing on developing governed pipeline templates for implementing centrally managed production pipelines.
-ms.date: 2025-08-05T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: design-pattern

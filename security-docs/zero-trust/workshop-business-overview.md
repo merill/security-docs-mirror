@@ -12,7 +12,7 @@ description: Learn how Microsoft expert-led workshops simplify security moderniz
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: overview
-ms.date: 2026-05-24T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 locale: en-us
 document_id: 09c8fadb-78fb-68b0-aa3f-94d3657b7f9b
 document_version_independent_id: 09c8fadb-78fb-68b0-aa3f-94d3657b7f9b
@@ -30,13 +30,13 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/workshop-business-overview.md
 cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/539ea068-ca2a-4180-a7b4-63c6319d3620
 - https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
-- https://authoring-docs-microsoft.poolparty.biz/devrel/1dd701e0-441f-4b0a-9806-aa47decc4e35
-- https://authoring-docs-microsoft.poolparty.biz/devrel/5287f575-02f0-405f-92b7-800456526b0c
 spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/03568a16-192d-46df-8ce4-4c75767d9e43
 - https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
-- https://authoring-docs-microsoft.poolparty.biz/devrel/0a2fc935-5977-4aa6-9f55-0be03bd2acb8
-- https://authoring-docs-microsoft.poolparty.biz/devrel/06e86142-34c2-4b94-ab9c-9477c21f7152
 platformId: 38218c7c-50c1-6d70-147d-4c68e90a91d0
 ---
 
@@ -122,6 +122,6 @@ The table summarizes publically available SAF workshop resources.
 | **Workshop** | **Details** |
 | --- | --- |
 | [**The Chief Information Security Officer (CISO) Workshop**](workshop-business-security-leaders) | This workshop helps you to accelerate security strategy and modernize security posture. It aligns to the [security strategy, integration, and governance*](security-adoption-discipline-strategy), and [security posture management](security-adoption-discipline-posture) disciplines that we use during [security adoption](security-adoption-model). |
-| [**Zero Trust Workshop**](/en-us/security/zero-trust/zero-trust-assessment-progress-tracking-resources) | This workshop helps accelerate Zero Trust security adoption for [technology pillars*](implement-overview) across the organization. |
+| [**Zero Trust Workshop**](workshop-zero-trust-overview) | This workshop helps accelerate Zero Trust security adoption for [technology pillars*](deploy/overview) across the organization. |
 | [**SecOps Workshop**](workshop-business-security-operations) | This workshop helps accelerate and modernization SecOps across the business. It aligns to the [security operations (SecOps/SOC)*](security-adoption-discipline-security-operations) discipline that we use during security adoption. |
 | [**Microsoft Cybersecurity Reference Architectures (MCRA)**](microsoft-reference-architecture) | MRCA provides a set of technical architectures that can help to you plan and adopt recommended security architectures. It aligns to the [security architecture](security-adoption-discipline-architecture) discipline. |

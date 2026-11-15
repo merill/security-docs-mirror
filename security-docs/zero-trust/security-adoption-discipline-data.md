@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Use the Microsoft security adoption model to modernize secure data across the business, based on Zero Trust principles.
-ms.date: 2026-05-24T00:00:00.0000000Z
+ms.date: 2026-11-05T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -47,6 +47,8 @@ This article helps security and technology teams establish and modernize a Data 
 This guidance is part of the **Microsoft Security Adoption Framework (SAF)**, a broader body of guidance for planning, prioritizing, and implementing end-to-end security modernization. SAF connects business scenarios, security disciplines, and technical implementation so that strategy, architecture, operations, and controls work together rather than as isolated recommendations.
 
 Within SAF, Data Security is a technical strategy discipline that applies lifecycle-based protection aligned to business value and risk.
+
+For high-impact execution paths, pair this discipline with the [secure critical assets scenario](security-adoption-scenario-secure-assets), [privileged access scenario](security-adoption-scenario-privileged-access), and [Security roles and responsibilities in SAF](security-adoption-roles).
 
 ## Why this discipline
 
@@ -171,3 +173,12 @@ Aligned technology pillars include:
 - **Apps**: Data security relies on app security controls to ensure apps securely access and handle sensitive data.
 - **Data**: Data security relies on data security controls to discover, classify, protect, and monitor data throughout its lifecycle. *- Network*: Data security relies on data security controls to help discover and secure data as it is transferred between systems.
 - **AI**: Data security relies on AI security controls to protect data used to train, analyze, and generate AI outputs.
+
+## Related SAF guidance
+
+- [Establish a Security Posture discipline](security-adoption-discipline-posture)
+- [Establish a SecOps discipline](security-adoption-discipline-security-operations)
+- [Secure and govern privileged access](security-adoption-scenario-privileged-access)
+- [Secure critical business assets](security-adoption-scenario-secure-assets)
+- [Security roles and responsibilities in SAF](security-adoption-roles)
+- [Map to NIST CSF 2.0 with SAF](/en-us/security/saf/framework-mappings/nist-cybersecurity-framework)

@@ -37,13 +37,13 @@ monikers: []
 item_type: Content
 source_path: security-docs/security-for-ai/prepare.md
 cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/b1cfdec6-b0c3-4209-818c-736879856e0e
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/1433a524-c01f-4b87-beab-670c040dea4f
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/46e3c7c4-fe77-4a6e-b40a-44c569819fa5
-- https://authoring-docs-microsoft.poolparty.biz/devrel/1dd701e0-441f-4b0a-9806-aa47decc4e35
 spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
+- https://authoring-docs-microsoft.poolparty.biz/devrel/2d0723c1-cf38-4c30-ab3d-5df787b33270
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/312f1f05-a431-4193-8a4d-e6245d5966de
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d0c6fab8-2d7d-4bb0-bf40-589e08d7c132
-- https://authoring-docs-microsoft.poolparty.biz/devrel/0a2fc935-5977-4aa6-9f55-0be03bd2acb8
 platformId: 4d48434b-371b-caca-9eb5-7433450f4a07
 ---
 
@@ -86,7 +86,7 @@ One of the most powerful things you can do to protect your environment is to imp
 - Starting-point policies that can be implemented right away. Get started by implementing these policies.
 - Enterprise policies that are recommended for Zero Trust. These policies require enrolling devices into management, which can take some time.
 
-The work of planning, architecting, and deploying identity and device access policies is described in the Microsoft’s Zero Trust guidance center: [Secure remote and hybrid work with Zero Trust](../zero-trust/adopt/secure-remote-hybrid-work).
+The work of planning, architecting, and deploying identity and device access policies is described in the Microsoft Zero Trust guidance center: [Enable and secure remote work](../zero-trust/security-adoption-scenario-remote-work).
 
 To prepare for AI, be sure to apply identity and device access protection across your digital estate. This positions your organization to easily add newly discovered AI apps to the scope of Conditional Access policies.
 
@@ -118,7 +118,7 @@ In the illustration, the technical adoption of information protection involves c
 - Extend the schema to data in other SaaS apps
 - Continue to discover and protect data in other repositories
 
-The work of planning, architecting, and deploying identity and device access policies is described in the Microsoft’s Zero Trust guidance center: [Identify and protect sensitive business data with Zero Trust](../zero-trust/adopt/identify-protect-sensitive-business-data).
+The work of planning, architecting, and deploying identity and device access policies is described in the Microsoft Zero Trust guidance center: [Protect critical business assets](../zero-trust/security-adoption-scenario-secure-assets).
 
 With the rapid adoption of AI tools, many organizations are taking an accelerated approach to data protection—immediately prioritizing protection for the most sensitive data and then filling in gaps and building maturity over time.
 
@@ -156,7 +156,7 @@ Use the following resources to make progress with Microsoft Purview.
 
 Finally, turn on Microsoft Defender threat protection capabilities. Some of these tools are easy to start. Others require a bit of planning and configuration. Some of these tools include AI-specific features you can turn on right away and gain value from.
 
-This work is described in the Microsoft Zero Trust adoption framework: [Implement threat protection and XDR](../zero-trust/adopt/prevent-reduce-business-damage-breach-threat-protection).
+This work is described in SAF guidance for minimizing business impact: [Minimize damage from security incidents](../zero-trust/security-adoption-scenario-minimize-impact).
 
 [![Diagram that shows capabilities of turning on threat detection and response.](media/turn-on-threat-detection-and-response.svg)](media/turn-on-threat-detection-and-response.svg#lightbox)
 

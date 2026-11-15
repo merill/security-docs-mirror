@@ -12,7 +12,7 @@ description: Cybersecurity documentation, training, and certifications for secur
 ms.service: security
 keywords: security, cybersecurity, security administration, security resources
 ms.topic: marketing-hub
-ms.date: 2026-09-04T00:00:00.0000000Z
+ms.date: 2026-11-10T00:00:00.0000000Z
 locale: en-us
 document_id: 81d487df-cfa5-09b9-3ce8-7ccd9b7894f2
 document_version_independent_id: 0ebdb39e-af1a-e713-e872-c8ff197c5ea1
@@ -41,6 +41,25 @@ platformId: d22be191-382f-433b-9230-25938a4ca633
 # Microsoft Security
 
 Empower your organization with AI-driven cybersecurity. Microsoft's integrated security solutions built on Zero Trust principles help you stay ahead of evolving risks. Learn how to predict and protect against threats with Microsoft Defender and Microsoft Sentinel, protect workloads and AI with Microsoft Defender for Cloud. Secure AI with Microsoft Security Copilot, Microsoft Entra, and Microsoft Purview. Explore our curated resources on the Security hub.
+
+## Plan and improve your security program
+
+Choose the outcome you need, then continue from strategy and assessment to architecture, implementation, and operations.
+
+- [Start with Zero Trust](/en-us/security/zero-trust/)
+ Apply Zero Trust principles across your security strategy, organization, and technology estate.
+- [Run a Zero Trust workshop](/en-us/security/zero-trust/workshop-zero-trust-overview)
+ Bring business, security, and technology leaders together to align on Zero Trust priorities, architecture, and next steps using guided workshop materials.
+- [Organize security adoption with SAF](/en-us/security/zero-trust/security-adoption-model)
+ Use the Microsoft Security Adoption Framework to align business outcomes, security disciplines, roles, and technology work.
+- [Assess your security posture](/en-us/security/zero-trust/assessment/overview)
+ Evaluate your tenant configuration and identify prioritized opportunities to improve security.
+- [Plan your security architecture](/en-us/security/zero-trust/microsoft-reference-architecture)
+ Use Microsoft Cybersecurity Reference Architectures to plan integrated security capabilities and modernization.
+- [Prepare for incident response](/en-us/security/zero-trust/security-operations-incident-response-playbooks)
+ Use incident response playbooks to prepare, investigate, contain, and recover from common attack scenarios.
+- [Secure AI apps and agents](/en-us/security/security-for-ai/)
+ Discover, protect, and govern AI apps, agents, and the data they use.
 
 # Discover top picks
 
@@ -134,12 +153,6 @@ Describe the basic concepts of cybersecurity
 
  Find out how you can protect yourself and your organization against cyberthreats and cyberattacks, and explore cybersecurity concepts in this Learning Path. 
 [Learn more](/en-us/training/paths/describe-basic-concepts-of-cybersecurity/)
-- ![](/en-us/security/media/security-hub/take-microsoft-security-virtual-training-day.png)
-
-Take the Microsoft Security Virtual Training Day: Security, Compliance, and Identity Fundamentals
-
- Join this training to discover basic concepts, like identity and access management and compliance management. Gain foundational knowledge of privacy and of data governance, protection, and management solutions. 
-[Learn more](https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1&amp;scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals&amp;startTime=08:00&amp;endTime=17:00)
 - ![](/en-us/security/media/security-hub/earn-microsoft-certified.png)
 
 Earn the Microsoft Certified: Security, Compliance, and Identity Fundamentals Certification​
@@ -157,13 +170,13 @@ Microsoft Security, Compliance, and Identity Fundamentals​
 
 Explore strategic guidance for Zero Trust, AI security frameworks, curated learning paths, and Microsoft's cloud reference architecture—all essential for building secure, scalable, and intelligent solutions.
 
-- [Security Adoption Framework (SAF)](/en-us/security/zero-trust/security-adoption-model?view=o365-worldwide)
+- [Security Adoption Framework (SAF)](/en-us/security/zero-trust/security-adoption-model)
  Learn how the Microsoft Security Adoption Framework (SAF) applies Zero Trust principles to help modernize security posture, secure remote and hybrid work, protect sensitive data, and prevent or reduce business damage from a breach.
 - [Security for AI](/en-us/security/security-for-ai/?wt.mc_id=securityhub_securityAI_webpage_cnl)
  Build a security posture for AI, including discovering, protecting, and governing your AI apps and data.
 - [Learn security by role](/en-us/training/plans-on-microsoft-learn)
  Stay ahead of cyberthreats and help safeguard your organization's digital assets with our specialized plans that cover Microsoft Security.
-- [Work with Microsoft Cybersecurity Reference Architectures](https://aka.ms/MCRA)
+- [Work with Microsoft Cybersecurity Reference Architectures](/en-us/security/zero-trust/microsoft-reference-architecture)
  Explore the Microsoft Cybersecurity Reference Architectures (MCRA), and review diagrams that describe how Microsoft Security capabilities integrate with Microsoft and third-party platforms.
 
 ![](/en-us/security/media/security-hub/hero-creds.png)

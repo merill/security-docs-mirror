@@ -11,7 +11,7 @@ author: jricketts
 description: Minimize DoD attack surface, reduce risks, enable data-sharing and collaboration, safeguard the technical estate, and disrupt adversarial activities.
 ms.service: security
 ms.topic: solution-overview
-ms.date: 2024-04-10T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.subservice: zero-trust
 manager: martinco
 ms.reviewer: ehudi
@@ -32,13 +32,13 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/dod-zero-trust-strategy-intro.md
 cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/062d60c9-ee0f-402e-a046-b4e67c3572d6
 - https://authoring-docs-microsoft.poolparty.biz/devrel/486161dc-fa28-4625-9b1c-1a21d690bc8d
-- https://authoring-docs-microsoft.poolparty.biz/devrel/a3955c7b-f5ee-420d-aff5-d7119738f38b
 spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 - https://authoring-docs-microsoft.poolparty.biz/devrel/17d3b3f6-a66e-4c69-9774-14a73c38e669
 - https://authoring-docs-microsoft.poolparty.biz/devrel/5dd28c86-729c-4723-ab5a-57e26fcec2a8
-- https://authoring-docs-microsoft.poolparty.biz/devrel/b31948f4-2f38-404b-ac93-c3c8c5b3ae33
 platformId: 0fffd6c3-ac65-657e-1c38-fc6f414bddef
 ---
 
@@ -56,6 +56,28 @@ The strategy has four goals.
 - **Zero Trust Enablement** - DoD Zero Trust execution integrates with DoD, and component-level processes, resulting in seamless and coordinated Zero Trust execution.
 
 Microsoft has an expanding array of Zero Trust capabilities powered by a unified identity platform and pre-integrated, fit-for-purpose security tools. These security tools provide comprehensive coverage across the seven pillars of the DoD Zero Trust Strategy for target and advanced activities.
+
+## How the DoD Zero Trust Strategy maps to SAF
+
+The DoD Zero Trust Strategy and supporting architecture organize Zero Trust around pillars, capabilities, activities, and implementation outcomes. SAF complements this model by organizing the security work and technology areas needed to put those objectives into sustained operation.
+
+The mapping below connects DoD Zero Trust areas to relevant SAF security disciplines and technologies. It is not a replacement for the authoritative DoD Zero Trust Strategy, Reference Architecture, or execution guidance, and it does not imply a one-to-one relationship between the models.
+
+Organizations can use the mapping to identify the security disciplines that perform the required work, the technologies where Zero Trust controls are applied, and relevant Microsoft implementation guidance. DoD includes automation and orchestration and visibility and analytics among its seven pillars. These areas span multiple technologies and map primarily to operational security disciplines such as Security Operations (SecOps) and Security Posture.
+
+This mapping operates at the DoD Zero Trust pillar and capability-area level. It is intended to help organizations navigate from DoD Zero Trust objectives to relevant SAF and Microsoft guidance, not to provide a capability-by-capability or activity-by-activity crosswalk.
+
+| DoD area | Primary SAF security disciplines | SAF technologies | Mapping rationale |
+| --- | --- | --- | --- |
+| **User** | [Access and Identity](security-adoption-discipline-identity-access); [Security Posture Management](security-adoption-discipline-posture); [SecOps](security-adoption-discipline-security-operations) | [Identity](deploy/identity) | User identity, authentication, authorization, privilege, risk, and access. |
+| **Device** | [Infrastructure Security](security-adoption-discipline-infrastructure); [Security Posture Management](security-adoption-discipline-posture); [SecOps](security-adoption-discipline-security-operations) | [Endpoints](deploy/endpoints); [Infrastructure](deploy/infrastructure) | Device identity, configuration, compliance, protection, and monitoring. |
+| **Applications and workloads** | [Development Security](security-adoption-discipline-development); [Security Architecture](security-adoption-discipline-architecture); [Access and Identity](security-adoption-discipline-identity-access); [SecOps](security-adoption-discipline-security-operations) | [Applications](deploy/applications); [Infrastructure](deploy/infrastructure); [AI](/en-us/security/saf/technologies/ai/overview) where applicable | Secure applications and workloads, workload identities, access, and runtime protection. |
+| **Data** | [Data Security](security-adoption-discipline-data); [Access and Identity](security-adoption-discipline-identity-access); [Security Architecture](security-adoption-discipline-architecture) | [Data](deploy/data) | Classification, protection, rights, access, encryption, and governance. |
+| **Network and environment** | [Infrastructure Security](security-adoption-discipline-infrastructure); [Security Architecture](security-adoption-discipline-architecture); [SecOps](security-adoption-discipline-security-operations) | [Network](deploy/networks); [Infrastructure](deploy/infrastructure) | Segmentation, network enforcement, communications protection, and telemetry. |
+| **Automation and orchestration** | [SecOps](security-adoption-discipline-security-operations); [Security Strategy, Integration, and Governance](security-adoption-discipline-strategy); [Development Security](security-adoption-discipline-development) where appropriate | [Spans technologies](deploy/overview) | Automated policy enforcement, response, orchestration, and integration. |
+| **Visibility and analytics** | [SecOps](security-adoption-discipline-security-operations); [Security Posture Management](security-adoption-discipline-posture) | [Spans technologies](deploy/overview) | Collection, correlation, detection, analytics, investigation, and measurement. |
+
+Microsoft implementation guidance is the downstream layer for applying these concepts with Microsoft technologies. It can support applicable DoD capabilities and activities, but it does not replace the authoritative DoD Zero Trust Strategy, Reference Architecture, or execution guidance and does not by itself demonstrate organizational achievement, maturity, or compliance. Start with the canonical [Security standards and frameworks](security-standards-and-frameworks) hub for related mappings and SAF guidance.
 
 ## Pillars, capabilities, and activities
 
@@ -86,4 +108,4 @@ When activities have more than one part, Microsoft guidance assumes you implemen
 
 This document prioritizes recommendations by product, or feature area, listing the most essential items first. When implementation actions span features in different Microsoft services, these actions are ordered in the required configuration sequence. Activity-level guidance lists all recommendations relevant for each activity. Your organization might complete the activity by doing a portion of the recommended configuration or implementing alternative solutions.
 
-The DoD Zero Trust Strategy assigns activities to target or advanced phases. This guide indicates `Target` and `Adanced` in the activity title. Target-level ZT is achieved by completing all target activities. Advanced-level ZT is achieved by completing all advanced activities. You don't need to finish all target activities before starting advanced activities. Configuring one feature might complete target and advanced activities at the same time. We recommend implementing key protections first, following the [Microsoft Zero Trust Rapid Modernization Plan](/en-us/security/zero-trust/zero-trust-ramp-overview).
+The DoD Zero Trust Strategy assigns activities to target or advanced phases. This guide indicates `Target` and `Adanced` in the activity title. Target-level ZT is achieved by completing all target activities. Advanced-level ZT is achieved by completing all advanced activities. You don't need to finish all target activities before starting advanced activities. Configuring one feature might complete target and advanced activities at the same time. We recommend implementing key protections first, following the [Zero Trust Technologies deployment guidance](/en-us/security/zero-trust/deploy/overview).

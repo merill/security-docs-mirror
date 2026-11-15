@@ -12,7 +12,7 @@ description: Learn how secure admin workstations isolate privileged access with 
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
-ms.date: 2026-09-24T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.custom: msecd-doc-authoring-1028
 ai-usage: ai-assisted
 locale: en-us
@@ -32,13 +32,9 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/sfi/saw-devices.md
 cmProducts:
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/1433a524-c01f-4b87-beab-670c040dea4f
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/062d60c9-ee0f-402e-a046-b4e67c3572d6
-- https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/312f1f05-a431-4193-8a4d-e6245d5966de
-- https://authoring-docs-microsoft.poolparty.biz/devrel/17d3b3f6-a66e-4c69-9774-14a73c38e669
-- https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: a572a7dd-0ae2-23f1-e21e-5d728074ddcc
 ---
 

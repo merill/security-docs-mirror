@@ -12,7 +12,7 @@ description: 'Discover the CISO Workshop: A comprehensive guide to modernizing s
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
-ms.date: 2025-09-30T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.reviewer: mas
 locale: en-us
 document_id: 9136c489-d536-b413-eba0-9c72fa3529ef
@@ -43,9 +43,15 @@ The CISO Workshop is one of our [Security Adoption Framework (SAF) workshops](wo
 
 The workshop is designed to support security and technology leaders as they align security strategy with evolving business priorities, technology platforms, and the threat landscape.
 
+Use this relationship as your operating model:
+
+- Use the **CISO Workshop** to establish business and security outcomes and priorities.
+- Use **SAF** to organize and manage the security improvement program.
+- Use **MCRA** to understand and implement the supporting security capabilities and architectures.
+
 Tip
 
-Our Security Adoption Framework (SAF) workshops align with guidance in our [structured security adoption model](security-adoption-model).
+Our Security Adoption Framework (SAF) workshops align with [structured SAF guidance](security-adoption-model).
 
 ## Why the CISO workshop?
 
@@ -77,9 +83,38 @@ The CISO workshop provides context and practical insights that support this disc
 
 [![Diagram showing CISO workshop structure with Part A (Context and Fundamentals), Part B (Business Alignment), and Part C (Security Disciplines).](media/security-executive-workshop-overview.png)](media/security-executive-workshop-overview-large.png#lightbox)
 
+## What happens after the workshop?
+
+Workshop completion is the start of execution, not the end of the effort. Use workshop outputs to run an ongoing security improvement lifecycle:
+
+**Prepare -&gt; Facilitate -&gt; Capture decisions -&gt; Build roadmap -&gt; Assign ownership -&gt; Implement -&gt; Measure -&gt; Improve**
+
+Recommended post-workshop actions:
+
+1. Confirm desired business and security outcomes.
+2. Capture key decisions, assumptions, dependencies, and unresolved questions.
+3. Prioritize gaps by business impact and security risk.
+4. Assign accountable owners across relevant [SAF security disciplines](security-adoption-discipline-overview).
+5. Map priority improvements to architecture capabilities with [MCRA](microsoft-reference-architecture).
+6. Build or update the security roadmap using [SAF journey guidance](security-adoption-journey).
+7. Establish milestones and evidence of progress with [security posture guidance](security-adoption-discipline-posture).
+8. Reassess periodically and update priorities.
+
+## Expected workshop outputs
+
+Depending on scope and workshop format, useful outputs to carry forward typically include:
+
+- Desired business and security outcomes.
+- Material risks and current-state observations.
+- Target-state priorities and architecture decision themes.
+- Prioritized improvement roadmap.
+- Accountable owners and decision authorities.
+- Key dependencies and unresolved decisions.
+- Progress measures and follow-up cadence.
+
 ## Workshop availability
 
-We recommend running this workshop as an expert-led delivery. If you have [Microsoft Unified](https://www.microsoft.com/unifiedsupport/overview), contact your Customer Success Account Manager (CSAM) to request an expert-led workshop delivery that helps you to:
+We recommend running this workshop as an expert-led delivery through [Microsoft Unified](https://www.microsoft.com/microsoft-unified). If you have Microsoft Unified, contact your Customer Success Account Manager (CSAM) to request an expert-led workshop delivery that helps you to:
 
 - Learn from real‑world customer engagements and Microsoft’s internal security teams.
 - Increase security program maturity and improve overall security posture.
@@ -104,3 +139,30 @@ There are also a number of free videos available for this workshop.
 Note
 
 The Architecture Design session modules discussed in the video aren't yet published for the free workshop.
+
+## Audience-specific onward paths
+
+### Security leaders
+
+Use these paths to turn workshop outcomes into program direction:
+
+- [Security Strategy, Integration, and Governance](security-adoption-discipline-strategy)
+- [Strengthen posture and compliance](security-adoption-scenario-improve-posture)
+- [Use SAF effectively](security-adoption-journey)
+
+### Architects and practitioners
+
+Use these paths to convert priorities into architecture and implementation work:
+
+- [Microsoft Cybersecurity Reference Architectures (MCRA)](microsoft-reference-architecture)
+- [Security Architecture discipline](security-adoption-discipline-architecture)
+- [Security disciplines overview](security-adoption-discipline-overview)
+- [Technology guidance](deploy/overview)
+
+### Partners and facilitators
+
+Use these paths to deliver consistently and connect workshop outputs to execution:
+
+- [SAF workshops overview](workshop-business-overview)
+- [CISO workshop videos](workshop-business-security-leaders-video)
+- [Security adoption journey](security-adoption-journey)

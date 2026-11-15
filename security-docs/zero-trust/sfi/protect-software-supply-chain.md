@@ -8,8 +8,8 @@ feedback_system: Standard
 feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
-description: Secure all tenants and their resources is part of the Protect engineering systems pillar of the Secure Future Initiative (SFI), which focuses on reducing attack surfaces and lateral movement risk by enforcing strict tenant governance, modernizing platform dependencies, and isolating production access. It emphasizes Zero Trust by default, ensuring that every tenant, system, and user operates under minimum necessary access and hardened boundaries.
-ms.date: 2025-10-03T00:00:00.0000000Z
+description: Protect the software supply chain by governing dependencies, producing software bills of materials, using trusted package sources, and enforcing secure build and release controls across engineering systems.
+ms.date: 2026-11-09T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: design-pattern
@@ -34,13 +34,13 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/sfi/protect-software-supply-chain.md
 cmProducts:
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/062d60c9-ee0f-402e-a046-b4e67c3572d6
 - https://authoring-docs-microsoft.poolparty.biz/devrel/5bd2b3fa-c186-4b92-a3c8-09f22a249d37
 - https://authoring-docs-microsoft.poolparty.biz/devrel/43093068-2dda-408b-b3fe-dfd705c84f78
+- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/17d3b3f6-a66e-4c69-9774-14a73c38e669
 - https://authoring-docs-microsoft.poolparty.biz/devrel/7eba7926-b7b2-4a7a-bf89-e6ac53b3e7f6
 - https://authoring-docs-microsoft.poolparty.biz/devrel/e453d60d-ba7e-43bc-8028-ec38e6b62512
+- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
 platformId: 2371e9b2-1aa2-0613-883d-c0c7cee93f1d
 ---
 

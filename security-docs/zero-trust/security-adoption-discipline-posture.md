@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Use the Microsoft security adoption model to optimize security posture across the business, based on Zero Trust principles.
-ms.date: 2026-05-24T00:00:00.0000000Z
+ms.date: 2026-11-05T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -31,12 +31,12 @@ item_type: Content
 source_path: security-docs/zero-trust/security-adoption-discipline-posture.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 - https://authoring-docs-microsoft.poolparty.biz/devrel/64b65f6c-101f-411a-9b83-9f577fab52d0
-- https://authoring-docs-microsoft.poolparty.biz/devrel/97159432-14a9-4307-a469-d2f2c75f0e33
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 - https://authoring-docs-microsoft.poolparty.biz/devrel/1a667fd1-8145-4b11-af0f-9f5de205a6e5
-- https://authoring-docs-microsoft.poolparty.biz/devrel/50565c62-5f6b-4687-be38-323113c72c2e
 platformId: 1710b1c3-9ec3-bb92-d3d2-921ea27cea3a
 ---
 
@@ -48,9 +48,11 @@ This guidance is part of the **Microsoft Security Adoption Framework (SAF)**, a 
 
 Within SAF, Security Posture Management is an operational discipline that complements [SecOps](security-adoption-discipline-security-operations) by reducing the likelihood of compromise before incident response is required.
 
+For business-risk prioritization, connect posture decisions to the [secure critical assets scenario](security-adoption-scenario-secure-assets) and [privileged access scenario](security-adoption-scenario-privileged-access), and align accountability with [Security roles and responsibilities in SAF](security-adoption-roles).
+
 ## Why this discipline
 
-Most successful cyberattacks don’t begin with advanced exploits. They start by abusing well-known, easily exploitable weaknesses—often in identity, endpoints, infrastructure, applications, or configuration hygiene.
+Most successful cyberattacks don't begin with advanced exploits. They start by abusing well-known, easily exploitable weaknesses, often in identity, endpoints, infrastructure, applications, or configuration hygiene.
 
 The Security Posture discipline exists to prevent attacks before they occur, complementing the Security Operations (SecOps) discipline, which focuses on detection, investigation, and response after compromise.
 
@@ -73,7 +75,7 @@ This diagram illustrates the complementary nature of Security Posture Management
 
 ## Mission and outcomes
 
-Reduce the likelihood and impact of cyberattacks by continuously identifying and eliminating the most exploitable risks across the organization’s technology estate.
+Reduce the likelihood and impact of cyberattacks by continuously identifying and eliminating the most exploitable risks across the organization's technology estate.
 
 Organizations that mature this discipline achieve:
 
@@ -87,7 +89,7 @@ Security posture acts as the operational extension of governance, translating en
 
 ## How to apply this discipline
 
-To apply the Security Posture Management discipline effectively, focus on establishing a continuous, risk-driven approach to understanding and improving your organization’s security posture:
+To apply the Security Posture Management discipline effectively, focus on establishing a continuous, risk-driven approach to understanding and improving your organization's security posture:
 
 1. **Define a posture management strategy aligned to business risk** Establish a clear approach for identifying, measuring, and prioritizing security risks based on their potential impact on the business.
 2. **Ensure continuous visibility across the environment** Maintain an up-to-date understanding of assets, configurations, and exposures across identities, devices, applications, infrastructure, and data.
@@ -120,7 +122,7 @@ Key modernization principles include:
     - **Functional** - Address Design and implementation flaws.
     - **Configuration** -Address misconfiguration and configuration drift over time.
     - **Operational** - Address administrative and operational practices that enable abuse (for example, weak credential handling).
-- **Operations**: Make posture improvement a continuous engineering activity—not a one-time cleanup. This requires sustained collaboration, cultural change, and incremental progress.
+- **Operations**: Make posture improvement a continuous engineering activity, not a one-time cleanup. This requires sustained collaboration, cultural change, and incremental progress.
 
 This discipline requires cultural change, sustained collaboration, and incremental improvement rather than one-time remediation projects.
 
@@ -143,7 +145,7 @@ An effective security posture strategy focuses on three continuous activities:
     - Reliable at scale.
     - Common entry points for multistage attacks.
 
-    Threat intelligence and real-world attack patterns should inform prioritization—not severity scores alone.
+    Threat intelligence and real-world attack patterns should inform prioritization, not severity scores alone.
 3. **Enable mitigation**: work with asset-owning teams to:
 
     - Integrate remediation into existing workflows.
@@ -158,12 +160,12 @@ Security Posture is inherently cross-functional.
 
 Primary roles include:
 
-- **Engineering and Operations teams**: Technology and Security Managers, Security and Automation Engineers accountable for implementing mitigations and maintaining hygiene across:
+- **Engineering and Operations teams**: Technology Director/Manager, Security Director/Manager, Security Engineer, and Automation Engineer roles accountable for implementing mitigations and maintaining hygiene across:
 
     - Identity and access
     - Networking
-    - Endpoints and user productivity
-    - Infrastructure and platforms (cloud, on-premises, CI/CD)
+    - User endpoints and productivity
+    - Infrastructure/platform (cloud, on-premises, CI/CD, AI, IoT)
     - Data
     - AI
     - OT environments
@@ -196,7 +198,7 @@ Together, these disciplines create a cohesive security operating model.
 
 Security Posture spans all technology pillars:
 
-- **Identities** – This pillar is a top-priority for security posture because identity is a High-risk entry point that's foundational to nearly all attacks. Almost all multistage attacks rely on identity attacks, such as pass-the-hash, ticket, and other methods, to laterally traverse and gain access to additional organizational assets. These attacks often use privileged accounts associated with IT administrators or administrative service accounts.
+- **Identities** - This pillar is a top-priority for security posture because identity is a high-risk entry point that's foundational to nearly all attacks. Almost all multistage attacks rely on identity attacks, such as pass-the-hash, ticket, and other methods, to laterally traverse and gain access to additional organizational assets. These attacks often use privileged accounts associated with IT administrators or administrative service accounts.
 - **Endpoints**: Endpoints are a common attacker foothold and staging environment. It's critical to quickly find and fix endpoint vulnerabilities.
 - **Infrastructure**: Rapidly finding and mitigating infrastructure vulnerabilities is important since infrastructure has broad impact due to shared dependencies for hosted workloads and data.
 - **Apps**: Rapidly finding and mitigating these vulnerabilities is important because threat actors often target email, collaboration, line of business, and other apps to enter and laterally traverse across an organization to access business assets.
@@ -205,3 +207,16 @@ Security Posture spans all technology pillars:
 - **AI**: Emerging AI attack surfaces require new discovery and protection capabilities.
 
 The discipline builds consistent skills, tooling, and processes across all pillars.
+
+## Apply posture management to AI security transformation
+
+The [Secure your foundations](/en-us/security/saf/scenarios/ai-security/security-foundations) theme translates current AI-readiness language into durable posture, identity, data, development, and governance outcomes. Use [Improve posture to get ready for AI](prioritizing-defense/improve-posture-to-get-ready-for-ai) for the detailed implementation path, including device management, exposure reduction, patching, software supply-chain security, and code remediation.
+
+## Related SAF guidance
+
+- [Establish a Security Strategy, Integration, and Governance discipline](security-adoption-discipline-strategy)
+- [Establish a SecOps discipline](security-adoption-discipline-security-operations)
+- [Secure critical business assets](security-adoption-scenario-secure-assets)
+- [Secure and govern privileged access](security-adoption-scenario-privileged-access)
+- [Security roles and responsibilities in SAF](security-adoption-roles)
+- [Map to CIS controls and Microsoft benchmarks](/en-us/security/saf/framework-mappings/cis-controls-benchmarks)

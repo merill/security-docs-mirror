@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Learn how to get started with common business scenarios in the Microsoft security adoption model
-ms.date: 2026-05-24T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -51,7 +51,7 @@ Our [structured adoption model](security-adoption-model) starts with business sc
 
 Tip
 
-Microsoft offers a rich set of security adoption workshops - the *Security Adoption Framework (SAF) workshops*. Our structured adoption model guidance aligns with the expert-led guidance from Microsoft Unified delivered in those workshops. Learn more about [SAF workshops](workshop-business-overview).
+Microsoft offers expert-led Security Adoption Framework (SAF) workshops through Microsoft Unified. SAF guidance aligns with these workshops. Learn more about [SAF workshops](workshop-business-overview).
 
 ## Why business scenarios matter
 

@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: jricketts
 author: janicericketts
 description: Independent software vendors (ISVs) can integrate their solutions with Microsoft Defender for Endpoint and Microsoft Intune to help customers adopt a Zero Trust model and keep their organizations secure.
-ms.date: 2025-06-04T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: integration
@@ -33,11 +33,11 @@ item_type: Content
 source_path: security-docs/zero-trust/integrate/endpoints.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
-- https://authoring-docs-microsoft.poolparty.biz/devrel/5fc61396-d075-4560-aece-fdbda73d243f
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/8b9ae643-2e85-42b8-beb2-eef4bae8c4bc
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
-- https://authoring-docs-microsoft.poolparty.biz/devrel/ad9437c1-8cda-4537-ad69-b4b263652e13
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/e047e27d-b5f3-43a8-b4b0-4f6dca95e7c9
 platformId: c327f1a8-f846-9b5a-75ee-450891274c2e
 ---
@@ -85,7 +85,7 @@ To integrate with Microsoft Intune, ISVs use Microsoft Graph and the Microsoft I
 
 ISV solutions can use Intune’s device compliance and policy information to support the Zero Trust principle of Verify Explicitly. The compliance data about users and devices from Intune allows the ISV's application to determine a device's risk posture as it relates to use of the application. By doing these verifications, the ISV ensures that devices using the service are compliant with the customers’ security and compliance standards and policies.
 
-The Microsoft Graph API allows ISVs to integrate with Intune through a set of RESTful APIs. These APIs are the same ones used by the Microsoft Intune admin center to view, create, manage, deploy, and report on all actions, data, and activity in Intune. Items of specific interest for ISVs supporting Zero Trust initiatives are the ability to view device compliance state and configure compliance rules and policies. See Microsoft's recommendations for using Microsoft Entra ID and Intune for Zero Trust configuration and compliance: [Secure endpoints with Zero Trust](/en-us/security/zero-trust/endpoints). Intune’s compliance rules are foundational for device based Conditional Access support through Microsoft Entra ID. ISVs should also view the Conditional Access feature and APIs to understand how to complete scenarios for user and device compliance and Conditional Access.
+The Microsoft Graph API allows ISVs to integrate with Intune through a set of RESTful APIs. These APIs are the same ones used by the Microsoft Intune admin center to view, create, manage, deploy, and report on all actions, data, and activity in Intune. Items of specific interest for ISVs supporting Zero Trust initiatives are the ability to view device compliance state and configure compliance rules and policies. See Microsoft's recommendations for using Microsoft Entra ID and Intune for Zero Trust configuration and compliance: [Secure endpoints with Zero Trust](../deploy/endpoints). Intune’s compliance rules are foundational for device based Conditional Access support through Microsoft Entra ID. ISVs should also view the Conditional Access feature and APIs to understand how to complete scenarios for user and device compliance and Conditional Access.
 
 Ideally as an ISV, your application connects to the Microsoft Graph APIs as a cloud application and establishes a service-to-service connection. Multitenant applications provide ISVs with centralized application definition and control and enable customers to individually consent to the ISV application operating against their tenant data. Review the information on [Tenancy in Microsoft Entra ID](/en-us/entra/identity-platform/single-and-multi-tenant-apps) for registering and creating single or multitenant Microsoft Entra Applications. Your application’s authentication can use Microsoft Entra ID for single sign-on.
 

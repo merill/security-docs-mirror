@@ -20,7 +20,7 @@ ms.collection:
 - msftsolution-secops
 ms.topic: best-practice
 ms.custom: cxdef-zt-ransomware
-ms.date: 2024-03-08T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 locale: en-us
 document_id: de82f3a4-d22a-ebca-96c9-082b4ef5bedd
 document_version_independent_id: de82f3a4-d22a-ebca-96c9-082b4ef5bedd

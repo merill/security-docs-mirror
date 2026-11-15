@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Avoid common security adoption antipatterns | Microsoft Learn
+title: Avoid security antipatterns | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/security/zero-trust/security-adoption-antipatterns
 uhfHeaderId: MSDocsHeader-Security
 breadcrumb_path: /security/breadcrumb/toc.json
@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: mas
 author: MarkSimos
 description: Learn common security adoption antipatterns in the Microsoft Security Adoption Framework (SAF) and how to avoid them across disciplines.
-ms.date: 2026-11-03T00:00:00.0000000Z
+ms.date: 2026-11-05T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -36,7 +36,7 @@ spProducts:
 platformId: 990fc81a-0789-e56d-754a-1f4dd3739c18
 ---
 
-# Avoid common security adoption antipatterns | Microsoft Learn
+# Avoid security antipatterns | Microsoft Learn
 
 Security modernization can be slowed by recurring decision patterns that introduce avoidable risk, rework, and fragmentation. In the **Microsoft Security Adoption Framework (SAF)**, these recurring patterns are treated as antipatterns and are addressed by aligning business outcomes, security disciplines, and implementation decisions.
 

@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Use the Microsoft security adoption model to secure and govern privileged admin access to critical systems across the organization.
-ms.date: 2026-05-24T00:00:00.0000000Z
+ms.date: 2026-11-05T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -30,11 +30,9 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/security-adoption-scenario-privileged-access.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa
-- https://authoring-docs-microsoft.poolparty.biz/devrel/486161dc-fa28-4625-9b1c-1a21d690bc8d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863
-- https://authoring-docs-microsoft.poolparty.biz/devrel/5dd28c86-729c-4723-ab5a-57e26fcec2a8
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: 74366f22-e5d6-d66b-343b-3305ddccf000
 ---
 
@@ -51,6 +49,8 @@ As a business leader, you must ensure that the systems, data, and access pathway
 A key outcome of protecting critical business assets is securing the privileged access that controls them. Privileged identities and access pathways represent concentrated risk because they provide administrative control over critical systems and data. If compromised, they can enable widespread impact across the organization.
 
 This guidance helps your organization reduce risk by strengthening control over privileged access, ensuring that your most sensitive systems and data are only accessible through tightly governed and securely enforced access pathways.
+
+Use this page as the scenario hub. If you need concept orientation, start with [Overview - privileged access](security-concept-privileged-access). For strategy and architecture, continue to [Establish a privileged access strategy](security-adoption-discipline-identity-access-privileged-strategy) and [Design a privileged access architecture](security-adoption-discipline-identity-access-privileged-model).
 
 ## How this guidance works
 

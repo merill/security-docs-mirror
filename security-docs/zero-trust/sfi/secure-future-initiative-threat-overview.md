@@ -1,15 +1,15 @@
 ---
 layout: Conceptual
-title: Monitor and detect threats in the Microsoft Secure Future Initiative (SFI) | Microsoft Learn
+title: Monitor and detect cyberthreats in the Microsoft Secure Future Initiative (SFI) | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/security/zero-trust/sfi/secure-future-initiative-threat-overview
 uhfHeaderId: MSDocsHeader-Security
 breadcrumb_path: /security/breadcrumb/toc.json
 feedback_system: Standard
 feedback_help_link_type: ''
-ms.author: raynew
-author: rayne-wiselman
-description: Learn how to monitor and detect threats in Microsoft's Secure Future Initiative (SFI).
-ms.date: 2025-11-03T00:00:00.0000000Z
+ms.author: mas
+author: MarkSimos
+description: Learn the security outcomes, priorities, and lessons from the cyberthreat monitoring pillar in Microsoft's Secure Future Initiative.
+ms.date: 2026-11-09T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: overview
@@ -40,31 +40,59 @@ spProducts:
 platformId: db3f3fe0-0e22-a9c2-629c-b838c3884582
 ---
 
-# Monitor and detect threats in the Microsoft Secure Future Initiative (SFI) | Microsoft Learn
+# Monitor and detect cyberthreats in the Microsoft Secure Future Initiative (SFI) | Microsoft Learn
 
-The [Secure Future Initiative (SFI) initiative](secure-future-initiative-overview) is a multiyear, cross-Microsoft initiative to increasingly secure the way in which Microsoft designs, builds, tests, and operates its products and services. SFI is build upon:
+This pillar focuses on improving detection quality and speed through better telemetry coverage, correlation, and operational visibility.
 
-- A set of security principles that drive the way in which we innovate on security design, implement those innovations into Microsoft products as secure defaults and standards, and provide internal and external security guidance. [Learn more](secure-future-initiative-overview#security-principles).
-- A set of prioritized security pillars and objectives. [Learn more](secure-future-initiative-overview#sfi-pillars-zero-trust-and-nist).
+## Security outcome Microsoft prioritized
 
-This article summarizes the "Monitor and detect threats" SFI pillar.
+Microsoft prioritized earlier detection of high-impact threats and faster, coordinated investigation across identity, infrastructure, network, and engineering systems.
 
-## Before you start
+## What Microsoft prioritized
 
-- [Learn about](secure-future-initiative-overview#sfi-pillars-zero-trust-and-nist) the SFI pillars.
-- [Review and track the latest progress on pillar objectives](secure-future-initiative-whats-new#progress-on-pillar-objectives) in the SFI What's New article.
-- Pillar objectives map to [Zero Trust principles](../zero-trust-overview), and to [NIST CSF functions and categories](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf).
-- [Get a list of NIST categories and acronyms](secure-future-initiative-overview#nist-functions) to help as you review the table in this article.
+- Better inventory and telemetry coverage for production systems
+- Durable security log retention and availability standards
+- Centralized access patterns for security telemetry
+- Faster anomaly detection and response workflows
+- Cross-domain visibility that supports threat correlation
 
-## Pillar and objectives
+## Lessons from SFI implementation
 
-The aim of this pillar is to continuously monitor and rapidly detect security threats. Focus is on proactive, intelligence-driven detection to surface attacker behavior early, and enable rapid coordinated investigation across all business areas.
+- Detection quality depends on data quality, consistency, and governance.
+- Shared telemetry standards improve cross-team response speed.
+- Monitoring maturity improves when inventory, retention, and detection engineering are managed together.
 
-Microsoft objectives and Zero Trust/NIST mapping for this pillar are summarized in the following table.
+## Zero Trust and NIST CSF alignment
 
-| **Objective** | **Zero Trust** | **NIST mapping** |
-| --- | --- | --- |
-| **1. Centralize telemetry and infrastructure tracking**Maintain a current resource inventory across Microsoft production infrastructure and services. | **Verify explicitly**: Asset inventories and relevant logs provide the factual baseline required to continuously validate what exists and what should be monitored. Accurate inventories prevent resources not being visible, and ensure that decisions are based on correct and up-to-date assets.**Assume breach**: High-impact assets are prioritized for monitoring because compromise is assumed to be possible and impactful. | **ID-AM-01** (*Inventories of hardware managed by the organization are maintained*).Maintaining a complete inventory of physical infrastructure ensures defenders know which production assets must be monitored and protected.**ID-AM-02** (*Inventories of software, services, and systems managed by the organization are maintained*).Software and service inventories enable comprehensive telemetry collection across production environments.**ID-AM-05** (*Assets are prioritized based on classification, criticality, resources, and impact on the mission*).Asset prioritization ensures monitoring and protection focus on the most critical production components.**PR.PS-04** (*Log records are generated and made available for continuous monitoring*).Asset logging enables production systems to generate the telemetry required for threat detection. |
-| **2. Security log retention standards**Retain security logs for at least two years, and make six months of appropriate logs available. | **Verify explicitly**: Retained logs allow validation of historical activity and investigative accuracy. You can validate who did what and when, and validate anomalous or malicious behavior.**Assume breach**: Long retention supports investigation of blended or persistent attack scenarios, even when attackers evade initial controls. External dependencies are monitored with the expectation that they might introduce risk. | **PR.PS-04** (*Log records are generated and made available for continuous monitoring*).Consistent log generation ensures that data exists to be retained and analyzed over time.**DE.CM-01** (*Networks and network services are monitored to find potentially adverse events*).Network logs retained over time support detection of patterns and delayed threat discovery.**DE.CM-02** (*The physical environment is monitored to find potentially adverse events*).Physical access logs contribute to long-term correlation of cyber and physical threats.**DE.CM-03** (*Personnel activity and technology usage are monitored to find potentially adverse events*).User and system activity logs provide evidence for insider and credential-based threat detection.**DE.CM-06** (*External service provider activities and services are monitored to find potentially adverse events*).Retained third-party activity logs support supply-chain threat detection and accountability.**DE.CM-09** (*Computing hardware and software, runtime environments, and their data are monitored to find potentially adverse events*).Endpoint and runtime telemetry retention enables forensic investigation and threat hunting. |
-| **3. Centralized access to security logs**Retain security logs for at least two years, and make six months of appropriate logs available. | **Verify explicitly**: Centralized visibility enables validation across the entire environment.**Assume breach**: Multi-source correlation is required when attackers operate across systems. | **PR.PS-04** (*Log records are generated and made available for continuous monitoring*) Centralization requires logs to be consistently generated and accessible from production systems.**DE.AE-03** (*Information is correlated from multiple sources*)Centralized access enables correlation across network, identity, endpoint, and cloud telemetry. |
-| **4. Rapid anomaly detection and response**Detect attacks quickly, and minimize the time in which attackers have access to internal resources. | **Verify explicitly**: Detection decisions are made on analyzed, validated evidence. Categorizing events ensures decisions are repeatable.**Assume breach**: Multi-source correlation is required when attackers operate across systems. | **DE.AE-02** (*Potentially adverse events are analyzed to better understand associated activities*).Analysis transforms raw signals into actionable indicators of compromise.**DE.AE-03** (*Information is correlated from multiple sources*).Correlation accelerates detection of complex, cross-domain attacks.**DE.AE-04** (*The estimated impact and scope of adverse events are understood*).Understanding scope and impact means faster prioritization of response actions.**DE.AE-06** (*Adverse events are categorized based on established classifications*).Classification supports consistent triage and escalation during active threats.**DE.AE-07** (*Events are analyzed to support determining the root cause of cybersecurity incidents*).Root-cause analysis enables durable remediation and prevention.**RS.CO-02** (*Internal and external stakeholders are notified of incidents*).Notifications ensure rapid coordination once anomalies are confirmed.**RS.MI-01** (*Incidents are contained, eradicated, and mitigated consistent with response plans*).Detected anomalies lead directly to mitigation and containment actions.**RS.MI-02** (*Incident response activities are tracked and communicated*).Tracking ensures response actions are coordinated, auditable, and effective. |
+This pillar primarily applies **Verify explicitly** and **Assume breach**.
+
+Representative NIST CSF mappings:
+
+- **Identify (ID)** for inventory and prioritization of monitored assets
+- **Protect (PR)** for telemetry-enabling controls
+- **Detect (DE)** for threat analysis and anomaly detection
+- **Respond (RS)** for coordinated response activation
+
+## Use canonical implementation guidance
+
+Use these resources for implementation details:
+
+- [SIEM and XDR overview](../siem-xdr-overview)
+- [Microsoft Sentinel documentation](/en-us/azure/sentinel/)
+- [Microsoft Defender XDR documentation](/en-us/defender-xdr/)
+- [Azure security benchmark logging and monitoring](/en-us/security/benchmark/azure/)
+
+## Related SFI and AI security guidance
+
+- [Manage memory safety in agentic systems](manage-agentic-memory-safety)
+- [Complete AI threat modeling](threat-modeling-ai)
+- [Implement AI observability](observability-ai-systems)
+- [Identify risk for autonomous agentic AI](manage-agentic-risk)
+- [Secure autonomous agentic AI systems](secure-agentic-systems)
+- [Defend against indirect prompt injection attacks](defend-indirect-prompt-injection)
+- [Complete production infrastructure inventory](complete-production-infrastructure-inventory)
+- [Security log retention standards](security-log-retention-standards)
+- [Rapid anomaly detection and response](rapid-anomaly-detection-response)
+- [Centralize access to security logs](centralize-access-to-security-logs)
+- [Combating insider threats](combat-insider-threats)
+- [Reinforcing a secure-first mindset](education-awareness)

@@ -8,8 +8,8 @@ feedback_system: Standard
 feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
-description: Use the Microsoft security adoption model to modernize and secure identity and access across the business, based on Zero Trust principles.
-ms.date: 2026-05-24T00:00:00.0000000Z
+description: Learn how the SAF Access and Identities discipline modernizes authentication, authorization, and access governance across users, workloads, devices, and privileged operations.
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -126,7 +126,7 @@ Key internal collaborators include:
 
 - **Security and enterprise architects**, to align access controls with broader security architecture and priorities
 - **Engineering and operations teams**, who implement access requirements in platforms and workloads\*\*
-- **Security leaders (CISO and delegates)**, who provide direction and oversight
+- **Security leaders (CISO, BISO, and Security Director/Manager)**, who provide direction and oversight
 - **Developers**, who design and build applications using modern identity and access patterns
 
 No single role owns access in isolation. Successful access control depends on shared responsibility and coordination across teams.
@@ -138,6 +138,8 @@ An effective access and identity strategy secures the full lifecycle of authoriz
 - **Identity subject** – who or what is requesting access.
 - **Access verb** – the action being performed.
 - **Access object** – the asset being accessed.
+
+Authentication verifies who or what is requesting access; authorization determines what that identity is allowed to do under defined policy and risk conditions.
 
 ### Identity subject (who)
 
@@ -154,6 +156,7 @@ Access enforcement must cover all assets and access paths across the entire acce
 - **Comprehensive coverage**: Enforce policy for cloud, on‑premises, SaaS, AI, OT/IoT assets, across interactive access, APIs, and machine‑to‑machine communication.
 - **Intermediary systems**: Secure devices, directories, gateways, VPNs, and access proxies that mediate access.
 - **Consistent policy**: Apply policy uniformly across general access, privileged access, network access, external access, and workload‑level authorization models.
+- **Context-aware authorization**: Use identity, device, workload, data sensitivity, and risk signals to make adaptive authorization decisions.
 - **Adaptive access**: Continuously evaluate whether identities are known, trusted, and allowed using real‑time signals, and terminate sessions if risk changes.
 - **Strong authentication**: Enforce phishing‑resistant authentication and mechanisms that mitigate password‑based attacks.
 - **Modern access mechanisms**: Enforce least privilege at the application level and replace legacy perimeter technologies with identity‑centric approaches such as Security Service Edge (SSE).

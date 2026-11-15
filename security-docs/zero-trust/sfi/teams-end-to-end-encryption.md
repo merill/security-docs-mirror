@@ -12,7 +12,7 @@ description: Customers should adopt a default encryption model with policy-gover
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
-ms.date: 2026-09-25T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.custom: msecd-doc-authoring-1028
 ms.collection:
 - highpri
@@ -37,8 +37,10 @@ item_type: Content
 source_path: security-docs/zero-trust/sfi/teams-end-to-end-encryption.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: be21cacd-fea1-8bcd-947f-da4c07b8031d
 ---
 

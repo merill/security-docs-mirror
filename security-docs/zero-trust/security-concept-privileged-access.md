@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Get a primer overview of privileged access
-ms.date: 2026-05-24T00:00:00.0000000Z
+ms.date: 2026-11-05T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -30,17 +30,17 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/security-concept-privileged-access.md
 cmProducts:
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/1433a524-c01f-4b87-beab-670c040dea4f
-- https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/312f1f05-a431-4193-8a4d-e6245d5966de
-- https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: 1203f8b6-d16a-1194-f526-a2c3d256c2b6
 ---
 
 # Privileged access | Microsoft Learn
 
 Privileged access sits across the [enterprise access model](security-adoption-discipline-identity-access-enterprise-model) and provides the only administrative path to the control plane. It defines who can configure systems, manage identities, enforce security, and ultimately shape the organization’s technology environment.
+
+Use this page as conceptual orientation. For outcome and governance planning, go to [Secure and govern privileged access](security-adoption-scenario-privileged-access). For strategy and architecture, continue to [Establish a privileged access strategy](security-adoption-discipline-identity-access-privileged-strategy) and [Design a privileged access architecture](security-adoption-discipline-identity-access-privileged-model).
 
 In modern enterprises, a relatively small number of identities - administrators, service accounts, and control plane roles have power and access to most business assets. These identities can:
 

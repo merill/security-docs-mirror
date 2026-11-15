@@ -6,10 +6,10 @@ uhfHeaderId: MSDocsHeader-Security
 breadcrumb_path: /security/breadcrumb/toc.json
 feedback_system: Standard
 feedback_help_link_type: ''
-ms.author: raynew
-author: rayne-wiselman
+ms.author: mas
+author: MarkSimos
 description: Get an overview of Microsoft Zero Trust implementation solutions
-ms.date: 2026-05-24T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -30,13 +30,9 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/implement-overview.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/a3955c7b-f5ee-420d-aff5-d7119738f38b
-- https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/46e3c7c4-fe77-4a6e-b40a-44c569819fa5
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/b31948f4-2f38-404b-ac93-c3c8c5b3ae33
-- https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d0c6fab8-2d7d-4bb0-bf40-589e08d7c132
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: e8aa7864-d99a-45ca-cedf-0b909dbe8bbc
 ---
 
@@ -46,13 +42,14 @@ This article provides an overview of Microsoft Zero Trust security solutions.
 
 ## Security adoption
 
-Microsoft's structured adoption model for Zero Trust security focuses on three components:
+The Microsoft Security Adoption Framework (SAF) connects security strategy to execution through four connected components:
 
-- [Business scenarios](security-adoption-business-scenarios-overview) help business leaders to define critical security outcomes across the organization. They focus on **why** we're adopting Zero Trust security.
-- [Security disciplines](security-adoption-discipline-overview) define the strategy, architecture, and processes required to support the security outcomes. They focus on **what** capabilities are needed.
-- [Technology pillars](deploy/overview) focus on implementing security for specific areas such as identity, data, and devices. They focus on **where** security capabilities are applied.
+- [Business scenarios](security-adoption-business-scenarios-overview) help business leaders define critical security outcomes across the organization. They focus on **why** the organization is improving security.
+- [Security disciplines](security-adoption-discipline-overview) organize the strategy, architecture, processes, and operating practices required to support those outcomes. They focus on **what** security work and capabilities are needed.
+- [Technologies](deploy/overview) identify what must be protected across identity, endpoints, applications, data, infrastructure, network, and AI. They focus on **where** security capabilities are applied.
+- **Technical solutions** translate security requirements into implementation and sustainable operations across products and platforms. They focus on **how** security is implemented and operated.
 
-Technical solutions are the final step in the security adoption and deployment journey and focus on **how**. They connect the business scenarios, discipline strategies, and architectures, together with relevant technology pillars into step-by-step product-level implementation guides.
+Together, these four components connect desired outcomes to execution. Technical solutions combine business context, discipline strategies, architecture, and relevant technology guidance into step-by-step product-level implementation guidance.
 
 ## Technical solutions
 
@@ -91,16 +88,15 @@ Scenario-based adoption ensures alignment to business priorities, while technolo
 
 ### Start with business scenarios
 
-The table summarizes technical solutions based on business scenarios. Follow any of the solutions for end-to-end implementation guidance.
+Use current SAF guidance to define the business outcome, organize the required security work, and then select technical solutions and product guidance for implementation.
 
-| **Solution** | **Business scenario** |
+| **Business scenario** | **Start with** |
 | --- | --- |
-| [Protect Microsoft Copilot](copilots/apply-zero-trust-copilots-overview) | Rapidly and securely adopt AI |
-| [Secure hybrid work](adopt/secure-remote-hybrid-work) | Enable people to do their job securely |
-| [Protect privileged access](adopt/implement-privileged-access) | identify and protect critical business assets |
-| [Improve security posture](adopt/rapidly-modernize-security-posture) | Continuously improve security posture and compliance. |
-| [Meet compliance requirements](adopt/meet-regulatory-compliance-requirements) | Continuously improve security posture and compliance. |
-| [Minimize attack impact](adopt/rapidly-modernize-security-posture) | Minimize business damage from security incidents |
+| Rapidly and securely adopt AI | [Protect Microsoft Copilot](copilots/apply-zero-trust-copilots-overview) |
+| Enable people to do their job securely | [Enable secure remote work](security-adoption-scenario-remote-work) |
+| Identify and protect critical business assets | [Secure and govern privileged access](security-adoption-scenario-privileged-access) |
+| Continuously improve security posture and compliance | [Strengthen security posture and compliance](security-adoption-scenario-improve-posture) and [Security standards and frameworks](security-standards-and-frameworks) |
+| Minimize business damage from security incidents | [Minimize business damage from security incidents](security-adoption-scenario-minimize-impact) |
 
 ### Start with technology pillars
 
@@ -110,10 +106,12 @@ Each solution is organized by a primary technology pillar but integrates control
 
 | **Solution** | **Technology pillar** |
 | --- | --- |
-| [Secure identity with Zero Trust](identity) | **Identity** - Define the Zero Trust control plane across people, services, and devices. Verify every access request using strong authentication, enforce conditional access, and apply least privilege based on risk, compliance, and typical behavior. |
-| [Secure endpoints with Zero Trust](endpoints) | **Devices** - Protect all devices accessing your environment—from IoT and mobile to partner-managed and cloud-hosted systems. Enforce device health and compliance, and continuously monitor endpoint risk before granting or maintaining access. |
-| [Secure data with Zero Trust](data) | **Data** - Protect data at all times, regardless of location. Classify and label sensitive information, encrypt it, and enforce access controls and usage restrictions based on data sensitivity. |
-| [Secure apps with Zero Trust](applications) | **Apps** - Secure applications and APIs as the interface to data. Discover and govern shadow IT, enforce in-app permissions, apply real-time access controls, monitor for abnormal behavior, and validate secure configuration. |
-| [Secure infrastructure with Zero Trust](infrastructure) | **Infrastructure** - Protect compute resources including servers, VMs, containers, and microservices. Assess configurations, enforce just-in-time (JIT) access, and use telemetry to detect and automatically respond to threats and anomalies. |
-| [Secure networks with Zero Trust](networks) | **Networks** - Secure the transport layer for all access. Use segmentation and micro-segmentation to limit lateral movement, and apply encryption, monitoring, analytics, and real-time threat protection across network traffic. |
-| [Secure SecOps](visibility-automation-orchestration) | **SecOps** - Integrate signals across all pillars to detect, investigate, and respond to threats. Correlate alerts, automate responses, and use centralized visibility to continuously validate trust and improve security posture. |
+| [Secure identity with Zero Trust](deploy/identity) | **Identity** - Define the Zero Trust control plane across people, services, and devices. Verify every access request using strong authentication, enforce conditional access, and apply least privilege based on risk, compliance, and typical behavior. |
+| [Secure endpoints with Zero Trust](deploy/endpoints) | **Endpoints** - Protect all devices accessing your environment-from IoT and mobile to partner-managed and cloud-hosted systems. Enforce device health and compliance, and continuously monitor endpoint risk before granting or maintaining access. |
+| [Secure data with Zero Trust](deploy/data) | **Data** - Protect data at all times, regardless of location. Classify and label sensitive information, encrypt it, and enforce access controls and usage restrictions based on data sensitivity. |
+| [Secure apps with Zero Trust](deploy/applications) | **Applications** - Secure applications and APIs as the interface to data. Discover and govern shadow IT, enforce in-app permissions, apply real-time access controls, monitor for abnormal behavior, and validate secure configuration. |
+| [Secure infrastructure with Zero Trust](deploy/infrastructure) | **Infrastructure** - Protect compute resources including servers, VMs, containers, and microservices. Assess configurations, enforce just-in-time (JIT) access, and use telemetry to detect and automatically respond to threats and anomalies. |
+| [Secure networks with Zero Trust](deploy/networks) | **Network** - Secure the transport layer for all access. Use segmentation and micro-segmentation to limit lateral movement, and apply encryption, monitoring, analytics, and real-time threat protection across network traffic. |
+| [Secure AI with Zero Trust](/en-us/security/saf/technologies/ai/overview) | **AI** - Secure AI applications, agents, models, prompts, context, tools, and connectors. Apply strong identity controls, least privilege permissions, data protection, runtime monitoring, and policy governance across AI workflows. |
+
+The [Zero Trust Workshop](workshop-zero-trust-overview) also includes DevSecOps and SecOps as workshop pillars. In SAF, these pillars map to the [Development Security discipline](security-adoption-discipline-development) and [SecOps discipline](security-adoption-discipline-security-operations), rather than to technologies.

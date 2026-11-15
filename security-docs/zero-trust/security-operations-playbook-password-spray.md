@@ -19,7 +19,7 @@ ms.pagetype: security
 ms.collection:
 - msftsolution-secops
 ms.topic: how-to
-ms.date: 2024-11-06T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.custom:
 - cxdef-zt-ransomware
 - has-azure-ad-ps-ref
@@ -266,7 +266,7 @@ The [Staged Rollout](/en-us/azure/active-directory/hybrid/how-to-connect-staged-
 ### Is the advanced logging enabled in ADFS?
 
 - This setting is a requirement for ADFS Connect Health, but it can be enabled independently
-- See how to [enable ADFS Health Connect](/en-us/azure/active-directory/hybrid/how-to-connect-health-agent-install#installing-the-azure-ad-connect-health-agent-for-ad-fs))
+- See how to [enable ADFS Health Connect](/en-us/azure/active-directory/hybrid/how-to-connect-health-agent-install#installing-the-azure-ad-connect-health-agent-for-ad-fs)
 - Also check the [phishing investigation playbook](security-operations-playbook-phishing)
 
 ### Are the logs stored in SIEM?

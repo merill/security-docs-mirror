@@ -12,7 +12,8 @@ description: Securing devices as part of the overall privileged access story
 ms.service: security
 ms.subservice: privileged-access
 ms.topic: solution-overview
-ms.date: 2020-12-15T00:00:00.0000000Z
+ms.date: 2026-11-10T00:00:00.0000000Z
+ai-usage: ai-assisted
 ms.reviewer: frasim
 locale: en-us
 document_id: 560aa063-1da0-1a34-a768-1e1e57f3f5d7
@@ -31,13 +32,9 @@ monikers: []
 item_type: Content
 source_path: security-docs/privileged-access-workstations/privileged-access-devices.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/e0ffb20c-01c6-407b-a9bd-29111652a1dc
-- https://authoring-docs-microsoft.poolparty.biz/devrel/c7ddd0ba-08b8-4055-8ab8-0da61f3dfbb3
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4b132a0c-342a-42eb-91ff-8159e1ed413d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/3904bce4-d817-48cf-85fd-b6146fca83b7
-- https://authoring-docs-microsoft.poolparty.biz/devrel/5cf7e60a-ca26-4c6f-befd-5e90eae977f5
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/f2b71146-ce8e-46a8-9965-8aa8b3aa8235
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: 6e58bd76-1b0a-716e-01b0-18953af0704f
 ---
 

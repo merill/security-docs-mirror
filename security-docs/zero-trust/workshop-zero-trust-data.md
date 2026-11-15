@@ -6,10 +6,10 @@ uhfHeaderId: MSDocsHeader-Security
 breadcrumb_path: /security/breadcrumb/toc.json
 feedback_system: Standard
 feedback_help_link_type: ''
-ms.author: raynew
-author: rayne-wiselman
+ms.author: mas
+author: MarkSimos
 description: Learn about the Data pillar in the Microsoft Zero Trust Workshop
-ms.date: 2026-11-06T00:00:00.0000000Z
+ms.date: 2026-11-12T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -31,36 +31,71 @@ item_type: Content
 source_path: security-docs/zero-trust/workshop-zero-trust-data.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
-- https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa
+- https://authoring-docs-microsoft.poolparty.biz/devrel/1dd701e0-441f-4b0a-9806-aa47decc4e35
+- https://authoring-docs-microsoft.poolparty.biz/devrel/64b65f6c-101f-411a-9b83-9f577fab52d0
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
-- https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863
+- https://authoring-docs-microsoft.poolparty.biz/devrel/0a2fc935-5977-4aa6-9f55-0be03bd2acb8
+- https://authoring-docs-microsoft.poolparty.biz/devrel/1a667fd1-8145-4b11-af0f-9f5de205a6e5
 platformId: 60dba2d8-5492-91e5-fbee-c592437df8b2
 ---
 
 # Microsoft Zero Trust Workshop - Data | Microsoft Learn
 
-In a Zero Trust framework, data is a critical security boundary. Protecting infrastructure or identities alone isn't sufficient—organizations must understand what data they have, where it resides, how sensitive it is, and how it's accessed and used. The Data pillar focuses on discovering, classifying, protecting, and governing data to reduce risk, enforce least privilege, and monitor for inappropriate use.
+Data is the asset that attackers ultimately target, so in a Zero Trust model protection must travel with the data itself. Every access decision should account for what the data is, how sensitive it is, where it resides, and who or what is requesting it.
 
-Data pillar workshop guidance focuses on understanding the data estate, defining classification and protection policies, enforcing controls on data usage and sharing, and monitoring for data risks across users, endpoints, and applications.
+The Data workshop pillar helps organizations assess their current data security posture, identify gaps, and create a prioritized implementation roadmap for discovering, classifying, protecting, and governing data across Microsoft 365, endpoints, and other connected data sources.
 
-## Workshop implementation
+The Data workshop pillar corresponds to the Data technology defined in the [Microsoft Security Adoption Framework (SAF)](deploy/overview).
 
-The Data workshop covers the implementation areas summarized in the table.
+## Why focus on data?
+
+Protecting infrastructure or identities alone isn't sufficient. Strong data security controls reduce the risk of oversharing, data loss, insider misuse, and regulatory exposure. The Data Workshop applies the Zero Trust principles of verify explicitly, use least privilege, and assume breach to structured and unstructured data wherever it is stored, shared, or used.
+
+The expected output is an actionable backlog of data security projects prioritized into First, Then, and Next based on business and regulatory risk, data sensitivity, dependencies, implementation effort, user impact, and readiness.
+
+## Data implementation areas
 
 | **Area** | **Details** |
 | --- | --- |
-| **Discover and classify sensitive data** | Identify and inventory sensitive data across locations such as Microsoft 365, endpoints, and other connected data sources.Use built-in and trainable classifiers (including exact data match and fingerprinting) to detect sensitive information based on content and patterns. |
-| **Define and standardize a data classification taxonomy** | Establish a sensitivity labeling taxonomy (for example, internal, confidential, and highly confidential) aligned with business requirements. Ensure labeling definitions are clear, enforceable, and consistently applied across workloads. |
+| **Discover and inventory sensitive data** | Identify and inventory sensitive data across Microsoft 365, endpoints, and other connected data sources. Use built-in sensitive information types, trainable classifiers, exact data match, and document fingerprinting to detect sensitive content based on its content and patterns. |
+| **Define data governance and regulatory requirements** | Identify the legal, regulatory, contractual, and industry obligations that apply to your data. Use these requirements to inform classification, protection, retention, and monitoring decisions, and assign clear ownership for data governance. |
+| **Define a data classification taxonomy** | Establish a sensitivity label taxonomy, such as General, Confidential, and Highly Confidential, aligned with business and regulatory requirements. Reuse an existing or default taxonomy where appropriate, and ensure label definitions are clear, enforceable, and consistently applied across workloads. |
+| **Classify and label sensitive data** | Apply sensitivity labels through a combination of manual labeling, label recommendations, and automatic labeling. Identify scenarios suited to automatic classification, and phase in enforcement as classification accuracy and user readiness improve. |
 | **Gain visibility into data usage and activity** | Understand how data is accessed, used, and shared across the organization. Use activity monitoring and data exploration tools to assess current behaviors and identify risks before enforcing policies. |
-| **Apply labels and enforce data protection policies** | Implement sensitivity labels (manual and automatic) to protect data through encryption, access restrictions, and usage controls. Apply protection consistently across data at rest, in motion, and in use. |
-| -**Enforce data access and usage controls** | Apply policy-based controls that govern how protected data can be accessed and used based on identity, device, location, and session context. Use conditional access for apps, session controls, and app-based protections to enforce Zero Trust access decisions for data. |
-| **Monitor and control data sharing and collaboration** | Track and control external and internal sharing of sensitive data. Implement policies to govern collaboration with partners and external users, and enforce restrictions on risky sharing behaviors across services such as SharePoint, OneDrive, and Teams. |
-| **Protect data across endpoints and devices** | Extend data protection policies to endpoints by integrating labeling and DLP with device and application controls. Ensure sensitive data remains protected when accessed, copied, or moved across managed and unmanaged devices. |
-| **Manage insider risk and sensitive data exposure** | Detect and respond to risky user activities involving data, such as exfiltration, misuse, or unusual access patterns. Correlate signals across data, identity, and endpoints, and apply enhanced protections to high-value data assets. |
-| **Manage data governance and administrative control** | Apply role-based access control (RBAC) and administrative segmentation for data protection, labeling, and compliance roles. Ensure separation of duties so that only authorized personnel can define, manage, and operate data security policies. |
-| **Integrate data signals into security operations (SecOps)** | Use data-related alerts, DLP events, and insider risk signals as part of broader security monitoring and incident response. Correlate data activity with identity and device signals to detect, investigate, and respond to threats. |
+| **Identify and protect critical data assets** | Identify the organization's most critical and highly sensitive data assets, and plan protections proportionate to their value and risk. Apply encryption, access restrictions, and usage controls, and evaluate special cryptographic requirements such as Bring Your Own Key (BYOK) and Double Key Encryption (DKE) where required. |
+| **Prevent data loss** | Deploy data loss prevention (DLP) policies across Microsoft 365 services, endpoints, and other supported locations, using simulation mode before enforcement where appropriate. Establish processes to triage, investigate, and tune DLP alerts and incidents on an ongoing basis. |
+| **Govern data sharing and collaboration** | Document approved cross-boundary sharing scenarios, including sharing with external partners and customers. Monitor and restrict risky internal and external sharing across services such as SharePoint, OneDrive, and Teams, and review sharing activity on an ongoing basis. |
+| **Enforce data access and permission controls** | Implement a SharePoint permission strategy that reduces oversharing and applies least privilege to sites and content. Use Conditional Access, session controls, app protection policies, and minimum standards for trusted devices and accounts to govern how protected data can be accessed and used. |
+| **Protect data on endpoints and devices** | Extend sensitivity labeling and DLP to endpoints, and integrate them with device and application controls. Ensure sensitive data remains protected when it is accessed, copied, or moved across managed and unmanaged devices. |
+| **Manage insider risk** | Implement insider risk management policies to detect and respond to risky activities involving data, such as exfiltration, misuse, or unusual access patterns. Correlate signals across data, identity, and endpoints, and apply stronger protections to users and data that present elevated risk. |
+| **Secure data security administration** | Apply role-based access control (RBAC) and privileged access management for DLP, information protection, and insider risk administrators. Segment administration using administrative units, and maintain separation of duties so that only authorized personnel can define, manage, and operate data security policies. |
+| **Integrate data signals into security operations** | Use DLP alerts, insider risk signals, and data-related activity as part of broader security monitoring, SIEM workflows, and incident response. Correlate data activity with identity and device signals to detect, investigate, and respond to threats. |
 
-## Assess data posture
+These areas summarize the Data workshop pillar. Use the detailed Data project guidance to review individual projects and implementation considerations.
 
-The Zero Trust Assessment tool can assess your data configuration against a range of security best practices. [Learn more](/en-us/security/zero-trust/assessment/overview).
+## How to use the Data Workshop
+
+Use the web-based Workshop with information protection, compliance, security, collaboration platform, endpoint, legal, and security operations stakeholders. For each relevant project:
+
+- Review the project objective and applicability to your environment.
+- Record the current status, notes, decisions, owners, and known dependencies.
+- Consider licensing, implementation effort, user impact, technical prerequisites, and cross-pillar dependencies.
+- Prioritize the project into First, Then, or Next and incorporate it into the implementation roadmap.
+
+[Open the Zero Trust Workshop](https://aka.ms/ztworkshop) and select the Data pillar.
+
+[Review the detailed Data project guidance](https://microsoft.github.io/zerotrustassessment/docs/category/data) for project-level information.
+
+## Assess your data posture
+
+The Microsoft Zero Trust Assessment can provide programmatically generated findings for supported data security configuration in your tenant. Assessment results can help identify technical gaps and inform Workshop discussions, but the Assessment is complementary and is not required to conduct the Data Workshop. It does not evaluate every Data Workshop project.
+
+[Learn about the Zero Trust Assessment](/en-us/security/zero-trust/assessment/overview) or [get started with an assessment](/en-us/security/zero-trust/assessment/get-started).
+
+## Who should participate?
+
+- Information protection, data governance, and compliance teams.
+- Security architecture, security operations, insider risk, and incident response teams.
+- Microsoft 365 collaboration, messaging, endpoint, identity, and cloud platform teams.
+- Legal, privacy, risk, HR, data owners, and business stakeholders.

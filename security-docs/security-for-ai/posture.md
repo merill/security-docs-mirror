@@ -12,7 +12,8 @@ manager: orspodek
 ms.service: security
 ms.subservice: ''
 description: How to approach AI security for apps and data with Microsoft AI security capabilities.
-ms.date: 2025-04-01T00:00:00.0000000Z
+ms.date: 2026-11-10T00:00:00.0000000Z
+ai-usage: ai-assisted
 ms.update-cycle: 180-days
 ms.topic: concept-article
 ms.collection:
@@ -38,12 +39,12 @@ item_type: Content
 source_path: security-docs/security-for-ai/posture.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/062d60c9-ee0f-402e-a046-b4e67c3572d6
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/46e3c7c4-fe77-4a6e-b40a-44c569819fa5
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 - https://authoring-docs-microsoft.poolparty.biz/devrel/17d3b3f6-a66e-4c69-9774-14a73c38e669
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d0c6fab8-2d7d-4bb0-bf40-589e08d7c132
 platformId: d861c079-35f3-69b0-90e4-b8bcf25dd0b2
 ---
 
@@ -51,7 +52,7 @@ platformId: d861c079-35f3-69b0-90e4-b8bcf25dd0b2
 
 Your AI security posture is an important part of your overall security strategy. AI places priority on specific elements of a cybersecurity strategy, such as data protection. This article helps you develop your strategy and priorities for securing AI. Subsequent articles in this collection help you identify the specific elements of cybersecurity to prioritize as you adopt AI companions, tools, and new apps.
 
-Your [security posture](../zero-trust/adopt/rapidly-modernize-security-posture) is defined as your organization’s overall cybersecurity defense capability, along with the level of preparation and operational status to deal with ongoing cyber-security threats. This posture should be quantifiable and measurable, similarly to any other major metric that pertains to the operational status or well-being of your organization.
+Your [security posture](../zero-trust/security-adoption-scenario-improve-posture) is defined as your organization’s overall cybersecurity defense capability, along with the level of preparation and operational status to deal with ongoing cyber-security threats. This posture should be quantifiable and measurable, similarly to any other major metric that pertains to the operational status or well-being of your organization.
 
 [![Diagram that shows the organization's security posture.](media/security-posture.svg)](media/security-posture.svg#lightbox)
 
@@ -66,7 +67,7 @@ Building a strong security posture for AI involves working within your organizat
 
 Use this library together with the following frameworks on Microsoft Learn:
 
-- [Zero Trust adoption framework](../zero-trust/adopt/zero-trust-adoption-overview)
+- [Security Adoption Framework (SAF)](../zero-trust/security-adoption-model)
 - [Cloud Adoption Framework for AI](/en-us/azure/cloud-adoption-framework/scenarios/ai/)
 
 [![Diagram that shows the framework of security for AI.](media/security-for-ai-framework-comparison.svg)](media/security-for-ai-framework-comparison.svg#lightbox)
@@ -74,8 +75,23 @@ Use this library together with the following frameworks on Microsoft Learn:
 In the image:
 
 - Use this library (Security for AI library) to learn how to implement capabilities to secure AI apps and data in your environment. These protections help build your Zero Trust foundation.
-- Use the [Zero Trust adoption framework](../zero-trust/adopt/zero-trust-adoption-overview) to continue to make progress toward end-to-end security. Each of the Zero Trust business scenarios also increases your security for AI apps and data.
+- Use the [Security Adoption Framework (SAF)](../zero-trust/security-adoption-model) to continue to make progress toward end-to-end security. Each of the SAF business scenarios also increases your security for AI apps and data.
 - Use the [Cloud Adoption Framework for AI](/en-us/azure/cloud-adoption-framework/scenarios/ai/) to develop your end-to-end roadmap for adoption of AI, including generative and non-generative AI. This library includes strategies for choosing AI technologies, processes for securing and governing AI, and resources for AI design and implementation.
+
+## Choose your path
+
+### Security leaders and program owners
+
+- [Plan AI security transformation with SAF](../saf/scenarios/ai-security/overview).
+- [Secure AI with Zero Trust](../saf/technologies/ai/overview).
+- [Strengthen security posture and compliance](../zero-trust/security-adoption-scenario-improve-posture).
+
+### Architects, developers, and security practitioners
+
+- [Secure AI agents at scale with Microsoft Agent 365](agent-365-security).
+- [Take AI red-team training](../ai-red-team/training).
+- [Explore the AI attack-technique catalog](../zero-trust/catalog-ai-attack-techniques/catalog-ai-attack-techniques).
+- [Review the AI defense-capability catalog](../zero-trust/catalog-ai-defense-capabilities/catalog-ai-defense-capabilities).
 
 ## Understand the motivations of your business leaders
 
@@ -261,6 +277,6 @@ Follow the guidance in this series of articles to learn more about securing AI a
 - [Protect AI data and apps](protect)
 - [Govern AI for compliance](govern)
 
-To learn more about optimizing your overall security posture and Zero Trust, see [Rapidly modernize your security posture](../zero-trust/adopt/rapidly-modernize-security-posture).
+To learn more about optimizing your overall security posture and Zero Trust, see [Strengthen posture and compliance](../zero-trust/security-adoption-scenario-improve-posture).
 
 To get started with recommended security protections for AI companions, see [Use Zero Trust security to prepare for AI companions, including Microsoft Copilots](../zero-trust/copilots/apply-zero-trust-copilots-overview).

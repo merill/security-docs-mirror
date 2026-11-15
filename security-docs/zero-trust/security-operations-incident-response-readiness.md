@@ -17,7 +17,7 @@ ms.service: security
 ms.subservice: zero-trust
 ms.custom: cxdef-zt-ransomware
 ms.localizationpriority: medium
-ms.date: 2024-11-06T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 locale: en-us
 document_id: c535c98c-17a4-fa64-3d25-b5e9348340ba
 document_version_independent_id: c535c98c-17a4-fa64-3d25-b5e9348340ba

@@ -11,7 +11,7 @@ author: jricketts
 description: For the device pillar, enable Zero Trust capabilities with integrated security tools for a secure and resilient cybersecurity framework.
 ms.service: security
 ms.topic: concept-article
-ms.date: 2024-12-16T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.subservice: zero-trust
 manager: martinco
 ms.reviewer: kbrewer

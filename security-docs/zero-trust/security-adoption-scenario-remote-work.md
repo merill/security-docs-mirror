@@ -38,7 +38,7 @@ platformId: 8c8ac7cf-d1f7-1a68-4fb8-c7e38e07e7a0
 
 # Enable secure remote work | Microsoft Learn
 
-This article explains how to enable secure remote work using Zero Trust principles, as part of the Microsoft [security adoption model]((security-adoption-model.md).
+This article explains how to enable secure remote work using Zero Trust principles, as part of the Microsoft [security adoption model](security-adoption-model).
 
 This business scenario helps you achieve the following outcome:
 

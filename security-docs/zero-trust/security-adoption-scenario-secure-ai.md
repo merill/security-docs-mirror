@@ -54,6 +54,10 @@ This business scenario is part of our [structured adoption model](security-adopt
 
 This guidance helps organizations adopt AI quickly and confidently while maintaining strong security, protecting sensitive data, and preserving business resilience.
 
+### Translate current AI security themes into this business scenario
+
+Microsoft AI security terminology can change as technology and threats evolve. Use [AI security transformation](/en-us/security/saf/scenarios/ai-security/overview) to translate current themes into durable outcomes, then use this SAF business scenario to coordinate the required disciplines, roles, technologies, and technical solutions.
+
 ## How this guidance works
 
 This article is part of a [structured adoption model](security-adoption-model) that connects security strategy to implementation:

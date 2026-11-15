@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Understand SecOps roles in the Microsoft security adoption model. | Microsoft Learn
+title: Understand SecOps roles and operating models | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/security/zero-trust/security-adoption-discipline-security-operations-roles
 uhfHeaderId: MSDocsHeader-Security
 breadcrumb_path: /security/breadcrumb/toc.json
@@ -8,8 +8,8 @@ feedback_system: Standard
 feedback_help_link_type: ''
 ms.author: mas
 author: MarkSimos
-description: Understand Secops roles and responsibilities.
-ms.date: 2026-05-24T00:00:00.0000000Z
+description: Understand the durable job functions, execution models, and partner relationships required for effective Security Operations.
+ms.date: 2026-11-09T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -30,119 +30,90 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/security-adoption-discipline-security-operations-roles.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
 - https://authoring-docs-microsoft.poolparty.biz/devrel/540ac133-a371-4dbb-8f94-28d6cc77a70b
+- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
 - https://authoring-docs-microsoft.poolparty.biz/devrel/60bfc045-f127-4841-9d00-ea35495a5800
+- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
 platformId: 9395fca3-f61c-5184-babe-b5bf647774a7
 ---
 
-# Understand SecOps roles in the Microsoft security adoption model. | Microsoft Learn
+# Understand SecOps roles and operating models | Microsoft Learn
 
-As you develop a [Security Operations (SecOps)](security-adoption-discipline-security-operations) discipline, this article explains the roles, responsibilities, and internal partnerships required to operate an effective, modern SecOps model aligned to Zero Trust principles.
+As you develop a [Security Operations (SecOps) discipline](security-adoption-discipline-security-operations), use this article to define the job functions, execution model, and internal partnerships required for effective SecOps.
 
-This guidance is part of the **Microsoft Security Adoption Framework (SAF)** and extends the SecOps discipline with role and operating model guidance.
+This guidance is part of the **Microsoft Security Adoption Framework (SAF)**. It describes durable SecOps job functions rather than prescribing an organizational chart or staffing hierarchy.
 
-SecOps is a specialized discipline focused on detecting, investigating, and responding to active threats in near real-time. It operates in continuous conflict with adversaries who actively adapt their techniques.
+**SecOps** is the discipline for detecting, investigating, containing, and learning from active threats. A **security operations center (SOC)** is one organizational construct for executing SecOps functions; SecOps functions can also be distributed across teams, service providers, and other models.
 
-This guidance is intended for anyone planning or participating in SecOps modernization, including security leaders, SecOps practitioners, architects, engineers, and partner teams.
+## Define the operating model
 
-## Why roles and operating models matter
+SecOps outcomes depend on clear accountability, decision authority, effective execution, and strong collaboration with the teams that design, build, and operate the environment.
 
-SecOps outcomes depend as much on people and collaboration as on technology. Even the most advanced detection and response tooling is ineffective without:
+Define:
 
-- Clear ownership during incidents
-- Structured escalation paths
-- Strong partnerships with teams that design, run, and understand the environment.
+- **Accountability** for SecOps outcomes, operational effectiveness, and improvement.
+- **Responsibility** for performing each job function and incident task.
+- **Decision authority** for containment, business disruption, communications, recovery sequencing, and other material incident decisions.
+- **Risk-acceptance authority** for residual risk and exceptions, assigned only to people with delegated authority.
+- **Escalation paths** for decisions and work that exceed current authority, capacity, or expertise.
 
-While SecOps is a dedicated security function, it relies heavily on the expertise of engineering, operations, and business teams that manage systems and processes across the organization.
+Job functions describe required work and outcomes. Assignment and execution can vary by organization. Assign functions across people, teams, service providers, AI agents, tools, and automation while preserving human accountability, decision authority, and oversight.
 
-A clear operating model ensures:
+Common labels such as Tier 1, Tier 2, and Tier 3 describe one staffing pattern, not a required SecOps hierarchy. Route work by risk, complexity, context, expertise, and authority instead of assuming a fixed human escalation path.
 
-- Incidents are handled by the right roles at the right time.
-- Escalations are predictable and efficient.
-- Learnings from incidents translate into improved security posture,
+The job-function names in this article align with the evolving role vocabulary in The Open Group Security Roles and Glossary Snapshot series. Adapt assignment and titles to the organization's needs.
 
-## SecOps roles and operating model
+[![Diagram showing durable SecOps job functions and their relationships.](media/security-adoption-discipline-operations-roles.png)](media/security-adoption-discipline-operations-roles.png#lightbox)
 
-These SecOps role definitions are based directly on The Open Group [Security Roles and Glossary Standard](https://publications.opengroup.org/s252), providing a common vocabulary and structure that scales from small teams to large, distributed security operations centers (SOCs).
+## Core SecOps job functions
 
-In smaller organizations, these responsibilities might be combined into a few roles. In larger organizations, they're typically separated into specialized teams. Regardless of size, the functions and outcomes remain consistent.
+| Job function | Primary outcome |
+| --- | --- |
+| **SecOps leadership** | Aligns SecOps to business risk, sustains the operating model, develops the workforce, and is accountable for operational effectiveness and improvement. |
+| **Triage** | Validates and prioritizes detections, performs well-understood investigations and response actions, and routes work that requires additional context, expertise, or authority. |
+| **Investigation** | Determines attack scope, impact, objectives, and persistence; coordinates complex containment and remediation; and produces learning for detections and controls. |
+| **Threat hunting** | Uses hypotheses, intelligence, and analytics to find attacker activity that evaded existing detections and to expose visibility or control gaps. |
+| **Detection engineering** | Designs, tests, tunes, and maintains detections and investigation procedures based on threat models, hunting, incidents, and operational feedback. |
+| **SecOps platform and data engineering** | Delivers reliable SecOps platforms, telemetry pipelines, integrations, data quality, and automation that enable the other functions. |
+| **Threat intelligence** | Converts internal and external threat information into decisions and actions for SecOps, security leadership, and partner teams. |
+| **Incident coordination and management** | Coordinates technical and business response, maintains shared situational awareness, and routes decisions to people with the required authority. |
+| **Attack simulation** | Tests readiness and controls through penetration testing, red teaming, purple teaming, technical exercises, and discussion-based exercises. |
+| **Reverse engineering** | Analyzes malicious code, tools, and adversary techniques to improve investigations, detections, and defenses. |
+| **Digital forensics** | Preserves and analyzes evidence using approved procedures and chain-of-custody practices when legal, regulatory, or investigative requirements apply. |
 
-SecOps roles and responsibilities are illustrated in this diagram:
+Organizations can combine several functions in one role or distribute one function across multiple teams. Keep the functions and intended outcomes explicit even when assignment changes.
 
-[![Diagram showing SecOps roles and responsibilities from The Open Group Security Roles and Glossary standard.](media/security-adoption-discipline-operations-roles.png)](media/security-adoption-discipline-operations-roles.png#lightbox)
+## Coordinate the functions
 
-In larger SecOps teams, specialized roles might be broken into dedicated teams. This diagram illustrates how these roles work together:
+Connect triage, investigation, and hunting with the engineering, intelligence, simulation, and specialist functions that improve detection and readiness. Use incident coordination to connect technical execution with business decisions, and use SecOps leadership to align priorities, capacity, accountability, and improvement to business risk.
 
-[![Diagram showing SecOps roles organized into an operating model.](media/security-adoption-discipline-operations-roles-model.png)](media/security-adoption-discipline-operations-roles-model.png#lightbox)
+During incidents, separate task execution from decision authority. Automation or an assigned responder can execute an approved action, but people with delegated authority remain accountable for decisions with material business, legal, safety, or risk consequences.
 
-## Core SecOps roles
+## Integrate key partners
 
-- **Security Operations (SecOps) Manager**: Provides leadership and oversight for the SecOps function. Supports SecOps teams, aligns work to business priorities, and continuously improves effectiveness.
-- **Triage (Tier 1) Analyst**: Acts as the first responder for alerts and incidents. This role rapidly handles well‑understood attack patterns and escalates complex cases for deeper investigation.
-- **Investigation (Tier 2) Analyst**: Leads response for complex or high‑impact incidents. This role investigates multi‑stage attacks, coordinates containment actions, and refines detection logic based on real incidents.
-- **Threat Hunter (Tier 3)**: Proactively searches for attackers who evaded detections. Threat hunters reduce attacker dwell time and contribute deep expertise during major incidents.
-- **Detection Engineer**: Designs, tests, and improves detections to reduce areas without full visibility. This role limits an attacker’s ability to operate undetected and improves detection and investigation procedures for analysts.
-- **SecOps Platform and Data Engineer**: Ensures that SecOps tooling and data pipelines are reliable, scalable, and continuously evolving. This role underpins the effectiveness of all other SecOps functions.
-- **Threat Intelligence Analyst**: Collects and analyzes threat information from internal and external sources and converts it into actionable insights for SecOps, security leadership, and partner teams.
-- **Incident Coordination and Management**: Coordinates technical and business response during major incidents. This role manages communications, decision‑making, and cross‑functional execution during crises.
-- **Attack Simulation**: Tests organizational readiness through realistic simulations. Surfaces gaps across people, process, and technology. These simulations can take many forms and formats, including:
-    - *Penetration testing* – simulation of a single operation to attempt compromise of an asset or the organization (often provided by an external organization).
-    - *Red teaming* - simulation of persistent threat actor conducting multiple long-term operations.
-    - *Purple teaming* – joint simulated attack operations where defenders (blue) and simulated attackers (red) work closely together to accelerate learning for both roles.
-    - *Discussion-based simulation (tabletop exercise)* – structured simulation exercise for multiple roles to talk through a realistic attack scenario (sometimes supplemented by technical simulations).
-- **Reverse Engineering/Digital Forensics (specialized roles)**: Highly specialized roles that analyze malware, artifacts, and evidence. Digital forensics specialists support legal and regulatory requirements by handling evidence with approved procedures and maintaining chain of custody.
+SecOps depends on teams that understand and control the affected environment. Define partner responsibilities before incidents and use incident learning to improve the systems they design, build, operate, and govern.
 
-## How SecOps roles work together
+### Technical engineering and operations
 
-These roles operate as a layered model, where:
+Identity, endpoint, network, infrastructure and platform, data and AI, OT, application, and service-management teams provide telemetry and system context; support investigation, containment, recovery, and validation; and implement sustainable fixes.
 
-- Triage handles volume and speed
-- Investigation and hunting handle complexity and depth
-- Engineers improve the system continuously
-- Leadership and coordination ensure alignment and resilience
+### Architecture
 
-This structure ensures scale without sacrificing quality.
+Enterprise, security, infrastructure, data, access, solution, and software architects define operational requirements and use incident findings to improve trust boundaries, attack-path resistance, resilience, and observability.
 
-## SecOps key internal partners
+### Application and product development
 
-SecOps can't operate effectively in isolation. Successful security operations depend on deep integration with teams that design, build, and operate the environment.
+Product and engineering teams provide application context, support investigation and remediation, generate security telemetry, preserve required evidence, and correct product weaknesses based on SecOps learning.
 
-SecOps data and insights—especially threat intelligence—are most valuable when they inform prioritization decisions across the organization.
+### Security Posture Management
 
-### Technical engineering/operations
+Security Posture Management teams translate incident and threat findings into exposure-reduction priorities, improved baselines and preventive controls, and verified remediation.
 
-These teams assist with investigation, containment, and recovery during incidents, and use SecOps insights to prioritize preventive controls. Common partners include:
+### Strategy, governance, and organizational crisis functions
 
-- Identity
-- Network
-- Endpoints
-- Infrastructure and platforms (cloud, on‑premises, CI/CD)
-- Data and AI
-- Operational Technology (OT)
+Security strategy and governance, legal, privacy, communications, business continuity, risk, and executive leadership define priorities, accountability, authority, and success measures; support major-incident decisions; and adjust strategy, investments, policies, and exercises based on operational evidence.
 
-### Architecture roles
+Create a closed improvement loop across these partners:
 
-Architects design the systems SecOps monitors and defends, and incorporate lessons learned from incidents into future designs.
-
-Key roles include:
-
-- Enterprise Architects
-- Security Architects
-- Infrastructure Architects
-- Data and AI Architects
-- Access Architects (identity, networks etc.)
-- Solution Architects
-- Software and Application Architects
-
-### Application and product development roles
-
-These teams design and maintain the applications SecOps must detect and protect.
-
-They support SecOps by:
-
-- Assisting with investigation and remediation during incidents
-- Ensuring applications generate appropriate telemetry
-- Using SecOps intelligence to prioritize security improvements
+**Incident and threat learning → Security Posture Management → architecture → engineering and operations → strategy and priorities**

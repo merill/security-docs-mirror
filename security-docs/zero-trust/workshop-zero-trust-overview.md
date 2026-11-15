@@ -6,8 +6,8 @@ uhfHeaderId: MSDocsHeader-Security
 breadcrumb_path: /security/breadcrumb/toc.json
 feedback_system: Standard
 feedback_help_link_type: ''
-ms.author: raynew
-author: rayne-wiselman
+ms.author: mas
+author: MarkSimos
 description: Learn about the Microsoft Zero Trust Workshop
 ms.date: 2026-11-06T00:00:00.0000000Z
 ms.service: security
@@ -61,7 +61,11 @@ The Zero Trust Workshop contains a number of components
 | --- | --- |
 | [**Assessment tool**](assessment/overview) | An assessment tool (PowerShell module) that you run in your environment to assess and improve your security posture and baseline. It provides the technical backbone of the Workshop and ensures that Workshop findings and outcomes are based on real data and analysis. The assessment:- Collects configuration data from your tenant.- Checks your environment configuration against a broad range of Zero Trust best practices.- Produces scores, gaps, and recommendations for each Zero Trust pillar and Microsoft Secure Future Initiative (SFI) pillar. |
 | [**Workshop tool**](https://microsoft.github.io/zerotrustassessment/docs/videos/IntroductionToZT) | A single-page app that helps you to document your Zero Trust progress, and develop an actionable roadmap for your journey. |
-| **Workshop guidance** | Workshop articles provide written guidance for facilitators and Workshop participants. Guidance focus on the Zero Trust pillars:- [**Identity**](workshop-zero-trust-identity), the primary Zero Trust control plane protecting users, admins, service accounts, and workload identities.- [**Devices**](workshop-zero-trust-devices), ensuring that all endpoints access corporate resources and healthy, compliant, and monitored.- [**Data**](workshop-zero-trust-data), protecting sensitive information, including documents, emails, databases, structured and unstructured data.- [**Networking**](workshop-zero-trust-networking), related to infrastructure, protecting network traffic, segmentation boundaries, and connectivity.- [**Infrastructure**](workshop-zero-trust-infrastructure), protecting multicloud and hybrid resources, including compute and storage.- [**SecOps**](workshop-zero-trust-security-operations), providing threat protection, detection, and response across the business.- [**AI**](workshop-zero-trust-ai-security), focusing on security for AI models and datasets. |
+| **Workshop guidance** | Workshop articles provide written guidance for facilitators and participants. The guidance is organized around Zero Trust workshop pillars:- [**Identity**](workshop-zero-trust-identity), the primary Zero Trust control plane protecting users, admins, service accounts, and workload identities.- [**Devices**](workshop-zero-trust-devices), ensuring that all endpoints access corporate resources and healthy, compliant, and monitored.- [**Data**](workshop-zero-trust-data), protecting sensitive information, including documents, emails, databases, structured and unstructured data.- [**Networking**](workshop-zero-trust-networking), related to infrastructure, protecting network traffic, segmentation boundaries, and connectivity.- [**Infrastructure**](workshop-zero-trust-infrastructure), protecting multicloud and hybrid resources, including compute and storage.- [**SecOps workshop pillar**](workshop-zero-trust-security-operations), providing threat protection, detection, and response across the business.- [**DevSecOps workshop pillar**](https://microsoft.github.io/zerotrustassessment/docs/category/devsecops), focusing on Development Security by integrating security into development practices and delivery pipelines.- [**AI**](workshop-zero-trust-ai-security), focusing on security for AI models and datasets. |
+
+Note
+
+Most workshop pillars correspond directly to [technologies](deploy/overview) defined in SAF. The SecOps and DevSecOps workshop pillars instead correspond to the SAF [SecOps](security-adoption-discipline-security-operations) and [Development Security](security-adoption-discipline-development-security) disciplines.
 
 ## How is the Workshop run?
 
@@ -72,7 +76,7 @@ The Workshop can be run as follows:
 
 ## How is a Workshop structured?
 
-Typically a Workshop focuses on four phases, with repeating cycles per pillar.
+Typically a Workshop focuses on four phases, with repeating cycles per workshop pillar.
 
 When run as a [formal engagement](https://microsoft.github.io/zerotrustassessment/docs/workshop-guidance/delivery-guide#engagement-model) the Workshop runs as follows:
 
@@ -81,23 +85,23 @@ When run as a [formal engagement](https://microsoft.github.io/zerotrustassessmen
 | **Phase 1 - Kickoff/Orientation** | Initial scoping call to introduce Zero Trust principles and Microsoft Zero Trust architecture, clarify scope, context and goals, and understand assessment logistics and prerequisites. | Workshop engagement is clear to all stakeholders.Logistics are in place. |
 | **Phase 2 - Assessment (optional)** | [Run the Zero Trust assessment tool](/en-us/security/zero-trust/assessment/get-started) to capture current baseline posture.Walk through assessment findings. | Findings are clearly understood and gaps are identified. |
 | **Phase 3 - Roadmap** | Define a with a customized and concrete deployment plan based on a baseline adoption roadmap. | Customer has a tailed adoption roadmap for Zero Trust security. |
-| **Phase 4 Closeout** | Gather feedback | Identify additional technology pillar workshops. |
+| **Phase 4 Closeout** | Gather feedback | Identify additional workshop pillar sessions. |
 
 Learn more about [Workshop delivery](https://microsoft.github.io/zerotrustassessment/docs/workshop-guidance/delivery-guide).
 
 ## Who's the Workshop intended for?
 
-The Workshop is intended for a variety of stakeholders. Attendance at pillar workshops is recommended for CISOs and IT Directors where possible.
+The Workshop is intended for a variety of stakeholders. Attendance at workshop pillar sessions is recommended for CISOs and IT Directors where possible.
 
 - **Zero Trust/security strategy owners**: People responsible for the organizational security strategy, such as the CISO, security architects, and IT managers leading cloud and modernization initiatives.
-- **Pillar owners**: Zero Trust focuses on a number of cross-organizational pillars. Pillar owners should participate, including:
+- **Pillar owners**: Zero Trust workshop pillars span multiple organizational teams. Pillar owners should participate, including:
     - Identity - IAM teams, SecOps team, Devices/Endpoint team, ID governance team, enterprise app developers.
     - Devices - Mobile device management architect/admin, security architect/ops, conditional access admin, governance and risk team.
     - Data - Information protection architect, Compliance officer/admin, platform admins focused on data security (Exchange, Sharepoint etc.)
     - Infrastructure, Apps - Infrastructure security teams, SecOps team, Endpoint security team, Compliance/policy team, app development team, network admin team.
     - Networking - IAM team, network ops team, SecOps team, devices/endpoints team, app/workload stakeholders.
-    - SecOps - Security team decision makers, security team specialists (security architect, analyst, engineer, SIEM admin etc.)
-    - DevOps: Developer leads/engineers.
+    - SecOps workshop pillar - Security team decision makers and specialists, including security architects, analysts, engineers, and SIEM administrators.
+    - DevSecOps workshop pillar - Developer and engineering leads, application security teams, and DevOps platform owners.
 - **Decision makers/Budget stakeholders**: With focus on the roadmap strategy - CTO, CIO, business app owners.
 - **Risk program owners**: Enterprise risk managers, governance and compliance leaders, data protection officers, specific business risk owners.
 - **Cross-functional staff**: People who operate systems across the business - infrastructure/network owners, cloud engineers, security engineers, helpdesk leads.

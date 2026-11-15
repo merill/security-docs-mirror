@@ -1,18 +1,18 @@
 ---
 layout: Conceptual
-title: Microsoft security best practices overview | Microsoft Learn
+title: Microsoft security best practices | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/security/zero-trust/security-best-practices-overview
 uhfHeaderId: MSDocsHeader-Security
 breadcrumb_path: /security/breadcrumb/toc.json
 feedback_system: Standard
 feedback_help_link_type: ''
-ms.author: raynew
-author: rayne-wiselman
-description: Overview of Microsoft security best practices
-ms.topic: article
+ms.author: mas
+author: MarkSimos
+description: Explore Microsoft security best practices for Zero Trust, security adoption, secure baselines, assessments, technologies, standards and frameworks, and secure engineering.
+ms.date: 2026-11-08T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
-ms.date: 2026-05-24T00:00:00.0000000Z
+ms.topic: concept-article
 locale: en-us
 document_id: fa58daad-4451-5d5b-4dae-9eae4aed5195
 document_version_independent_id: fa58daad-4451-5d5b-4dae-9eae4aed5195
@@ -30,43 +30,76 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/security-best-practices-overview.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d
-- https://authoring-docs-microsoft.poolparty.biz/devrel/540ac133-a371-4dbb-8f94-28d6cc77a70b
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/57eae307-c3a1-4cac-b645-1a899934bac8
+- https://authoring-docs-microsoft.poolparty.biz/devrel/97159432-14a9-4307-a469-d2f2c75f0e33
+- https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d
-- https://authoring-docs-microsoft.poolparty.biz/devrel/60bfc045-f127-4841-9d00-ea35495a5800
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ee561821-1ac7-45a8-9409-6ba5eb7a5b97
+- https://authoring-docs-microsoft.poolparty.biz/devrel/50565c62-5f6b-4687-be38-323113c72c2e
+- https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
 platformId: e3b70a1a-fbec-5350-af1d-5660151738d3
 ---
 
-# Microsoft security best practices overview | Microsoft Learn
+# Microsoft security best practices | Microsoft Learn
 
-Microsoft security best practices are designed to help organizations protect their digital estates by reducing risk, improving resilience, and enabling secure productivity.
+**Security best practices apply at many levels.** They help organizations make informed decisions about managing security risk and improving resilience. Best practices can address people, processes, and technology across strategy, governance, architecture, implementation, and operations.
 
-- At the core of these best practices is the [Zero Trust security model](zero-trust-overview). Zero Trust assumes that threats exist both inside and outside the network, and emphasizes verifying every access request, enforcing least privilege access, and segmenting resources as we assume breach.
+**Microsoft security guidance includes many forms of best practices.** These range from strategic principles and organizational practices to security standards and frameworks, secure configuration baselines and benchmarks, architecture, assessments, technology guidance, and implementation practices. These forms of guidance provide different perspectives and levels of detail and are designed to work together rather than as a single checklist or prescribed approach.
 
-Zero Trust principles are reinforced through a combination of engineering best practices, frameworks, benchmarks, and assessment tools.
+**Standards and frameworks provide established security practices.** They organize security objectives, practices, controls, or requirements into structures that organizations can use to guide security programs, assess progress, and communicate alignment. Microsoft guidance helps organizations connect these frameworks to practical security work and technology implementation.
 
-## Best practices and recommendations
+**Best practices must be adapted to organizational context.** Business priorities, risk, regulatory and policy requirements, threat environment, technology estate, existing capabilities, resources, and organizational structure can affect which practices are most important and how they should be implemented.
 
-- **[Microsoft's Secure Future Initiative (SFI)](sfi/secure-future-initiative-overview)**
+Use the following resources based on what you are trying to accomplish.
 
-    A series of best practices and security learning based on Microsoft's multi-year efforts to increasingly secure the way in which we design, build, test, and operate our products. SFI provides a series of best practice patterns that you can learn from and implement. SFI tackles security by pillars. Objectives for each pillar align to one or more [NIST Cybersecurity Framework functions](sfi/secure-future-initiative-overview#sfi-pillars-zero-trust-and-nist).
-- **[Microsoft Entra security recommendations](/en-us/entra/fundamentals/configure-security)**
+## Establish a security foundation with Zero Trust
 
-    Check identity and app security configuration and posture. Recommendations aligns to SFI themes. These best practices are included in the [Zero Trust Assessment tool](assessment/overview).
-- **[Microsoft Intune device security recommendations](/en-us/intune/intune-service/protect/zero-trust-configure-security)**
+Use [Zero Trust](zero-trust-overview) as a security foundation for designing, implementing, and operating security controls across your organization.
 
-    Ensure tenant-level governance and device compliance. Protect data on devices and in transit, and enforce secure access to organizational data. These best practices are included in the [Zero Trust Assessment tool](assessment/overview).
-- **[Azure networking security best practices](/en-us/azure/networking/security/zero-trust-network-security)**
+Zero Trust applies three principles across business, security, and technology decisions: verify explicitly, use least privilege access, and assume breach.
 
-    Assess and harden network posture with Azure DDoS protection, Azure Firewall, Azure Web Application Firewall on Application Gateway or Azure Front Door. These best practices are included in the [Zero Trust Assessment tool](assessment/overview).
-- **[Data security best practices](/en-us/purview/zero-trust-microsoft-purview)**
+## Organize and improve your security program with SAF
 
-    Check Microsoft Purview configuration settings for data security posture. These best practices are included in the [Zero Trust Assessment tool](assessment/overview).
-- The **[Microsoft Cloud Security Benchmark (MCSB)](/en-us/security/benchmark/azure/overview)**
+Use the [Microsoft Security Adoption Framework (SAF)](security-adoption-model) to connect business priorities and risk to coordinated security work and technology implementation.
 
-    Provides a series of best practices and recommendations for improving the security of workloads, data, and services on Azure.
-- Other Microsoft Defender products such as [Defender for Cloud](/en-us/azure/defender-for-cloud/concept-cloud-security-posture-management) and [Security Exposure Management](/en-us/security-exposure-management/microsoft-security-exposure-management), and [Microsoft Purview Compliance Manager](/en-us/purview/compliance-manager) also monitor and assess your enterprise security posture, providing actionable security and compliance insights and recommendations.
-- External best practices and framework also provide Zero Trust security principles and guidance. [Learn more](security-zero-trust-frameworks).
+SAF helps business, technology, and security roles collaborate across business scenarios, security disciplines, technologies, and technical solutions.
+
+## Use established security baselines and benchmarks
+
+**Security baselines provide tested starting points.** They help organizations apply established security recommendations consistently rather than developing every security configuration from the beginning.
+
+Microsoft provides security baselines and benchmarks for different technologies and environments, including:
+
+- **Microsoft Cloud Security Benchmark (MCSB):** Provides security recommendations for improving the security of cloud workloads, data, and services. See [Overview of the Microsoft cloud security benchmark](/en-us/security/benchmark/azure/overview).
+- **Windows and Windows Server security baselines:** Provide Microsoft-recommended configuration settings for securing Windows devices and servers. See [Windows security baselines](/en-us/windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines) and [configure security baselines for Windows Server 2025](/en-us/windows-server/security/osconfig/osconfig-how-to-configure-security-baselines).
+- **Microsoft 365 Apps for enterprise security baseline:** Provides recommended configuration settings for Microsoft 365 Apps and guidance for balancing security with productivity requirements. See [Security baseline for Microsoft 365 Apps for enterprise](/en-us/microsoft-365-apps/security/security-baseline).
+- **Microsoft Edge security baseline:** Provides recommended security configuration settings for Microsoft Edge. See [Microsoft Edge security baseline settings reference for Microsoft Intune](/en-us/intune/device-security/security-baselines/ref-v2-edge-settings).
+- **Microsoft Intune security baselines:** Provide deployable groups of recommended security settings for Windows devices and supported security technologies managed with Intune. See [Use security baselines to help secure Windows devices you manage with Microsoft Intune](/en-us/intune/device-security/security-baselines/overview).
+
+**A security baseline is a starting point, not a universal configuration.** Evaluate and adapt baselines based on organizational risk, regulatory and policy requirements, technology dependencies, operational needs, and productivity requirements.
+
+## Assess your Zero Trust implementation
+
+Use the [Zero Trust assessment](assessment/overview) to evaluate your current implementation, identify security gaps, and prioritize improvements across Zero Trust technology controls.
+
+Assessment results can provide a practical starting point for prioritizing improvements and measuring progress over time.
+
+## Secure specific technologies
+
+Use [technology security guidance](deploy/overview) when you need to secure a particular part of your technology environment.
+
+The guidance applies Zero Trust principles across identities, endpoints, applications, data, infrastructure, networks, and AI and connects to more detailed implementation guidance.
+
+## Apply security standards and frameworks
+
+Use [Security standards and frameworks](security-standards-and-frameworks) when your organization uses an established security standard or framework to structure security objectives, practices, controls, or requirements.
+
+Standards and frameworks capture and organize security practices from different authorities, communities, and areas of expertise. Organizations can use them to structure security programs, establish common expectations, assess progress, and communicate alignment.
+
+Microsoft mappings connect framework objectives to SAF guidance, security capabilities, technology implementation, and relevant Microsoft product guidance. Organizations can use these mappings to help align security work with framework objectives and requirements without treating framework alignment or compliance as the complete measure of security success.
+
+## Learn from Microsoft's security engineering practices
+
+Use the [Microsoft Secure Future Initiative (SFI)](sfi/secure-future-initiative-overview) to learn from security engineering practices, patterns, and lessons from Microsoft's efforts to strengthen the security of its products and services.
+
+SFI complements SAF and other Microsoft security guidance with engineering practices and lessons that organizations can consider as they improve their own security programs.

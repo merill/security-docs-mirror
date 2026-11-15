@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: duau
 author: duongau
 description: Learn how to apply Zero Trust principles to discontinue legacy network security technology.
-ms.date: 2024-06-17T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.reviewer: adtork, maroja, maalgeba
@@ -37,9 +37,11 @@ item_type: Content
 source_path: security-docs/zero-trust/azure-networking-legacy.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 - https://authoring-docs-microsoft.poolparty.biz/devrel/d4cf20b3-3e54-4ed9-8b09-370a52eee81b
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 - https://authoring-docs-microsoft.poolparty.biz/devrel/9ecc2643-be13-4271-a1f4-87114737d63a
 platformId: 5d72a35e-35f7-f42b-305e-660dc059163f
 ---

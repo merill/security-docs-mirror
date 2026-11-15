@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: v-cjwoodling
 author: cjwoodling6
 description: Reinforcing a secure-first mindset is part of the monitor and detect threats pillar of the Secure Future Initiative (SFI), embedding role-based training and continuous reinforcement into everyday operations to reduce risk from phishing and social engineering.
-ms.date: 2026-09-25T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -38,9 +38,11 @@ source_path: security-docs/zero-trust/sfi/education-awareness.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa
 - https://authoring-docs-microsoft.poolparty.biz/devrel/97159432-14a9-4307-a469-d2f2c75f0e33
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863
 - https://authoring-docs-microsoft.poolparty.biz/devrel/50565c62-5f6b-4687-be38-323113c72c2e
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: cb746f3b-00b5-c13e-1e16-a508e61b8a15
 ---
 

@@ -12,7 +12,7 @@ description: Review the videos for the Microsoft security CISO workshop.
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
-ms.date: 2026-05-24T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 locale: en-us
 document_id: c3e0b9f9-9aeb-34c0-3107-41e79dd3784b
 document_version_independent_id: c3e0b9f9-9aeb-34c0-3107-41e79dd3784b
@@ -46,6 +46,12 @@ The CISO Workshop is one of our [Security Adoption Framework (SAF) workshops](wo
 
 The workshop is designed to support security and technology leaders as they align security strategy with evolving business priorities, technology platforms, and the threat landscape.
 
+Use this relationship as your journey through the content:
+
+- Use the **CISO Workshop** to establish business and security outcomes and priorities.
+- Use **SAF** to organize and manage the security improvement program.
+- Use **MCRA** to plan and implement supporting security capabilities and architectures.
+
 Tip
 
 Our Security Adoption Framework (SAF) workshops align with guidance in our [structured security adoption model](security-adoption-model).
@@ -62,6 +68,17 @@ If you have [Microsoft Unified](https://www.microsoft.com/unifiedsupport/overvie
 ## Workshop videos
 
 If you're unable to organize an expert-led workshop, it's available as a series of publically available prerecorded videos summarized in this article. A [pdf slide presentation of accompanying materials](https://arch-center.azureedge.net/Microsoft-CISO-Workshop-Security-Strategy-and-Program.pdf) is also available for download/review.
+
+## How to use these videos in the SAF journey
+
+Use videos by workshop phase, then move directly into program execution:
+
+| Workshop phase | Video areas | Next action after viewing |
+| --- | --- | --- |
+| Establish context and strategic direction | Introduction, Part A | Confirm outcomes and priorities in [SAF strategy guidance](security-adoption-discipline-strategy). |
+| Align to business risk and operating model | Part B | Translate priorities into [SAF disciplines](security-adoption-discipline-overview) and roadmap actions in [SAF journey guidance](security-adoption-journey). |
+| Convert priorities into capability plans | Part C | Use [MCRA](microsoft-reference-architecture) and [security architecture guidance](security-adoption-discipline-architecture) to shape architecture priorities and capability sequencing. |
+| Close and execute | Summary | Build a measurable improvement plan with [security posture guidance](security-adoption-discipline-posture). |
 
 ## Video - Introduction and overview
 
@@ -144,3 +161,15 @@ This video provides a review of maturity model for the real-world journey to imp
 ## Summary
 
 Wrap-up of the workshop with key quick wins and next steps.
+
+## What happens after viewing?
+
+Use workshop insights as structured inputs to your security improvement program:
+
+1. Confirm business and security outcomes.
+2. Capture decisions, assumptions, and unresolved questions.
+3. Prioritize capability and architecture gaps by risk and business impact.
+4. Assign owners using [SAF security disciplines](security-adoption-discipline-overview) and [roles guidance](security-adoption-roles).
+5. Build and maintain a roadmap using [SAF journey guidance](security-adoption-journey).
+6. Translate priorities into architecture and capability plans with [MCRA](microsoft-reference-architecture).
+7. Measure progress and reassess on a regular cadence.

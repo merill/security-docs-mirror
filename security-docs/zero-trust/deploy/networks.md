@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Learn how to secure networks using a Zero Trust strategy with Secure Access Service Edge (SASE) and Secure Service Edge (SSE) solutions.
-ms.date: 2025-06-26T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.service: security
 manager: femila
 ms.subservice: zero-trust
@@ -33,13 +33,9 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/deploy/networks.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/20ed8455-bc18-4537-87a4-83784e7b2a39
-- https://authoring-docs-microsoft.poolparty.biz/devrel/85ee13c4-5d0b-41b0-895d-b7e834668123
-- https://authoring-docs-microsoft.poolparty.biz/devrel/5287f575-02f0-405f-92b7-800456526b0c
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/9a7f703b-30bb-4d62-9eb4-97213f571849
-- https://authoring-docs-microsoft.poolparty.biz/devrel/7e79a0d4-3b49-4899-aac2-fbdd26ca15a8
-- https://authoring-docs-microsoft.poolparty.biz/devrel/06e86142-34c2-4b94-ab9c-9477c21f7152
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: 1ff41ffb-7da5-2682-9526-b476f9fd722b
 ---
 

@@ -20,7 +20,7 @@ ms.collection:
 - zerotrust-solution
 - highpri
 - tier1
-ms.date: 2025-04-14T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 locale: en-us
 document_id: b5008a63-8821-c0b2-0a7d-627e8b5fc6f2
 document_version_independent_id: b5008a63-8821-c0b2-0a7d-627e8b5fc6f2
@@ -38,11 +38,11 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/microsoft-365-zero-trust.md
 cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 - https://authoring-docs-microsoft.poolparty.biz/devrel/1dd701e0-441f-4b0a-9806-aa47decc4e35
-- https://authoring-docs-microsoft.poolparty.biz/devrel/a3955c7b-f5ee-420d-aff5-d7119738f38b
 spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 - https://authoring-docs-microsoft.poolparty.biz/devrel/0a2fc935-5977-4aa6-9f55-0be03bd2acb8
-- https://authoring-docs-microsoft.poolparty.biz/devrel/b31948f4-2f38-404b-ac93-c3c8c5b3ae33
 platformId: 45a52720-99d1-621f-92a5-0c020cbb2767
 ---
 
@@ -86,7 +86,7 @@ For more information about Zero Trust, see Microsoft's [***Zero Trust Guidance C
 
 Microsoft 365 is built intentionally with many security and information protection capabilities to help you build Zero Trust into your environment. Many of the capabilities can be extended to protect access to other SaaS apps your organization uses and the data within these apps.
 
-This illustration represents the work of deploying Zero Trust capabilities. This work is aligned to Zero Trust business scenarios in the [Zero Trust adoption framework](/en-us/security/zero-trust/adopt/zero-trust-adoption-overview).
+This illustration represents the work of deploying Zero Trust capabilities. This work is aligned to SAF business scenarios in the [Security Adoption Framework (SAF)](/en-us/security/zero-trust/security-adoption-model).
 
 [![Diagram that shows the Microsoft 365 Zero Trust deployment plan across five swim lanes.](media/zero-trust/m365-zero-trust-deployment-swim-lanes.svg)](media/zero-trust/m365-zero-trust-deployment-swim-lanes.svg#lightbox)
 
@@ -144,7 +144,7 @@ Return to [***Common identity and device access policies***](zero-trust-identity
 
 [![Diagram that shows the Zero Trust identity and access policies for the Enterprise (recommended) tier.](media/zero-trust/identity-access-enterprise-tier.svg)](media/zero-trust/identity-access-enterprise-tier.svg#lightbox)
 
-Read more about how to secure remote and hybrid work in the **Zero Trust adoption framework** — [Secure remote and hybrid work](/en-us/security/zero-trust/adopt/secure-remote-hybrid-work).
+Read more about how to secure remote and hybrid work in SAF — [Enable and secure remote work](/en-us/security/zero-trust/security-adoption-scenario-remote-work).
 
 ## Swim lane 2 — Prevent or reduce business damage from a breach
 
@@ -160,7 +160,7 @@ Go to [***Pilot and deploy Microsoft Defender XDR***](/en-us/defender-xdr/pilot-
 | --- | --- | --- |
 | Set up the evaluation and pilot environment for all components: <br>- [Defender for Identity](/en-us/defender-for-identity/zero-trust)<br>- [Defender for Office 365](/en-us/defender-office-365/zero-trust-with-microsoft-365-defender-office-365)<br>- [Defender for Endpoint](/en-us/defender-endpoint/zero-trust-with-microsoft-defender-endpoint)<br>- [Defender for Cloud Apps](/en-us/defender-cloud-apps/zero-trust)<br><br> Protect against threats  Investigate and respond to threats | See the guidance to read about the architecture requirements for each component of Microsoft Defender XDR. | Microsoft Entra ID Protection isn't included in this solution guide. It's included in Swim lane 1 — Secure remote and hybrid work. |
 
-Read more about how to prevent or reduce business damage from a breach in the **Zero Trust adoption framework** — [Prevent or reduce business damage from a breach](/en-us/security/zero-trust/adopt/prevent-reduce-business-damage-breach).
+Read more about minimizing business impact from incidents in SAF — [Minimize damage from security incidents](/en-us/security/zero-trust/security-adoption-scenario-minimize-impact).
 
 ## Swim lane 3 — Identify and protect sensitive business data
 
@@ -174,7 +174,7 @@ Microsoft Purview Information Protection provides a framework, process, and capa
 
 For more information on how to plan and deploy information protection, see [***Deploy a Microsoft Purview Information Protection solution***](/en-us/purview/information-protection-solution).
 
-Read more about how to identify and protect sensitive business data in the **Zero Trust adoption framework** — [Identify and protect sensitive business data](/en-us/security/zero-trust/adopt/identify-protect-sensitive-business-data).
+Read more about protecting critical business assets in SAF — [Protect critical business assets](/en-us/security/zero-trust/security-adoption-scenario-secure-assets).
 
 ## Swim lane 4 — Secure AI apps and data
 
@@ -232,6 +232,6 @@ Use the following resources to meet regulatory and compliance requirements.
 
 | Resource | More information |
 | --- | --- |
-| Zero Trust adoption framework — [Meet regulatory and compliance requirements](/en-us/security/zero-trust/adopt/meet-regulatory-compliance-requirements) | Describes a methodical approach your organization can follow, including defining strategy, planning, adopting, and governing. |
+| Security Adoption Framework (SAF) — [Security posture discipline](/en-us/security/zero-trust/security-adoption-discipline-posture) | Describes a methodical approach your organization can follow, including defining strategy, planning, adopting, and governing. |
 | [Govern AI apps and data for regulatory compliance](/en-us/security/security-for-ai/govern) | Addresses regulatory compliance for the emerging AI-related regulations, including specific capabilities that help. |
 | [Manage data privacy and data protection with Microsoft Priva and Microsoft Purview](/en-us/microsoft-365/solutions/data-privacy-protection) | Assess risks and take appropriate action to protect personal data in your organization's environment using Microsoft Priva and Microsoft Purview. |

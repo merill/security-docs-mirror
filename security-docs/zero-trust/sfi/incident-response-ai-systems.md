@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Learn about incident response readiness for AI systems.
-ms.date: 2026-04-12T00:00:00.0000000Z
+ms.date: 2026-11-09T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: design-pattern
@@ -35,12 +35,12 @@ item_type: Content
 source_path: security-docs/zero-trust/sfi/incident-response-ai-systems.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/37c61750-a5c6-46b8-be1f-24f8a60797db
 - https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
-- https://authoring-docs-microsoft.poolparty.biz/devrel/2624a017-7337-44fa-9494-a407bb0e59fa
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/903ca71b-804f-4489-8ccc-fa0cd0391d12
 - https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
-- https://authoring-docs-microsoft.poolparty.biz/devrel/a438284e-c3c3-4c36-ab0b-aa7c244b912c
 platformId: a01fb545-f420-f4cc-a3eb-9ca3d3fda40d
 ---
 
@@ -121,4 +121,4 @@ Organizations can adopt similar practices using the following steps:
 
 ## Summary
 
-Incident response for AI systems extends established practices to account for probabilistic behavior, novel harm categories, and the human cost of sustained exposure to harmful content. The staged remediation model — immediate containment, expand and strengthen, fix at source — manages the reality that tactical and systemic fixes operate on different timescales. AI-specific classification, purpose-built telemetry, rehearsed cross-functional coordination, and active responder wellbeing determine how quickly harm is contained and how durably it is remediated. Incident response for AI systems extends established practices to account for probabilistic behavior, novel harm categories, and the human cost of sustained exposure to harmful content. The staged remediation model — immediate containment, expand and strengthen, fix at source — manages the reality that tactical and systemic fixes operate on different timescales. AI-specific classification, purpose-built telemetry, rehearsed cross-functional coordination, and active responder wellbeing determine how quickly harm is contained and how durably it is remediated.
+Incident response for AI systems extends established practices to account for probabilistic behavior, novel harm categories, and the human cost of sustained exposure to harmful content. The staged remediation model — immediate containment, expand and strengthen, fix at source — manages the reality that tactical and systemic fixes operate on different timescales. AI-specific classification, purpose-built telemetry, rehearsed cross-functional coordination, and active responder wellbeing determine how quickly harm is contained and how durably it is remediated.

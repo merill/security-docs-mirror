@@ -38,12 +38,12 @@ item_type: Content
 source_path: security-docs/security-for-ai/govern.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/eab1aabc-e18c-405b-ac29-e35eb0b15e3b
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/46e3c7c4-fe77-4a6e-b40a-44c569819fa5
 - https://authoring-docs-microsoft.poolparty.biz/devrel/8e3fdb08-a059-4277-98f6-c0e21e940707
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/46e3c7c4-fe77-4a6e-b40a-44c569819fa5
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/574d2eb1-e22a-49c0-b4eb-64e86dbeee6b
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d0c6fab8-2d7d-4bb0-bf40-589e08d7c132
 - https://authoring-docs-microsoft.poolparty.biz/devrel/88291526-9c74-4f87-878c-de0a82134421
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d0c6fab8-2d7d-4bb0-bf40-589e08d7c132
 platformId: 8f68d543-c7db-c5f9-34a1-3c72a5020677
 ---
 
@@ -60,7 +60,7 @@ This is the fourth article in a series. If you haven’t yet accomplished the ta
 
 Use this article together with these resources:
 
-- Zero Trust adoption framework business scenario—[Meet regulatory and compliance requirements with Zero Trust](../zero-trust/adopt/meet-regulatory-compliance-requirements)
+- Security Adoption Framework (SAF) guidance—[Security posture discipline](../zero-trust/security-adoption-discipline-posture)
 - Cloud Adoption Framework (CAF) for AI—[Process to govern AI](/en-us/azure/cloud-adoption-framework/scenarios/ai/govern)
 
 ## What are new considerations for governing AI apps and data?
@@ -231,7 +231,7 @@ Use the following resources to get started.
 Continue to make progress on end-to-end security with Zero Trust resources:
 
 - [Zero Trust guidance center](/en-us/security/zero-trust/)
-- [Zero Trust adoption framework](/en-us/security/zero-trust/adopt/zero-trust-adoption-overview)
+- [Security Adoption Framework (SAF)](/en-us/security/zero-trust/security-adoption-model)
 - [Zero Trust deployment plan with Microsoft 365](/en-us/microsoft-365/security/microsoft-365-zero-trust)
 - [Incident response with XDR and integrated SIEM](/en-us/security/zero-trust/siem-xdr-overview)
 - [Apply Zero Trust principles to Azure services](/en-us/security/zero-trust/apply-zero-trust-azure-services-overview)

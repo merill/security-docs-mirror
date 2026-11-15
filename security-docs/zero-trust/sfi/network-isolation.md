@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Network isolation is part of the protect networks pillar of the Secure Future Initiative (SFI)and aligns with the Zero Trust principles of Verify Explicitly, Least Privilege, and Assume Breach to ensure that corporate and cloud networks are secured against unauthorized internal access and external intrusions.
-ms.date: 2025-10-03T00:00:00.0000000Z
+ms.date: 2026-11-09T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -34,13 +34,9 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/sfi/network-isolation.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa
-- https://authoring-docs-microsoft.poolparty.biz/devrel/20ed8455-bc18-4537-87a4-83784e7b2a39
-- https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863
-- https://authoring-docs-microsoft.poolparty.biz/devrel/9a7f703b-30bb-4d62-9eb4-97213f571849
-- https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: e94d49b0-9f53-eff8-20ca-2b301e147e44
 ---
 
@@ -108,7 +104,7 @@ To track success, measure the following:
 
 Network isolation is a foundational strategy for preventing lateral movement and protecting sensitive workloads. By segmenting resources, enforcing perimeters, and applying layered defenses, organizations reduce their attack surface and build resilience against modern adversaries.
 
-Isolating networks is no longer optional---it is a necessary control for safeguarding cloud and hybrid environments. The Network isolation objective provides a clear framework for reducing lateral movement, aligning with Zero Trust, and protecting enterprise-scale environments. 
+Network isolation is an important control for safeguarding cloud and hybrid environments. The Network isolation objective provides a clear framework for reducing lateral movement, aligning with Zero Trust, and protecting enterprise-scale environments. 
 
 Additionally, all network, identity, and device activity should be continuously monitored. Centralize logging and correlate security alerts using extended detection and response (XDR) solutions and SIEM tools to effectively detect anomalies and threats. Pair detection with behavioral analytics, deep packet inspection, and automated threat response to quickly contain suspicious activity, and support efficient incident response.
 

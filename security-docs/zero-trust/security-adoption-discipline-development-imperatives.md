@@ -8,8 +8,8 @@ feedback_system: Standard
 feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
-description: Modernize and secure development processes and functions using key imperatives.
-ms.date: 2026-05-24T00:00:00.0000000Z
+description: Plan how to integrate security into development practices across the software lifecycle.
+ms.date: 2026-11-09T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -31,220 +31,132 @@ item_type: Content
 source_path: security-docs/zero-trust/security-adoption-discipline-development-imperatives.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/43093068-2dda-408b-b3fe-dfd705c84f78
-- https://authoring-docs-microsoft.poolparty.biz/devrel/540ac133-a371-4dbb-8f94-28d6cc77a70b
+- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
 - https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/e453d60d-ba7e-43bc-8028-ec38e6b62512
-- https://authoring-docs-microsoft.poolparty.biz/devrel/60bfc045-f127-4841-9d00-ea35495a5800
+- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
 - https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: 2d660f83-2f0b-766c-83c5-52bf78260aef
 ---
 
 # Adopt secure development planning imperatives | Microsoft Learn
 
-This article defines the key imperatives for integrating security into development practices as part of the [Development Security discipline](security-adoption-discipline-development).
+This article defines the planning imperatives for integrating security into development practices as part of the [Development Security discipline](security-adoption-discipline-development).
 
-This guidance is part of the **Microsoft Security Adoption Framework (SAF)** and provides planning imperatives that support consistent implementation of the Development Security discipline.
+This guidance is part of the **Microsoft Security Adoption Framework (SAF)**. Use these imperatives to translate the discipline into planning and release expectations. Use [Shift DevOps to DevSecOps](security-adoption-discipline-development-security) for the operating-model and process changes that put them into practice.
 
-Modern organizations rely on rapid software development to deliver innovation, meet business requirements, maintain competitive advantage, and respond to changing business needs. While DevOps enables this agility, it also introduces new security risks as code, infrastructure, and deployment processes evolve more quickly.
-
-To securely adopt DevOps practices, organizations must integrate security into development strategy, workflows, and delivery processes, and adopt DevSecOps practices that secure application delivery across the lifecycle.
+Modern organizations depend on rapid software delivery to innovate and respond to change. Integrate security into development strategy, workflows, and release decisions so that delivery speed does not create unmanaged security or operational risk.
 
 ## Outcomes
 
-Adopting the planning imperatives in this article enables organizations to:
+Use these planning imperatives to:
 
-- Reduce the introduction of security weaknesses into production workloads.
-- Improve consistency of production readiness decisions.
-- Reduce friction between development, security, and operations.
-- Improve resilience of applications and delivery infrastructure.
-- Sustain innovation velocity while managing security and operational risk.
+- Reduce security weaknesses in production workloads.
+- Make production-readiness decisions more consistent.
+- Reduce unhealthy friction between development, security, and operations.
+- Improve the resilience of workloads and delivery infrastructure.
+- Sustain delivery velocity while managing security and operational risk.
 
 ## Recognize the scope of development security
 
-Development security applies to more than application code. Organizations should define security requirements and activities across all components involved in designing, building, deploying, and operating workloads.
+Plan for more than application code. Include the people, identities, tools, environments, automation, dependencies, and infrastructure used to design, build, deploy, and operate workloads.
 
-Organizations must account for security risks across:
+Account for:
 
-- Application logic and services
-- Infrastructure automation/Infrastructure‑as‑code (IaC) deployments
-- Build and release pipelines
-- Deployment configurations and operational scripting
-- Developer environments and service identities
-- Third-party dependencies and supply chain components
+- Application logic, services, and APIs.
+- Infrastructure as code and deployment configurations.
+- Source repositories, build systems, and release pipelines.
+- Developer environments and service identities.
+- Third-party and open-source components.
+- Production platforms and operational tooling.
 
-Recognizing this full scope helps organizations define security requirements that reflect how modern workloads are delivered, rather than limiting security to application code review late in the lifecycle.
+Use the [Development Security discipline](security-adoption-discipline-development) for the full scope and its relationships with other SAF disciplines.
 
 ## Account for key risks
 
-Organizations should explicitly include the following risks when defining requirements:
+Include these risk areas when defining requirements and priorities:
 
-| **Risk area** | **Example impact** |
+| Risk area | Example impact |
 | --- | --- |
-| Application design flaws | Unauthorized access, data exposure, persistent logic flaws. |
-| Pipeline compromise | Injection of malicious code into build artifacts. |
-| Developer environment compromise | Theft of credentials or elevation of privileges. |
-| DevOps tooling misuse | Unauthorized changes via automation or integrations. |
-| Supply chain vulnerabilities | Introduction of malicious or vulnerable dependencies. |
+| **Application design and implementation** | Unauthorized access, data exposure, or persistent flaws in business logic. |
+| **Development infrastructure and automation** | Stolen credentials, unauthorized changes, or tampered build artifacts. |
+| **Developer environment** | Compromised identities, source code, tools, or privileged access. |
+| **Software supply chain** | Malicious or vulnerable dependencies that affect the organization or downstream customers. |
+| **Operations** | Extended exposure or disruption caused by weak configuration, monitoring, patching, or recovery. |
 
-These risks directly inform the planning imperatives defined in this article and must be addressed through design, process, and governance decisions.
+Use these risks to shape design, workflow, assurance, and governance decisions for both the workload and the systems used to deliver it.
 
-These risks affect both application workloads and the infrastructure used to build and operate them.
+## Integrate security into strategy and the lifecycle
 
-## Integrate security into strategy/lifecycle
+Define security, privacy, safety, and compliance requirements alongside business, functional, and operational requirements. Connect them to:
 
-Security must be incorporated into development strategy, not applied as a post-release control.
+- Product and development strategy.
+- Architecture and design.
+- Delivery and release workflows.
+- Operational support and recovery models.
 
-Organizations must define security requirements alongside functional requirements and align them with:
+Use a continuous Security Development Lifecycle (SDL) approach:
 
-- Development strategy
-- Architectural planning
-- Delivery workflows
-- Operational support models
+- Define requirements while teams still have practical design options.
+- Align architecture and implementation with those requirements.
+- Integrate security into infrastructure automation and delivery pipelines.
+- Validate important requirements throughout delivery and before release.
+- Track findings in normal engineering workflows and prioritize remediation by risk.
+- Feed vulnerabilities, incidents, and operational lessons back into planning and design.
 
-Security outcomes are shared responsibilities owned by engineering and operations roles, supported by security specialists.
+Product and engineering teams are accountable for the functionality, security, reliability, and operational outcomes of the software they deliver. Development, security, and operations roles have distinct responsibilities. Security specialists define and interpret security requirements, provide expertise and reusable patterns, enable teams with tools and education, challenge risk decisions, and advise authorized decision makers.
 
-Security enables innovation, it isn't a gate applied after delivery.
+## Set minimum production viability in the secure definition of done
 
-Organizations must adopt a continuous Secure Development Lifecycle (SDL) approach that includes:
+Use **minimum production viability** as the release quality gate within the team's **secure definition of done**. It is the minimum set of development, security, and operations requirements that a workload needs for production use. A minimum viable product is not production-ready based on functionality alone.
 
-- Defining security requirements early in design.
-- Aligning security requirements with architecture and implementation.
-- Integrating security with infrastructure automation.
-- Performing continuous security validation.
-- Tracking security findings.
-- Prioritizing remediation.
-- Applying security findings to release readiness decisions so that security issues are treated as production blockers when necessary.
+Before each production release, verify all three dimensions:
 
-Security must be continuously evaluated and improved as application architectures, risks, and delivery models evolve.
+| Requirement | Minimum outcome for production use |
+| --- | --- |
+| **Development** | The software meets the required business and user needs. |
+| **Security** | The software meets the security, safety, privacy, and compliance requirements appropriate to its risk. |
+| **Operations** | The software meets the quality, performance, reliability, supportability, monitoring, and recovery requirements for production use. |
 
-## Define minimum production viability criteria
+Treat these dimensions as concurrent inputs to one release decision, not as sequential maturity stages. Tailor the rigor to the workload's business impact, exposure, and regulatory obligations.
 
-Workloads must meet minimum viability criteria before production release. These criteria define whether a workload is safe, compliant, and operationally ready for production use across three dimensions:
-
-- **Development (dev)**: Development stakeholders define minimum functional requirements necessary to meet business needs and customer/user value.
-- **Security (sec)**: Security stakeholders define minimum requirements necessary to meet regulatory obligations, sustain organizational security posture, and support detection and response of active threats.
-- **Operations (ops)**: Operations stakeholders define minimum performance, quality, and supportability requirements necessary for the workload to operate reliably in production environments.
-
-Production viability criteria:
-
-- Ensure workloads are safe to deploy and operate in production environments.
-- Act as release decision inputs and must be enforced consistently across development workflows.
-
-Production viability criteria evolve based on changes to:
-
-- Application delivery models.
-- Threat conditions.
-- Organizational risk tolerance.
-- Compliance requirements.
+Define decision authority and escalation paths explicitly. For an exception, record the unmet requirement, business rationale, compensating controls, expiration date, and remediation plan. Only a person with delegated authority may approve the exception and accept the residual risk.
 
 ## Integrate security into development workflows
 
-Security must be embedded directly into development and delivery processes. Organizations should:
+Use the same planning, backlog, defect, approval, and release mechanisms for security work that teams use for other engineering work.
 
-- Define security requirements within development workflows.
-- Integrate security activities into:
-    - Design processes
-    - Build pipelines
-    - Deployment workflows (CI/CD)
-- Implement security validation mechanisms such as:
-    - Code scanning
-    - Dependency validation
-    - Configuration checks
+Integrate security activities into:
 
-Security findings must be treated the same as production defects and incorporated into release decisions.
+- **Design**: Apply secure patterns, threat modeling, and architecture review where risk warrants them.
+- **Build**: Validate code, dependencies, secrets, infrastructure as code, and configurations.
+- **Delivery**: Protect repositories, branches, pipelines, identities, artifacts, and release actions.
+- **Operations**: Monitor, patch, detect, respond, recover, and feed lessons back into engineering.
 
-Security validation should occur continuously through the delivery, not only at release checkpoints.
-
-## Balance and harmonize requirements
-
-Organizations must define how development, security, and operational requirements are balanced in software delivery decisions. Production workloads must meet requirements across:
-
-- Business functionality.
-- Security resilience.
-- Speed of innovation.
-- Operational reliability and performance.
-
-Organizations must define shared delivery objectives and performance metrics that:
-
-- Align to shared performance and delivery objectives across development, security, and operations.
-- Avoid domination by a single domain.
-- Prioritize outcomes based on:
-    - Organizational risk tolerance.
-    - Regulatory obligations.
-    - Business accountability.
-
-The balance must adapt as threat conditions evolve, delivery models change, and organizational priorities shift.
-
-## Establish shared accountability
-
-Effective DevSecOps requires shared ownership across development, security, and operations teams with a view to:
-
-- Aligning ownership of production viability criteria.
-- Aligning delivery objectives across disciplines.
-- Reducing silos and unhealthy friction that creates security gaps, delivery delays, and operational instability.
+Manage security findings through the normal defect workflow and release decision process. Block release when an unmet requirement exceeds the risk that an authorized decision maker can accept. Validate continuously instead of relying only on a final checkpoint.
 
 ## Apply policy-driven security guardrails
 
-Policy-driven guardrails should enforce controls without introducing excessive friction. Guardrails should include:
+Use policy-driven guardrails to apply requirements consistently without creating unnecessary delivery friction. Include:
 
 - Identity and access requirements.
 - Configuration and compliance standards.
 - Deployment and release controls.
 
-Guardrails should be:
+Integrate guardrails into platform foundations, development workflows, and deployment automation. Automate repeatable checks when practical, tune noisy controls, and preserve human review for consequential decisions.
 
-- Integrated into platform foundations (for example landing zones).
-- Embedded into development/deployment workflows.
-- Enforced automatically when possible.
-
-This approach ensures security requirements are consistently applied while maintaining delivery velocity.
-
-For a balanced approach to security and speed of innovation, review adoption using [policy-driven guardrails](/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/dine-guidance).
+For a balanced approach to security and delivery speed, review [policy-driven guardrails](/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/dine-guidance).
 
 ## Sustain and improve
 
-Security doesn't remain effective as a static set of controls and must evolve over time.
+Update development security practices as workloads, threats, regulations, delivery models, and business priorities change.
 
-Organizations must continuously evaluate and update development security practices in response to changes in:
+- Define shared objectives for functionality, security, reliability, and delivery flow.
+- Use metrics that show both risk reduction and the effect of controls on engineering work.
+- Prevent any one discipline from dominating tradeoffs by default.
+- Review delivery friction and remove steps that add little risk reduction.
+- Incorporate security requirements into product planning and resource allocation.
+- Refine minimum production viability criteria based on vulnerabilities, incidents, testing, and production telemetry.
 
-- Threat conditions and attacker behavior.
-- Application architectures and delivery models.
-- Regulatory obligations.
-- Organizational risk tolerance.
-- Production viability criteria.
-- Development delivery processes.
-- Security governance practices.
-
-Security practices must evolve alongside the systems they protect.
-
-### Alignment techniques
-
-Teams must align to:
-
-- **Define common goals**: Development, security, and operations leaders should collaboratively define delivery objectives and performance metrics for workload delivery, to support consistent release planning.
-- **Prevent single‑domain decision dominance**: Delivery decisions should account for development, security, and operational requirements to avoid imbalances that might negatively impact workload reliability, compliance, or business functionality.
-- **Prioritize continuous improvement over static release criteria**: Development security practices should be iteratively refined over time as application delivery models, threat conditions, and organizational priorities evolve.
-- **Establish shared delivery context across stakeholder roles**: Development, security, and operations teams should maintain a shared understanding of:
-    - Business urgency and delivery timelines
-    - Relevant threat conditions and risk exposure
-    - Operational availability and supportability requirements
-- **Monitor delivery friction introduced by security requirements**: Security requirements may introduce delivery friction. Leaders should evaluate whether this friction contributes to risk reduction (for example, by enabling earlier identification of vulnerabilities) or unnecessarily delays workload delivery without materially improving production resilience.
-- **Incorporate development security into planning and resource allocation**: Security requirements for application workloads should be incorporated into development planning and resource allocation alongside functionality and operational support requirements.
-- **Define shared delivery performance objectives**: Performance and success metrics for application workloads should reflect development, security, and operational delivery outcomes.
-
-## Align workflows with security requirements
-
-Security must be operationalized through development workflows. Organizations must define and align workflows for:
-
-- Architectural design activities.
-- Build and deployment processes.
-- Issue tracking and remediation workflows.
-
-Security findings must be:
-
-- Prioritized and tracked.
-- Managed alongside production defects.
-- Incorporated into release readiness decisions.
-
-Workflow alignment ensures that security requirements are consistently enforced throughout delivery.
+Improve incrementally. Prioritize the highest-risk gaps and the foundations that make secure delivery easier to sustain.

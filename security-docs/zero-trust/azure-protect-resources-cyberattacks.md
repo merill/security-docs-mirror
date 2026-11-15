@@ -62,7 +62,7 @@ This article includes guidance for how to:
 - Detect cyberattacks when they occur.
 - How to respond to them.
 
-This article is intended for technical implementers to support the [Implement security breach prevention and recovery infrastructure](adopt/prevent-reduce-business-damage-breach-infrastructure) Zero Trust business scenario.
+This article is intended for technical implementers to support the SAF scenario [Minimize damage from security incidents](security-adoption-scenario-minimize-impact).
 
 ## Reference architecture
 

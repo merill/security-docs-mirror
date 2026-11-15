@@ -87,6 +87,7 @@ You don't need to use SAF in a fixed sequence. Choose a starting point that matc
 - **[Start with a priority risk or problem](security-adoption-discipline-posture)** when an urgent gap or high-value opportunity needs attention.
 - **[Start with a business or technology initiative](security-adoption-business-scenarios-overview)** when a specific initiative needs coordinated protection across roles, disciplines, and technologies.
 - **[Start with a security standard or framework](security-standards-and-frameworks)** when the organization must align security work to defined objectives or practices.
+- **Start with current AI security priorities:** Use [AI security transformation](/en-us/security/saf/scenarios/ai-security/overview) to translate current themes into durable outcomes, then follow the mapped SAF business scenarios, disciplines, roles, technologies, and technical solutions.
 
 These starting points are common, not required stages. Organizations can combine them or move between them as priorities, risks, and capabilities change.
 
@@ -111,7 +112,7 @@ SAF builds on established Microsoft security guidance rather than replacing it. 
 Microsoft provides complementary guidance in several areas:
 
 - **Strategy and architecture:**[CISO workshop](workshop-business-security-leaders) and [Microsoft Cybersecurity Reference Architectures (MCRA)](microsoft-reference-architecture)
-- **Assessment and technology implementation:**[Zero Trust assessment](assessment/overview) and [technology implementation guidance](deploy/overview)
+- **Zero Trust planning, assessment, and technology implementation:**[Zero Trust Workshop](workshop-zero-trust-overview), [Zero Trust assessment](assessment/overview), and [technology implementation guidance](deploy/overview)
 - **Engineering:**[Microsoft Security Development Lifecycle (SDL)](https://www.microsoft.com/securityengineering/sdl/), [DevSecOps Capability Model](/en-us/devops/devsecops/capability-model), and [Secure Future Initiative (SFI)](sfi/secure-future-initiative-overview)
 - **Operations and response:**[Privileged access guidance](/en-us/security/privileged-access-workstations/overview) and [incident-response playbooks](security-operations-incident-response-playbooks)
 

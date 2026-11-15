@@ -6,9 +6,9 @@ uhfHeaderId: MSDocsHeader-Security
 breadcrumb_path: /security/breadcrumb/toc.json
 feedback_system: Standard
 feedback_help_link_type: ''
-ms.author: raynew
-author: rayne-wiselman
-description: Learn about the SecOps pillar in the Microsoft Zero Trust Workshop
+ms.author: mas
+author: MarkSimos
+description: Learn about the SecOps workshop pillar in the Microsoft Zero Trust Workshop
 ms.date: 2026-11-06T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
@@ -30,17 +30,23 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/workshop-zero-trust-security-operations.md
 cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
 - https://authoring-docs-microsoft.poolparty.biz/devrel/43093068-2dda-408b-b3fe-dfd705c84f78
 spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
 - https://authoring-docs-microsoft.poolparty.biz/devrel/e453d60d-ba7e-43bc-8028-ec38e6b62512
 platformId: b5dce5d5-a85d-739b-4c27-ef7534ed2de3
 ---
 
 # Microsoft Zero Trust Workshop - SecOps | Microsoft Learn
 
-Security operation (SecOps) is foundational to Zero Trust because it ensures not only that threats are prevented, but also that they are continuously detected, investigated, and responded to. In a Zero Trust model, organizations assume breach, making strong SecOps capabilities essential to contain attacks, reduce impact, and maintain resilience.
+Security operation (SecOps) is foundational to Zero Trust because it ensures that threats are continuously detected, investigated, and responded to. In a Zero Trust model, organizations assume breach, making strong SecOps capabilities essential to contain attacks, reduce impact, and maintain resilience.
 
-SecOps pillar guidance focuses on collecting and correlating security signals across the environment, detecting and analyzing threats, orchestrating and automating response actions, proactively hunting for threats, and continuously improving security operations.
+The SecOps workshop pillar focuses on collecting and correlating security signals across the environment, detecting and analyzing threats, orchestrating and automating response actions, proactively hunting for threats, and continuously improving security operations.
+
+Note
+
+The Zero Trust Workshop uses *pillar* to organize workshop content. In the Microsoft Security Adoption Framework (SAF), SecOps is a [security discipline](security-adoption-discipline-security-operations), not a technology. The discipline defines outcomes, roles, processes, and the operating model; this workshop pillar helps teams plan implementation across the technology estate.
 
 ## Workshop implementation
 

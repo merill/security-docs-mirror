@@ -12,7 +12,8 @@ description: How can organizations secure privileged with Azure resources?
 ms.service: security
 ms.subservice: privileged-access
 ms.topic: overview
-ms.date: 2024-06-20T00:00:00.0000000Z
+ms.date: 2026-11-10T00:00:00.0000000Z
+ai-usage: ai-assisted
 ms.reviewer: mas
 locale: en-us
 document_id: bd336460-7f23-85de-3b43-85d8fda09431
@@ -31,13 +32,9 @@ monikers: []
 item_type: Content
 source_path: security-docs/privileged-access-workstations/overview.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d
-- https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa
-- https://authoring-docs-microsoft.poolparty.biz/devrel/8e3fdb08-a059-4277-98f6-c0e21e940707
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d
-- https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863
-- https://authoring-docs-microsoft.poolparty.biz/devrel/88291526-9c74-4f87-878c-de0a82134421
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: 3c67ba0d-d641-8801-fc5b-f01abaccee53
 ---
 
@@ -56,6 +53,8 @@ The following diagram summarizes the recommended privileged access strategy to c
 Securing privileged access effectively seals off unauthorized pathways completely and leaves a select few authorized access pathways that are protected and closely monitored. This diagram is discussed in more detail in the article, [Privileged Access Strategy](privileged-access-strategy).
 
 Building this strategy requires a holistic approach combining multiple technologies to protect and monitor those authorized escalation paths using Zero Trust principles including explicit validation, least privilege, and assume breach. This strategy requires multiple complementary initiatives that establish a holistic technology approach, clear processes, and rigorous operational execution to build and sustain assurances over time.
+
+Connect this privileged-access guidance to the current Microsoft Security Adoption Framework (SAF): [establish an Access and Identities discipline](../zero-trust/security-adoption-discipline-identity-access), [build a privileged-access architecture strategy](../zero-trust/security-adoption-discipline-identity-access-privileged-strategy), and [review the current privileged-access architecture model](../zero-trust/security-adoption-discipline-identity-access-privileged-model).
 
 ## Get started and measure progress
 

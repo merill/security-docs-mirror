@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Secure all tenants and their resources is a part of the Protect tenants and isolate production systems pillar of the Secure Future Initiative (SFI). This pillar focuses on minimizing the potential impact of security incidents through strong tenant isolation, segmentation, and attack surface reduction.
-ms.date: 2025-10-03T00:00:00.0000000Z
+ms.date: 2026-11-09T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -34,13 +34,13 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/sfi/secure-all-tenants-resources.md
 cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/57eae307-c3a1-4cac-b645-1a899934bac8
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/1433a524-c01f-4b87-beab-670c040dea4f
-- https://authoring-docs-microsoft.poolparty.biz/devrel/1dd701e0-441f-4b0a-9806-aa47decc4e35
 spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ee561821-1ac7-45a8-9409-6ba5eb7a5b97
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/312f1f05-a431-4193-8a4d-e6245d5966de
-- https://authoring-docs-microsoft.poolparty.biz/devrel/0a2fc935-5977-4aa6-9f55-0be03bd2acb8
 platformId: 85959eaa-7d78-01bb-1608-ffbb1c2be42b
 ---
 
@@ -65,12 +65,6 @@ Microsoft has invested heavily in identifying and cataloging all tenants across 
 ## Solution
 
 As part of the Secure Future Initiative (SFI), Microsoft implemented the secure all tenants and their resources objective by enforcing tenant baselines, governing lifecycle management, and standardizing protections across its cloud environments.
-
-- **Standardized security logging library**: Ensures consistent data capture across services, reducing observability gaps.
-- **Centralized log collection**: Specialized investigator accounts provide unified access to cross-service logs, simplifying correlation and speeding up investigations.
-- **Extended log retention**: Audit logs retained for up to two years across Microsoft services, to enable forensic investigation of long-term attack patterns.
-- **Advanced detection analytics**: Integration of machine learning and AI-powered models improves detection of complex attack techniques and reduces false positives.
-- **Expanded customer logging**: Microsoft increased standard audit log retention for Microsoft 365 customers to 180 days, with options for longer retention.
 
 Microsoft's approach includes:
 

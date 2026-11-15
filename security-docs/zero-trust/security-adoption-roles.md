@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Security adoption roles, responsibilities, and accountabilities | Microsoft Learn
+title: Security roles and responsibilities in SAF | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/security/zero-trust/security-adoption-roles
 uhfHeaderId: MSDocsHeader-Security
 breadcrumb_path: /security/breadcrumb/toc.json
@@ -8,10 +8,10 @@ feedback_system: Standard
 feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
-description: List of resources to read about Microsoft's Zero Trust framework
+description: Understand the role model, accountabilities, and responsibilities that support security adoption in the Microsoft Security Adoption Framework (SAF).
 ms.topic: article
 ms.service: security
-ms.date: 2026-05-24T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 locale: en-us
 document_id: 969fdb10-9d59-c8a8-4070-a0ef01b4b801
 document_version_independent_id: 969fdb10-9d59-c8a8-4070-a0ef01b4b801
@@ -30,16 +30,18 @@ item_type: Content
 source_path: security-docs/zero-trust/security-adoption-roles.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
+- https://authoring-docs-microsoft.poolparty.biz/devrel/540ac133-a371-4dbb-8f94-28d6cc77a70b
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
+- https://authoring-docs-microsoft.poolparty.biz/devrel/60bfc045-f127-4841-9d00-ea35495a5800
 platformId: ad26ab66-89ed-a555-947b-a3c232e7ea4f
 ---
 
-# Security adoption roles, responsibilities, and accountabilities | Microsoft Learn
+# Security roles and responsibilities in SAF | Microsoft Learn
 
-Adopting a Zero Trust security model is a strategic transformation that affects the entire organization, and requires clear ownership and coordination across business, security, and technology teams. It's not a single technology deployment or a one-time project. Successful adoption and operation depend on sustained leadership and the alignment of roles that plan, implement, and operationalize Zero Trust at scale.
+Adopting security through the Microsoft Security Adoption Framework (SAF) is a strategic transformation that affects the entire organization and requires clear ownership and coordination across business, security, and technology teams. It's not a single technology deployment or a one-time project.
 
-This article describes the key organizational roles involved in Zero Trust adoption and explains how these roles work together to plan, implement, and operationalize Zero Trust at scale.
+This article defines the role model and responsibilities used to plan, implement, and sustain security modernization at scale.
 
 ## Why roles matter in adoption
 
@@ -57,12 +59,17 @@ Defining role ownership helps translate Zero Trust strategy into coordinated act
 
 Security is fundamentally a human discipline that manages risk from human threat actors. While automation and AI play important roles, people remain central to security outcomes.
 
-- Security is an intrinsic part of every business area. It has fiduciary and risk implications, impacts business capabilities and execution, and all technologies.
-- Security is everyone's job. From the board of directors to technology teams, nontechnical teams such as finance and legal, and information/frontline workers.
+- Security is an intrinsic part of every business area. It has fiduciary and risk implications, affects business capabilities and execution, and touches all technologies.
+- Security is everyone's job. From the board of directors to technical engineering and operations teams, nontechnical teams such as finance and legal, and information workers/frontline workers.
 - For effective security risk management, every person must understand security in the context of their role, and actively support security objectives.
 - Since anyone in the organization can create or amplify security risk, everyone must apply security principles in their daily actions and decisions.
 
-This diagram from the [Open Group security roles and glossary standard](https://publications.opengroup.org/s252) illustrates how to delegate security accountability and responsibility across an organization:
+The Open Group [Security Roles and Glossary Standard](https://publications.opengroup.org/s252) anchors this approach:
+
+> 
+> Security accountabilities and responsibilities must be delegated across the organization.
+
+This diagram illustrates that delegation model:
 
 [![Illustration of how to delegate security accountability and responsibility through an organization](media/adoption-role-delegation.png)](media/adoption-role-delegation.png#lightbox)
 
@@ -71,7 +78,7 @@ This diagram from the [Open Group security roles and glossary standard](https://
 Managing security risk effectively requires accountability and collaboration:
 
 - Collaboration between accountable and responsible parties is critical.
-- Making good security decisions requires a healthy and relationship. Accountable decision-makers and security experts must be able to share ideas safely and challenge assumptions.
+- Making good security decisions requires a healthy relationship. Accountable decision-makers and security experts must be able to share ideas safely and challenge assumptions.
 
 With these tenets in mind, security risk should be managed in a similar way to financial and legal risk. Each role has policies and education/training that guide their daily decisions, rather than assigning responsibility and even blame to security teams only.
 
@@ -79,22 +86,54 @@ With these tenets in mind, security risk should be managed in a similar way to f
 
 ## Role definition outcomes
 
+Clearly defined roles help the organization manage security as a business risk rather than treating it only as a technical problem. Different groups contribute different expertise, decision authority, and operational capabilities needed to understand and manage that risk.
+
 When roles are clearly defined, aligned, and connected:
 
-- Leadership sets priorities and accountability.
-- Business and risk functions align security to outcomes.
-- Architecture and technical leadership design scalable solutions.
-- Engineering and operations implement and sustain security controls.
-- Security operations validate effectiveness.
-- Everyone participates in protecting the organization.
+- Leadership sets business priorities, risk appetite, decision rights, and accountability.
+- Business leaders identify critical outcomes, assets, processes, and acceptable tradeoffs.
+- Risk and security-adjacent disciplines connect security risk with regulatory, privacy, financial, legal, fraud, data, AI, and other enterprise risks.
+- Architecture and technical leadership translate business and security requirements into scalable technology decisions.
+- Development, engineering, and operations build and sustain protections while balancing security with reliability, usability, cost, and business agility.
+- Security strategy, integration, and governance identify systemic risk and coordinate improvements across the organization.
+- Security operations detect where threats are materializing and limit the business impact of successful attacks.
+- Cross-functional disciplines help manage the financial, legal, workforce, contractual, and reputational consequences of security decisions and incidents.
 
-Clear ownership and shared responsibility turn Zero Trust from an aspiration into a durable, measurable security strategy.
+Together, these roles allow the organization to make informed decisions about security risk, implement those decisions consistently, and understand whether risk is being effectively managed over time.
 
 ## Roles and terminology
 
-Role terminology and definitions are based on the [Open Group Security Roles and Glossary Standard](https://publications.opengroup.org/s252). This graphic illustrates the list of roles.
+Role terminology and definitions are based on the [Open Group Security Roles and Glossary Standard](https://publications.opengroup.org/s252).
+
+This updated SAF role list and diagram shows the current role groupings:
 
 [![Illustration of security roles in the Microsoft Security Adoption Framework](media/adoption-role-list.png)](media/adoption-role-list.png#lightbox)
+
+Current role groups:
+
+- Organizational Leadership and Governance
+- Business Management and Operations
+- Security-Adjacent Disciplines
+- Cross-Functional Disciplines
+- Technical Leadership
+- Architecture
+- Application and Product Development
+- Security Strategy, Integration, and Governance
+- Technical Engineering and Operations
+- Security Operations (SecOps/SOC)
+
+### Role terminology glossary
+
+The following terms are based on the [Zero Trust Roles and Glossary Standard from The Open Group](https://publications.opengroup.org/s252) (published as the *Security Roles and Glossary Standard*):
+
+- **Discipline**: A security domain of practice that combines people, process, architecture, operations, and technology.
+- **Role**: A set of job functions assigned to one or more people.
+- **Job function**: A specific set of tasks performed to achieve a security outcome.
+- **Role specialization**: How broad or narrow a role is, based on the depth and scope of assigned tasks.
+- **Accountability**: Ownership of outcomes and impacts from decisions and actions.
+- **Responsibility**: Obligation to perform tasks competently and provide sound guidance.
+- **Security responsibility**: Responsibility focused on managing security risk and outcomes.
+- **Technology responsibility**: Responsibility focused on designing, implementing, and operating technology that supports security outcomes.
 
 ## Role responsibilities
 
@@ -110,7 +149,7 @@ Role terminology and definitions are based on the [Open Group Security Roles and
 - Establishing governance models and accountability structures.
 - Holding leaders responsible for measurable security outcomes.
 
-When leadership treats Zero Trust as a business enabler rather than a technical project, adoption gains momentum and durability.
+**Business risk value**: Organizational leadership makes security risk an explicit part of business decision-making. It helps the organization prioritize investment, establish risk ownership, make informed tradeoffs, and avoid unmanaged security risk becoming an unexpected source of business disruption, financial loss, regulatory exposure, or reputational damage.
 
 ### Business management and operations
 
@@ -121,13 +160,14 @@ When leadership treats Zero Trust as a business enabler rather than a technical 
 - Integrating Zero Trust requirements into business processes and workflows.
 - Balancing security controls with user experience and operational efficiency.
 - Identifying critical business assets, processes, and data to prioritize protection.
-- Supporting change adoption across teams and functions. Measuring business impact of security decisions.
+- Supporting change adoption across teams and functions.
+- Measuring business impact of security decisions.
 
-Zero Trust succeeds when security enables business operations instead of being perceived as an obstacle.
+**Business risk value**: Integrating security into business operations helps protect the processes, assets, data, and capabilities the organization depends on while preserving productivity and customer value. Business leaders are positioned to make informed tradeoffs between security risk and business objectives because they understand the operational consequences of those decisions.
 
-### Security-adjacent leadership
+### Security-adjacent disciplines
 
-**Purpose**: Security-adjacent leadership roles such as Chief of Staff, Chief Product Officer, Chief Compliance/Audit officer align security strategy with enterprise risk, compliance, and privacy objectives.
+**Purpose**: Security-adjacent disciplines such as Chief Security Officer (CSO), Chief Risk Officer (CRO), Chief Privacy Officer (CPO), Data Officer / Data Governance, AI Governance, Organizational Compliance and Audit, and Anti-Fraud align security strategy with enterprise risk, compliance, and privacy objectives.
 
 These roles connect Zero Trust to broader enterprise risk management and assurance functions.
 
@@ -139,9 +179,9 @@ These roles connect Zero Trust to broader enterprise risk management and assuran
 - Advising leadership on risk tradeoffs and residual risk.
 - Coordinating across security, compliance, and governance domains.
 
-Their involvement ensures Zero Trust is defensible, auditable, and aligned with organizational obligations.
+**Business risk value**: These disciplines help the organization understand security risk alongside related business risks such as regulatory, privacy, fraud, data, and AI risk. Their involvement helps leaders make informed risk decisions, demonstrate compliance and assurance where required, and understand residual risk that remains after controls are applied. Good security can make compliance easier to achieve, demonstrate, and sustain, but security does not automatically satisfy compliance obligations.
 
-### Other cross-functional disciplines
+### Cross-functional disciplines
 
 **Purpose**: Non-technical disciplines such as legal, finance, PR, and communications align Zero Trust adoption across nontechnical business support functions. Zero Trust impacts contracts, budgets, communications, and external trust.
 
@@ -152,7 +192,7 @@ Their involvement ensures Zero Trust is defensible, auditable, and aligned with 
 - Communications and PR: internal and external messaging during incidents or changes.
 - HR and people teams: policy enforcement, training alignment, and workforce engagement.
 
-These roles help ensure Zero Trust adoption is sustainable, compliant, and well-communicated.
+**Business risk value**: These disciplines help manage business consequences that extend beyond security technology, including contractual exposure, financial loss, workforce impacts, legal obligations, and reputational damage. Their involvement helps the organization prepare for and manage the broader business impact of security decisions and incidents.
 
 ### Technical leadership
 
@@ -166,7 +206,7 @@ These roles help ensure Zero Trust adoption is sustainable, compliant, and well-
 - Ensuring consistency across identity, endpoint, application, data, and infrastructure domains.
 - Supporting modernization of legacy systems.
 
-Strong technical leadership prevents siloed implementations and fragmented security posture.
+**Business risk value**: Strong technical leadership translates business and security priorities into coordinated technology decisions. This reduces risk created by fragmented architectures, inconsistent implementation, legacy technology, and local optimization, while helping the organization balance security with reliability, usability, cost, and business agility.
 
 ### Architecture
 
@@ -180,7 +220,7 @@ Strong technical leadership prevents siloed implementations and fragmented secur
 - Providing design guidance and reference patterns.
 - Ensuring solutions scale with business and technology change.
 
-Architecture turns principles into systems that can evolve over time.
+**Business risk value**: Architecture helps prevent security risk from accumulating through inconsistent designs, unmanaged dependencies, and technology fragmentation. Coherent architecture enables the organization to make deliberate risk tradeoffs and build technology environments that can adapt safely as business requirements, threats, and technologies change.
 
 ### Application and product development
 
@@ -195,9 +235,9 @@ Architecture turns principles into systems that can evolve over time.
 - Addressing security early in the development lifecycle.
 - Using secure workstations and CI/CD systems.
 
-Zero Trust is strongest when applications assume no implicit trust.
+**Business risk value**: Building security into applications and products reduces the likelihood that vulnerabilities, excessive access, insecure dependencies, or development practices create business exposure later. Addressing these risks during design and development can reduce remediation cost and disruption while helping protect customers, data, services, and business operations.
 
-### Security strategy roles and responsibilities
+### Security strategy, integration, and governance
 
 **Purpose**: Security strategy roles such as security education, insider risk, posture, and compliance management help shape long-term security behavior and maturity. These roles focus on people, policy, and sustained security effectiveness.
 
@@ -210,7 +250,7 @@ Zero Trust is strongest when applications assume no implicit trust.
 - Overseeing security compliance and policy enforcement.
 - Measuring maturity and progress against Zero Trust objectives.
 
-They ensure Zero Trust becomes embedded in how the organization operates, not just how it deploys technology.
+**Business risk value**: These functions help the organization identify systemic security risk, establish consistent expectations, prioritize improvements, and monitor whether risk is changing over time. They connect security strategy and governance to business priorities so leaders can make informed decisions about where risk should be reduced, transferred, avoided, or explicitly accepted by the appropriate accountable decision-maker.
 
 ### Technical engineering and operations
 
@@ -220,11 +260,11 @@ They ensure Zero Trust becomes embedded in how the organization operates, not ju
 
 - Deploying security controls across identity, devices, applications, data, and infrastructure.
 - Integrating security into operational workflows and platforms.
-- Managing change, testing, and roll out to minimize disruption.
+- Managing change, testing, and rollout to minimize disruption.
 - Maintaining system reliability, availability, and performance.
 - Continuously improving controls based on feedback and telemetry.
 
-These teams make Zero Trust real and reliable.
+**Business risk value**: Engineering and operations convert security requirements into reliable protections across the technology estate. Consistent implementation and operation reduce exposure created by configuration drift, control gaps, unmanaged change, and operational failures while balancing security with availability, performance, and business continuity.
 
 ### Security operations (SecOps / SOC)
 
@@ -238,4 +278,4 @@ These teams make Zero Trust real and reliable.
 - Feeding operational insights back into policies, architecture, and automation.
 - Measuring effectiveness through detection, response, and impact metrics.
 
-Zero Trust assumptions are tested and refined through daily operations.
+**Business risk value**: Security operations limit the business impact of attacks that bypass preventive controls by detecting, containing, and helping the organization recover from threats quickly. Operational insights also help the organization understand where risk is materializing and improve controls, architecture, and processes to reduce future likelihood and impact.

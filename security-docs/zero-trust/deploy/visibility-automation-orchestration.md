@@ -33,12 +33,12 @@ item_type: Content
 source_path: security-docs/zero-trust/deploy/visibility-automation-orchestration.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/43093068-2dda-408b-b3fe-dfd705c84f78
-- https://authoring-docs-microsoft.poolparty.biz/devrel/8a94907f-2511-4271-b5ca-ec7f2e75067c
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/1577a46d-8446-40bd-bfae-0578362f4d94
+- https://authoring-docs-microsoft.poolparty.biz/devrel/8a94907f-2511-4271-b5ca-ec7f2e75067c
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/e453d60d-ba7e-43bc-8028-ec38e6b62512
-- https://authoring-docs-microsoft.poolparty.biz/devrel/bffa8e88-f633-409d-a24d-083bdbc68872
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/cdf3f22d-5420-4d59-a2bf-66d6b3d9c828
+- https://authoring-docs-microsoft.poolparty.biz/devrel/bffa8e88-f633-409d-a24d-083bdbc68872
 platformId: cb261610-a6b1-9817-42ff-b04ad485d850
 ---
 
@@ -106,7 +106,7 @@ This guide will walk you through the steps required to manage visibility, automa
 
 ### I. Establish visibility
 
-The first step is to establish visibility by enabling [Microsoft Threat Protection](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) (MTP).
+The first step is to establish visibility by enabling [Microsoft Defender XDR](/en-us/defender-xdr/).
 
 Follow these steps:
 
@@ -123,7 +123,7 @@ The next key step, once you have established visibility, is to enable automation
 
 With Microsoft Defender XDR, we have automated both investigations and remediation, which essentially provides an extra Tier 1 SOC analysis.
 
-[Automated Investigation and Remediation](/en-us/microsoft-365/security/mtp/mtp-autoir) (AIR) can be enabled gradually, so that you can develop a comfort level with the actions that are taken.
+[Automated investigation and response](/en-us/defender-xdr/m365d-autoir) can be enabled gradually, so that you can develop a comfort level with the actions that are taken.
 
 Follow these steps:
 
@@ -133,7 +133,7 @@ Follow these steps:
 
 #### Link Microsoft Purview Data Connectors and relevant third-party products to Microsoft Sentinel
 
-In order to gain visibility into the incidents that result from deploying a Zero Trust model, it's important to connect Microsoft Defender XDR, Microsoft Purview Data Connectors, and relevant third party products to [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/) in order to provide a centralized platform for incident investigation and response.
+In order to gain visibility into the incidents that result from deploying a Zero Trust model, it's important to connect Microsoft Defender XDR, Microsoft Purview Data Connectors, and relevant third party products to [Microsoft Sentinel](/en-us/azure/sentinel/) in order to provide a centralized platform for incident investigation and response.
 
 As part of the data connection process, relevant analytics can be enabled to trigger incidents and workbooks can be created for a graphical representation of the data over time.
 
@@ -148,19 +148,19 @@ Although machine learning and fusion analytics are provided out of the box, it's
 
 Enabling additional controls improves the signal coming in to Microsoft Defender XDR and Microsoft Sentinel to improve your visibility and ability to orchestrate responses.
 
-[Attack surface reduction](/en-us/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction) controls represent one such opportunity. These protective controls not only block certain activities that are most associated with malware, but also give into attempts to use specific approaches, which can help to detect adversaries leveraging these techniques earlier in the process.
+[Attack surface reduction](/en-us/defender-endpoint/attack-surface-reduction-overview) controls represent one such opportunity. These protective controls not only block certain activities that are most associated with malware, but also give into attempts to use specific approaches, which can help to detect adversaries leveraging these techniques earlier in the process.
 
 ## Products covered in this guide
 
 **Microsoft Azure**
 
-[Microsoft Defender for Identity](https://www.microsoft.com/security/business/threat-protection/identity-defender)
+[Microsoft Defender for Identity](/en-us/defender-for-identity/what-is)
 
-[Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/)
+[Microsoft Sentinel](/en-us/azure/sentinel/)
 
 **Microsoft 365**
 
-[Microsoft Threat Protection](https://www.microsoft.com/security/business/threat-protection/microsoft-365-defender)
+[Microsoft Defender XDR](/en-us/defender-xdr/)
 
 **The Zero Trust deployment guide series**
 

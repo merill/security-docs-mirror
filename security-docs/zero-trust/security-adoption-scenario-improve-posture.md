@@ -42,7 +42,7 @@ platformId: 82702794-db25-bb0e-ab0f-cb28d2176ab3
 
 # Strengthen security posture and compliance | Microsoft Learn
 
-This article explains how to strengthen posture and compliance using Zero Trust principles, as part of the Microsoft [security adoption model]((security-adoption-model.md).
+This article explains how to strengthen posture and compliance using Zero Trust principles, as part of the Microsoft [security adoption model](security-adoption-model).
 
 This business scenario helps you achieve the following outcome:
 

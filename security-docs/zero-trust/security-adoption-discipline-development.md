@@ -8,8 +8,8 @@ feedback_system: Standard
 feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
-description: Use the Microsoft security adoption model to modernize and secure development processes and functions, based on Zero Trust principles.
-ms.date: 2026-05-24T00:00:00.0000000Z
+description: Establish a Development Security discipline that reduces software risk while enabling rapid, reliable delivery.
+ms.date: 2026-11-09T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -38,184 +38,167 @@ platformId: f9615260-cb26-532d-5e10-a7715bc70eca
 
 # Establish a Development Security discipline | Microsoft Learn
 
-This article helps security and technology teams establish and modernize a Development Security discipline. This discipline helps security, engineering, and technology teams ensure that software is designed, built, integrated, and deployed securely—without slowing innovation.
+This article helps security and technology teams establish or modernize a Development Security discipline. The discipline helps organizations design, build, integrate, deploy, and operate software securely while maintaining delivery speed and reliability.
 
-This guidance is part of the **Microsoft Security Adoption Framework (SAF)**, a broader body of guidance for planning, prioritizing, and implementing end-to-end security modernization. SAF connects business scenarios, security disciplines, and technical implementation so that strategy, architecture, operations, and controls work together rather than as isolated recommendations.
+This guidance is part of the **Microsoft Security Adoption Framework (SAF)**. SAF connects business scenarios, security disciplines, technologies, and implementation guidance so that security work supports business outcomes instead of becoming a collection of isolated controls.
 
-Within SAF, Development Security is a technical strategy discipline. Use [Shift DevOps to DevSecOps](security-adoption-discipline-development-security) and [Adopt secure development planning imperatives](security-adoption-discipline-development-imperatives) for deeper implementation planning.
+Within SAF, Development Security is a technical strategy discipline. Use [Shift DevOps to DevSecOps](security-adoption-discipline-development-security) for operating-model and process change, [Development security implementation patterns](/en-us/security/saf/disciplines/development/implementation-patterns) for repeatable engineering approaches, and [Adopt secure development planning imperatives](security-adoption-discipline-development-imperatives) for secure-development expectations.
 
-## Why this discipline?
-
-Software is deeply interconnected with identities, data, infrastructure, and business processes. When development security is weak or inconsistent, each software release can introduce new vulnerabilities that attackers exploit to gain access to broader organizational assets.
-
-Without an effective Development Security discipline, organizations commonly experience:
-
-- Increased risk from software vulnerabilities introduced during development.
-- Application compromise that enables lateral movement across identities and data.
-- Disruption of business operations and revenue.
-- Exposure or abuse of customer and regulated data.
-- Accumulation of technical debt that increases long‑term risk and remediation cost.
-
-A strong development security discipline ensures that each release reduces risk, rather than compounding it.
+For capability-maturity assessment and planning, use the [DevSecOps Capability Model](/en-us/devops/devsecops/capability-model) with SAF. The capability model helps you assess software security practices. SAF helps you connect improvements to business risk, cross-discipline dependencies, and operating priorities.
 
 ## Mission and outcomes
 
-The Development Security discipline reduces organizational risk by ensuring that all software, whether developed internally or by partners, is designed, built, integrated, and deployed in alignment with security standards, without slowing delivery or innovation.
+The Development Security discipline reduces organizational risk by ensuring that software developed internally or by partners meets the organization's security requirements throughout its lifecycle.
 
-Organizations that mature this discipline achieve:
+Software is deeply connected to identities, data, infrastructure, devices, and business processes. A weakness in an application, development environment, dependency, or delivery pipeline can give an attacker a path to broader organizational assets or downstream customers.
 
-- Security built into development processes rather than added late.
-- Earlier identification and remediation of design and implementation flaws.
-- More predictable, secure release cycles.
-- Reduced rework, emergency fixes, and operational disruption.
-- Lower accumulation of technical and security debt over time.
+Without an effective Development Security discipline, organizations commonly experience:
 
-Development Security ensures that security posture improves continuously with each release, rather than being periodically reset.
+- Vulnerabilities introduced during design, development, integration, or deployment.
+- Application compromise that exposes identities, data, infrastructure, or business processes.
+- Supply-chain compromise that affects the organization, its customers, or its partners.
+- Emergency fixes, operational disruption, and delayed releases.
+- Accumulating technical and security debt that increases future cost and risk.
 
-### Changes in team work
+A mature discipline helps organizations:
 
-It's important that a Development Security discipline meets developers and product teams where they are, focusing n integrating security into existing development workflows, rather than introducing late-stage controls, friction-heavy review processes, or even skipping security in development processes.
+- Build security into normal engineering work instead of adding it near release.
+- Find and address design and implementation flaws earlier.
+- Produce more predictable and secure releases.
+- Reduce rework, emergency remediation, and operational disruption.
+- Improve security posture with each release instead of adding risk over time.
 
-This approach is often described as **shifting left**, introducing security thinking earlier in ideation, design, and implementation, when issues are easier and less costly to fix. Shifting left does not mean saying no earlier in the process. Instead, it introduces security-informed discussion early to improve product decisions and ensure solutions meet security and business requirements.
+The goal is to **secure innovation while it happens**.
 
-Key principles include:
+## Recognize the scope of development security
 
-- **Early integration**: Consider security during ideation and design, not just testing
-- **Developer alignment**: Meet development and product teams where they already work
-- **Small, incremental change**: Prefer automation and low-friction improvements
-- **Continuous improvement**: Treat security as an ongoing discipline, not a milestone
+Development security applies to more than application source code. It includes the people, processes, identities, tools, environments, dependencies, and infrastructure used to create and operate software.
 
-Over time, consistent integration reduces fire drills and accelerates delivery rather than slowing it.
+The discipline can apply to:
 
-## How to apply this discipline
+- Applications, services, and APIs.
+- Scripts, automation, and infrastructure as code.
+- Web, mobile, desktop, and device software.
+- Firmware, operational technology, and Internet of Things solutions.
+- AI-enabled applications, agents, models, tools, and connectors.
+- Source repositories, developer environments, build systems, and release pipelines.
+- Third-party and open-source components used by the software.
+- The platforms and infrastructure that host the resulting workloads.
 
-To apply the Development Security discipline effectively, focus on establishing a consistent approach to building and maintaining secure applications and services across the organization:
+Treating only the application code as in scope leaves important attack paths unaddressed.
 
-1. **Define a secure development strategy aligned to business risk** Establish a clear approach for how applications and services are designed, built, and maintained to reduce the risk of compromise and protect critical business functionality.
-2. **Embed security into development and engineering processes** Ensure security practices are integrated into planning, design, development, and deployment activities rather than applied after the fact.
-3. **Establish standardized secure development practices** Provide clear guidance to ensure that secure coding, testing, and release practices are applied consistently across teams and projects.
-4. **Align development security with critical assets and business scenarios** Prioritize protections for applications and services that support high-value assets and key business operations.
-5. **Continuously improve based on risk, vulnerabilities, and feedback** Use insights from vulnerabilities, incidents, and testing results to strengthen development practices and reduce risk over time.
+## Establish accountability
 
-## Manage change
+Product and engineering teams are accountable for the functionality, security, reliability, and operational outcomes of the software they deliver. Security teams have distinct responsibilities: define and interpret security requirements, provide expertise and reusable patterns, enable teams with tools and education, challenge risk decisions, and advise authorized decision makers.
 
-Modern development security is typically implemented through a DevSecOps approach that combines agile delivery with essential governance and quality practices before release.
+These responsibilities keep security close to the decisions that create risk without expecting every developer or product owner to become a security specialist.
 
-Rather than choosing between speed and security, DevSecOps focuses on securing key aspects of the development lifecycle to mitigate urgent risk while not impeding rapid release cycles:
+Primary roles commonly include:
 
-**Secure the design** – Use proven security design patterns and validate designs through threat modeling. **Secure the code** – Follow secure coding practices and validate software and dependencies. **Secure the pipeline** – Validate the pipeline process and protect CI/CD systems from compromise and unauthorized change. Ensure traceability of changes to the pipeline and the software going through the pipeline. **Secure operations** – Ensure deployed workloads follow configuration, patching, and operational best practices.
-
-Teams can improve outcomes by continuously refining collaboration between development, security, and operations, balancing functional delivery goals with reliability and risk reduction.
-
-[![DevSecOps strategy that combines traditional development practices with Agile techniques.](media/security-adoption-discipline-dev-overview.png)](media/security-adoption-discipline-dev-overview.png#lightbox)
-
-This continuous incremental improvement should be applied to both work production (software code produced in the lifecycle) as well as the maturing of the development lifecycle itself.
-
-## Define a DevSecOps process
-
-Development Security is commonly implemented through a DevSecOps operating model that evolves over time rather than appearing fully formed. DevSecOps brings development, security, and operations together to achieve better outcomes through continuous improvement.
-
-Most organizations progress through these stages:
-
-Development (Dev) – The first production release focuses on delivering a minimally viable product (MVP) that meets core business requirements. DevOps – After initial release, teams focus on rapid iteration, operational stability, and governance through continuous delivery. DevSecOps – As collaboration matures, development, security, and operations work together to continuously refine processes and balance speed, risk, and reliability.
-
-[![DevSecOps strategy that combines traditional quality controls and agile development.](media/security-adoption-discipline-dev-agile.png)](media/security-adoption-discipline-dev-agile.png#lightbox)
-
-This progression allows organizations to improve security outcomes without sacrificing agility or innovation.
-
-### Establish a secure MVP baseline
-
-A key step in this model is defining what constitutes a minimum viable product (MVP) from development, security, and operations perspectives. Establishing this shared baseline creates clarity across teams and enables consistent improvement over time.
-
-| **Component** | **Details** |
-| --- | --- |
-| **Dev(elopment)** | Ensure that the software meets the minimum business and functional requirements. |
-| **Sec(urity)** | Ensure that software meets the minimum security and compliance requirements. |
-| **Op(eration)s** | Ensure that software meets the minimum quality, reliability, and operational readiness requirements. |
-
-MVP requirements vary by organization and industry and are influenced by risk appetite, regulatory exposure, and business criticality. These requirements often evolve as the organization, threat landscape, and delivery models change.
-
-### Continuous software improvement
-
-After the initial production release, workloads move into continuous improvement cycles. In this phase, development, security, and operations refine both the software and the delivery process. Security efforts focus on:
-
-- **Integrate security natively** into development workflows, using the same tools and prioritization models as other engineering work
-- **Rapidly identify, prioritize and fix security bugs** as part of standard release cycles.
-
-This approach aligns with Microsoft Secure Future Initiative (SFI) learnings such as pr[**Paved Paths**](https://devblogs.microsoft.com/engineering-at-microsoft/building-paved-paths-the-journey-to-platform-engineering/), where secure practices are built into platforms and processes rather than enforced externally.
-
-Over time, this continuous learning helps teams refine requirements, streamline collaboration, and better balance delivery speed, security, and reliability.
-
-## Discipline roles and collaborators
-
-The Dev Security discipline is typically run by teams doing app and product development.
-
-Primary roles in this discipline typically include:
-
-- Technology delivery and product managers
-- Software developers (including AI development)
-- Software security engineers
-- DevOps and platform engineers
-- Testing and quality engineering roles
-- Supply chain and dependency security roles
+- Product owners and technology delivery managers.
+- Software developers, including AI developers.
+- Software security and application security engineers.
+- DevOps and platform engineering leads.
+- Software testing and quality managers.
+- Supply-chain and dependency security roles.
 
 Key collaborators include:
 
-- Business and technical leadership – Provide sponsorship and prioritization
-- Architecture roles – Guide secure design and integration decisions
-- Security Strategy, Integration, and Governance discipline roles– Provide policy, education, and oversight
-- Infrastructure and platform teams – Enable secure development environments
-- Security Operations (SecOps) – Monitor and respond when applications are attacked
+- Business and technical leaders with delegated authority, who provide sponsorship and make or escalate risk decisions.
+- Security architecture roles, who guide secure design and integration.
+- Security Strategy, Integration, and Governance roles, who provide policy, education, oversight, and risk coordination.
+- Access and identity, data, infrastructure, endpoint, and network teams, who secure the technology dependencies used by development and production workloads.
+- Security Operations (SecOps), who monitor applications and their supporting systems and respond to attacks.
 
-## Alignment with other disciplines
+Define decision authority and escalation paths explicitly. Specify which decisions product and engineering teams can make, which require escalation, and who may approve exceptions or accept residual risk. Do not treat participation in delivery as authority to accept risk.
 
-Development Security is tightly integrated with other SAF disciplines:
+## Integrate security into engineering work
 
-- Access and Identities – Protects developer, workload, and service identities.
-- Infrastructure Security – Secures platforms running applications and pipelines.
-- Data Security – Ensures sensitive data is protected throughout the software lifecycle.
-- SecOps– Detects and responds to application-level attacks.
-- Security Strategy, Integration, and Governance – Aligns development practices to enterprise risk priorities.
+Meet product and engineering teams where they work. Integrate security into the tools, processes, and workflows already used to plan, design, build, test, release, and operate software.
 
-Together, these disciplines ensure software security supports broader business and security outcomes.
+This approach is often described as **shifting left**: bringing security into decisions early enough to improve the outcome, when teams still have practical options and fixes usually cost less. Shifting left does not mean saying no earlier. It means adding security context while product and technical decisions are still being made.
 
-## Alignment with technology pillars
+Key principles include:
 
-Executing the strategy for the development security discipline requires security controls across multiple technology pillars.
+- **Integrate early**: Consider security during ideation and design, not only during testing.
+- **Use existing engineering workflows**: Track security work in the same planning, backlog, approval, and defect-management systems used for other engineering work.
+- **Make secure practices easier to adopt**: Provide paved paths, reusable components, automation, and practical guidance.
+- **Apply rigor based on risk**: Use stronger assurance for software that can create greater business, customer, safety, or regulatory impact.
+- **Validate throughout the lifecycle**: Find issues early, verify important controls before release, and monitor the workload in production.
+- **Continuously improve**: Use vulnerabilities, incidents, testing, and operational feedback to strengthen both the software and the development process.
 
-[![Development Security - mapping to technology pillars.](media/security-adoption-discipline-dev-pillars.png)](media/security-adoption-discipline-dev-pillars.png#lightbox)
+Done well, security reduces late surprises and costly rework instead of becoming another source of delivery friction.
 
-Alignment with technology pillars includes:
+## Apply the discipline
 
-- **Identities**: Protects developer and workload identities and credentials.
-- **Endpoints**: Secures developer workstations and build systems.
-- **Infrastructure**: Protects platforms hosting code, pipelines, and workloads.
-- **Apps**: Provides a primary focus for development security practices.
-- **Data**: Protects data used, generated, and stored by applications.
-- **Network**: Designs software to operate securely on untrusted networks.
-- **AI**: Secures AI components and models used in modern applications.
+Apply Development Security by establishing a consistent approach across the organization:
 
-This breadth ensures the discipline addresses real-world attack paths.
+1. **Define a development security strategy aligned to business risk**: Establish how to design, build, integrate, release, and maintain software to protect critical business functions and manage software risk.
+2. **Set minimum production viability in the secure definition of done**: Define one release quality gate that combines the minimum development, security, and operations requirements for production use. Adjust the rigor to the workload's business impact.
+3. **Integrate security into engineering processes**: Build security into planning, architecture, design, development, testing, deployment, and operations rather than applying it after development is complete.
+4. **Standardize and automate secure practices**: Provide reusable patterns for secure design, coding, dependencies, identities, pipelines, infrastructure, testing, and release decisions.
+5. **Protect the development environment and software supply chain**: Secure developer endpoints, repositories, build systems, service identities, dependencies, artifacts, and delivery paths.
+6. **Continuously improve**: Use vulnerabilities, incidents, postmortems, testing, and production telemetry to improve priorities, practices, and controls.
 
-## What's next?
+## Set minimum production viability in the secure definition of done
 
-Additional development security strategy guidance is in the [Development security strategy](security-adoption-discipline-development-security).
+Use **minimum production viability** as the release quality gate within the team's **secure definition of done**. It is the minimum set of development, security, and operations requirements that a workload needs for production use. A minimum viable product is not production-ready based on functionality alone.
 
-### Take a workshop
+Before each production release, verify all three dimensions:
 
-Microsoft Unified offers expert-led workshops to help organizations modernize their Dev security discipline. These workshops include:
+| Requirement | Minimum outcome for production use |
+| --- | --- |
+| **Development** | The software meets the required business and user needs. |
+| **Security** | The software meets the security, safety, privacy, and compliance requirements appropriate to its risk. |
+| **Operations** | The software meets the quality, performance, reliability, supportability, monitoring, and recovery requirements for production use. |
 
-- **Architecture and strategy workshops** - The *Security Adoption Framework (SAF) - Architecture Design Session: Infrastructure and Development Security workshop* focuses on accelerating development security modernization and integration with infrastructure security. This workshop is available as a less than four-hour discussion focused on key learnings and best practices.
-- **Technology adoption workshops**: Microsoft Unified has workshops to help organizations learn about, plan, implement, and optimize the use of Microsoft Development Security Technology as illustrated in this diagram.
+Treat these dimensions as concurrent inputs to one release decision, not as sequential maturity stages. Keep security present from ideation through production operations.
 
-[![Development Technology Adoption Workshops](media/security-adoption-discipline-dev-technical.png)](media/security-adoption-discipline-dev-technical.png#lightbox)
+Tailor the rigor to the workload. A prototype, a customer-facing service, a financial system, and a safety-critical device do not need identical assurance. For an exception, record the unmet requirement, business rationale, compensating controls, expiration date, and remediation plan. Only a person with delegated authority may approve the exception and accept the residual risk.
 
-### Review the Microsoft Security Development Lifecycle
+[![Release quality gate showing that minimum production viability combines development, security, and operations requirements before the first production release and improves continuously afterward.](media/security-adoption-discipline-dev-overview.png)](media/security-adoption-discipline-dev-overview.png#lightbox)
 
-The Microsoft Continuous Security Development Lifecycle provides a methodology to securely develop software. The Security Development Lifecycle (SDL) is the approach Microsoft uses to integrate security into DevOps processes (sometimes called a DevSecOps approach). The SAF development security guidance helps you adapt the SDL approach and practices to your organization.
+## Use DevSecOps to operationalize the discipline
 
-You can apply the practices described in the SDL approach to all types of software development and all platforms, from classic waterfall through to modern DevOps approaches. This generally applicable software security approach works across any type of software and platform.
+DevSecOps is a primary way to operationalize Development Security. It integrates security into DevOps practices so that development, security, and operations work together throughout the software lifecycle.
 
-For more information, see [Microsoft Security Development Lifecycle (SDL)](https://www.microsoft.com/securityengineering/sdl/).
+Focus on four connected areas:
 
-Effective development security requires following a security development lifecycle (SDL) like the [Microsoft Security Development Lifecycle (SDL)](https://www.microsoft.com/securityengineering/sdl/)
+- **Secure design**: Use proven design patterns and threat modeling to identify and reduce risk before implementation choices become expensive to change.
+- **Secure code and dependencies**: Apply secure coding practices and validate first-party and third-party components.
+- **Secure delivery**: Protect repositories, build systems, artifacts, identities, and CI/CD pipelines from compromise and unauthorized change.
+- **Secure operations**: Configure, patch, monitor, detect, respond, and recover throughout the workload's operational life.
+
+Use [Shift DevOps to DevSecOps](security-adoption-discipline-development-security) for the process and operating-model changes needed to put this approach into practice.
+
+## Align with other SAF disciplines and technologies
+
+Development Security depends on other SAF disciplines:
+
+- **Access and identity** protects developer, workload, service, and agent identities.
+- **Data security** protects the data used, generated, and stored by software.
+- **Infrastructure security** protects developer platforms, build systems, hosting environments, and shared services.
+- **Security architecture** establishes secure design patterns, trust boundaries, and cross-technology controls.
+- **Security Strategy, Integration, and Governance** aligns development practices to business risk, policy, and accountability.
+- **Security Operations** detects and responds to attacks against applications, pipelines, and supporting infrastructure.
+
+Development Security also requires controls across identities, endpoints, applications, data, infrastructure, networks, and AI. Use the relevant SAF technology guidance and product documentation for detailed implementation.
+
+[![Development Security relationships with SAF technology areas.](media/security-adoption-discipline-dev-pillars.png)](media/security-adoption-discipline-dev-pillars.png#lightbox)
+
+## Use Microsoft workshops
+
+Microsoft Unified offers expert-led workshops to help organizations modernize Development Security:
+
+- **Architecture and strategy**: The *Security Adoption Framework (SAF) - Architecture Design Session: Infrastructure and Development Security* workshop focuses on Development Security modernization and its relationship with Infrastructure Security.
+- **Technology adoption**: Development Security technology workshops help teams plan, implement, and optimize relevant Microsoft capabilities.
+
+[![Development Security technology adoption workshops.](media/security-adoption-discipline-dev-technical.png)](media/security-adoption-discipline-dev-technical.png#lightbox)
+
+## Where to go next
+
+- Use [Development security implementation patterns](/en-us/security/saf/disciplines/development/implementation-patterns) for repeatable engineering approaches.
+- Use [Shift DevOps to DevSecOps](security-adoption-discipline-development-security) to integrate security into the development operating model.
+- Use [Adopt secure development planning imperatives](security-adoption-discipline-development-imperatives) for secure-development expectations.
+- Use the [DevSecOps Capability Model](/en-us/devops/devsecops/capability-model) to assess current maturity and prioritize improvements.
+- Use the [Microsoft Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/) for practices that apply across software development approaches and platforms.

@@ -12,7 +12,7 @@ description: Learn how to centralize compliance signals, assign remediation owne
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
-ms.date: 2026-09-24T00:00:00.0000000Z
+ms.date: 2026-11-09T00:00:00.0000000Z
 ms.custom: msecd-doc-authoring-1028
 ai-usage: ai-assisted
 locale: en-us
@@ -47,6 +47,8 @@ platformId: b246ffc2-9d36-5705-065d-3b56e85409ad
 As organizations scale engineering environments, maintaining continuous compliance becomes increasingly complex and critical to overall security. Traditional monitoring approaches often lack integration, real-time visibility, and clear ownership, leading to delayed remediation and increased risk exposure.
 
 To address these challenges, Microsoft uses centralized compliance monitoring platforms that integrate telemetry, ownership mapping, and automated signals directly into engineering workflows. This approach enables organizations to transform fragmented compliance data into actionable insights, improving visibility, accountability, and the speed of remediation across engineering systems.
+
+Security should be driven by business and security risk. Effective security practices can make compliance easier to achieve, demonstrate, and sustain, while compliance requirements do not by themselves define an effective security program.
 
 ## Context and problem
 

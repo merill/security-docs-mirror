@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Learn how to design a strategy for privileged access within the security adoption Identities and Access discipline
-ms.date: 2026-05-24T00:00:00.0000000Z
+ms.date: 2026-11-05T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -43,6 +43,8 @@ This article helps security and technology teams establish a privileged access s
 This guidance is part of the **Microsoft Security Adoption Framework (SAF)**. SAF connects business scenarios, security disciplines, and technical implementation so that strategy, architecture, operations, and controls work together rather than as isolated recommendations.
 
 Within SAF, privileged access strategy defines how high-impact access pathways are governed, constrained, and continuously improved to reduce organizational risk.
+
+For full context and execution, pair this strategy with [Overview - privileged access](security-concept-privileged-access), [Secure and govern privileged access](security-adoption-scenario-privileged-access), and [Design a privileged access architecture](security-adoption-discipline-identity-access-privileged-model).
 
 ## Privileged access strategy
 

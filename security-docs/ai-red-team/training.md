@@ -12,7 +12,8 @@ description: Secure generative AI systems with Microsoft's AI Red Teaming 101 se
 ms.service: security
 ms.subservice: ai-red-team
 ms.topic: how-to
-ms.date: 2025-07-09T00:00:00.0000000Z
+ms.date: 2026-11-10T00:00:00.0000000Z
+ai-usage: ai-assisted
 ms.reviewer: sayoung
 ms.custom:
 - ai-gen-docs-bap
@@ -108,3 +109,12 @@ After completing this training series, you'll understand:
 - Defense strategies, including proven mitigation techniques like Microsoft's Spotlighting methods
 - Automation tools for scaling red teaming efforts using PyRIT and other open-source tools
 - Real-world applications with hands-on labs and case studies from Microsoft's production AI security work
+
+## Apply what you learned
+
+Continue from training into threat analysis, defensive design, and implementation:
+
+- [Explore the AI attack-technique catalog](../zero-trust/catalog-ai-attack-techniques/catalog-ai-attack-techniques) to identify relevant adversary techniques and failure modes.
+- [Review the AI defense-capability catalog](../zero-trust/catalog-ai-defense-capabilities/catalog-ai-defense-capabilities) to select protections for the risks you identify.
+- [Secure AI with Zero Trust](../saf/technologies/ai/overview) to connect AI security work to identity, data, application, infrastructure, and operational controls.
+- [Apply development security implementation patterns](../saf/disciplines/development/implementation-patterns) to integrate security into AI and software delivery workflows.

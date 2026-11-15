@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Zero Trust Integration Overview | Microsoft Learn
+title: Integrate security solutions with Microsoft | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/security/zero-trust/integrate/overview
 uhfHeaderId: MSDocsHeader-Security
 breadcrumb_path: /security/breadcrumb/toc.json
@@ -8,11 +8,11 @@ feedback_system: Standard
 feedback_help_link_type: ''
 ms.author: jricketts
 author: janicericketts
-description: Learn how to integrate with Microsoft technology to create Zero Trust solutions for your customers.
-ms.date: 2025-02-21T00:00:00.0000000Z
+description: Find integration guidance for software providers, independent software vendors, and technology partners building solutions with Microsoft security products.
+ms.date: 2026-11-09T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
-ms.topic: how-to
+ms.topic: concept-article
 ms.collection:
 - zerotrust-partner
 locale: en-us
@@ -32,56 +32,39 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/integrate/overview.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
-- https://authoring-docs-microsoft.poolparty.biz/devrel/1dd701e0-441f-4b0a-9806-aa47decc4e35
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/46e3c7c4-fe77-4a6e-b40a-44c569819fa5
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/5fc61396-d075-4560-aece-fdbda73d243f
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/8b9ae643-2e85-42b8-beb2-eef4bae8c4bc
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
-- https://authoring-docs-microsoft.poolparty.biz/devrel/0a2fc935-5977-4aa6-9f55-0be03bd2acb8
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d0c6fab8-2d7d-4bb0-bf40-589e08d7c132
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
+- https://authoring-docs-microsoft.poolparty.biz/devrel/ad9437c1-8cda-4537-ad69-b4b263652e13
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/e047e27d-b5f3-43a8-b4b0-4f6dca95e7c9
 platformId: bced7d89-05a4-947a-c9d5-34ebb89a2833
 ---
 
-# Zero Trust Integration Overview | Microsoft Learn
+# Integrate security solutions with Microsoft | Microsoft Learn
 
-Zero Trust is an approach to security that adapts to the complexity of the modern environment, embraces the mobile workforce, and protects people, devices, applications, and data wherever they're located.
+This guidance is for independent software vendors (ISVs), software providers, and technology partners that build security solutions with Microsoft products and services.
 
-The journey to implementing Zero Trust is distinct for every organization depending on their needs and existing infrastructure. For this reason, we support technology partner integrations that help meet our customers' unique needs.
+Choose the integration scenario that matches your solution, and then use the linked product documentation for supported APIs, SDKs, prerequisites, and publishing requirements. Product-owned documentation is the source of record for each integration.
 
-Organized by Zero Trust technology areas, this guidance is for software providers and technology partners who want to enhance their security solutions and reach new customers by integrating with Microsoft products.
+These integration paths can help customers apply Zero Trust principles, but they are organized around supported integration opportunities rather than the Security Adoption Framework technology taxonomy.
 
-![Diagram of elements of visibility, automation, and orchestration in Zero Trust.](../media/diagram-zero-trust-security-elements.png)
+## Choose an integration scenario
 
-## More Zero Trust documentation
+| Integration scenario | Start here |
+| --- | --- |
+| **Identity and access** | Publish and provision applications with Microsoft Entra ID, or extend authentication for external users. See [Publish your app to the Microsoft Entra application gallery](/en-us/entra/identity/enterprise-apps/publish-app-gallery), [Develop a SCIM endpoint for user provisioning](/en-us/entra/identity/app-provisioning/use-scim-to-provision-users-and-groups), and [Custom authentication extensions for Microsoft Entra External ID](/en-us/entra/external-id/customers/concept-custom-extensions). |
+| **Endpoint security** | Extend endpoint detection, investigation, and response by using [Microsoft Defender for Endpoint partner opportunities and scenarios](/en-us/defender-endpoint/partner-integration) and the [Defender for Endpoint APIs](/en-us/defender-endpoint/api/apis-intro). |
+| **Device management and compliance** | Integrate device, application, and compliance management by [working with Intune in Microsoft Graph](/en-us/graph/api/resources/intune-graph-overview) and [configuring Microsoft Graph API access for Intune](/en-us/intune/developer/configure-graph-api-access). |
+| **Applications and SaaS security** | Integrate secure web gateways, firewalls, and other solutions with [Cloud Discovery](/en-us/defender-cloud-apps/set-up-cloud-discovery), or use the [Microsoft Defender for Cloud Apps REST API](/en-us/defender-cloud-apps/api-introduction). |
+| **Data protection** | Build applications that classify, label, and protect information by using the [Microsoft Information Protection SDK](/en-us/information-protection/develop/overview). |
+| **Cloud and infrastructure security** | Exchange security findings and integrate workflows by using [Microsoft Defender for Cloud partner integrations](/en-us/azure/defender-for-cloud/partner-integrations) and [continuous export](/en-us/azure/defender-for-cloud/continuous-export). |
+| **Network security** | Use current Azure network extension points and review Microsoft 365 connectivity requirements. See [Azure Firewall Manager security partner providers](/en-us/azure/firewall-manager/trusted-security-partners), [Gateway Load Balancer](/en-us/azure/load-balancer/gateway-overview), and the [Microsoft 365 Network Provider Program](/en-us/microsoft-365/enterprise/microsoft-365-networking-partner-program) for the program's current status. |
+| **Security operations** | Decide what to build, create the required integration content, and package and publish a solution by using the [Microsoft Sentinel solution build and publishing guide](/en-us/azure/sentinel/isv/sentinel-integration-guide). For cross-product security data, see [Microsoft Graph security API partner opportunities](/en-us/graph/security-partner-overview). |
+| **Operational technology and IoT security** | Connect SIEM, ticketing, and other partner services by using the [Microsoft Defender for IoT integration guidance](/en-us/azure/defender-for-iot/organizations/integrate-overview). |
 
-Use other Zero Trust content based on a documentation set or the roles in your organization.
+## Related guidance
 
-### Documentation set
-
-Follow this table for the best Zero Trust documentation sets for your needs.
-
-| Documentation set | Helps you... | Roles |
-| --- | --- | --- |
-| [Adoption framework](../adopt/zero-trust-adoption-overview) for phase and step guidance for key business solutions and outcomes | Apply Zero Trust protections from the C-suite to the IT implementation. | Security architects, IT teams, and project managers |
-| [Concepts and deployment objectives](../deploy/overview) for general deployment guidance for technology areas | Apply Zero Trust protections aligned with technology areas. | IT teams and security staff |
-| [Zero Trust for small businesses](../guidance-smb-partner) | Apply Zero Trust principles to small business customers. | Customers and partners working with Microsoft 365 for business |
-| [Zero Trust Rapid Modernization Plan (RaMP)](../zero-trust-ramp-overview) for project management guidance and checklists for easy wins | Quickly implement key layers of Zero Trust protection. | Security architects and IT implementers |
-| [Zero Trust deployment plan with Microsoft 365](/en-us/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&amp;toc=%2fsecurity%2fzero-trust%2ftoc.json) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to your Microsoft 365 tenant. | IT teams and security staff |
-| [Zero Trust for Microsoft Copilots](../copilots/apply-zero-trust-copilots-overview) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Microsoft Copilots. | IT teams and security staff |
-| [Zero Trust for Azure services](../azure-infrastructure-overview) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Azure workloads and services. | IT teams and security staff |
-| [Develop using Zero Trust principles](../develop/overview) for application development design guidance and best practices | Apply Zero Trust protections to your application. | Application developers |
-
-### Your role
-
-Follow this table for the best documentation sets for your role in your organization.
-
-| Role | Documentation set | Helps you... |
-| --- | --- | --- |
-| Security architect  IT project manager  IT implementer | [Adoption framework](../adopt/zero-trust-adoption-overview) for phase and step guidance for key business solutions and outcomes | Apply Zero Trust protections from the C-suite to the IT implementation. |
-| Member of an IT or security team | [Concepts and deployment objectives](../deploy/overview) for general deployment guidance for technology areas | Apply Zero Trust protections aligned with technology areas. |
-| Customer or partner for Microsoft 365 for business | [Zero Trust for small businesses](../guidance-smb-partner) | Apply Zero Trust principles to small business customers. |
-| Security architect  IT implementer | [Zero Trust Rapid Modernization Plan (RaMP)](../zero-trust-ramp-overview) for project management guidance and checklists for easy wins | Quickly implement key layers of Zero Trust protection. |
-| Member of an IT or security team for Microsoft 365 | [Zero Trust deployment plan with Microsoft 365](/en-us/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&amp;toc=%2fsecurity%2fzero-trust%2ftoc.json) for stepped and detailed design and deployment guidance for Microsoft 365 | Apply Zero Trust protections to your Microsoft 365 tenant. |
-| Member of an IT or security team for Microsoft Copilots | [Zero Trust for Microsoft Copilots](../copilots/apply-zero-trust-copilots-overview) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Microsoft Copilots. |
-| Member of an IT or security team for Azure services | [Zero Trust for Azure services](../azure-infrastructure-overview) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Azure workloads and services. |
-| Application developer | [Develop using Zero Trust principles](../develop/overview) for application development design guidance and best practices | Apply Zero Trust protections to your application. |
+- [Deploy Zero Trust technologies](../deploy/overview) if you're implementing security controls in an organization.
+- [Use the Security Adoption Framework](../security-adoption-model) if you're planning security adoption, managing security work, or connecting improvements to business priorities and risk.

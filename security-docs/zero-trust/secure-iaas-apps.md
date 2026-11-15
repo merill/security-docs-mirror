@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: This article gives an overview of how to apply Zero Trust principles to IaaS applications in Amazon Web Services (AWS).
-ms.date: 2025-05-20T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: how-to

@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: SecOps technology | Microsoft Learn
+title: Technology guidance for SecOps | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/security/zero-trust/security-operations-technology
 uhfHeaderId: MSDocsHeader-Security
 breadcrumb_path: /security/breadcrumb/toc.json
@@ -8,8 +8,8 @@ feedback_system: Standard
 feedback_help_link_type: ''
 ms.author: mas
 author: MarkSimos
-description: Find technology pillars, technical solutions, and product guidance that implement and support the SecOps discipline.
-ms.date: 2026-11-03T00:00:00.0000000Z
+description: Find technologies, technical solutions, and product guidance that implement and support the SAF SecOps discipline.
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -42,21 +42,22 @@ spProducts:
 platformId: e1494399-c574-5304-cb01-8f2eeb81093c
 ---
 
-# SecOps technology | Microsoft Learn
+# Technology guidance for SecOps | Microsoft Learn
 
 This article is part of the **Microsoft Security Adoption Framework (SAF)**. It connects the SecOps discipline's mission, operating model, and practices to technical implementation guidance.
 
-SecOps technology supports centralized visibility, detection, investigation, response, threat hunting, threat intelligence, automation, and continuous improvement across identities, endpoints, applications, data, infrastructure, networks, and AI.
+Technology guidance for SecOps supports centralized visibility, detection, investigation, response, threat hunting, threat intelligence, automation, and continuous improvement across identities, endpoints, applications, data, infrastructure, networks, and AI.
 
 Important
 
-Looking for specific security controls or implementation steps? Technology pillars define where Zero Trust controls are applied, and technical solutions provide end-to-end, product-level implementation guidance. Start with [Implement Zero Trust solutions](implement-overview) and [Technology pillars](deploy/overview).
+Looking for specific security controls or implementation steps? Technologies identify where Zero Trust controls are applied, and technical solutions provide end-to-end, product-level implementation guidance. Start with [Implement Zero Trust solutions](implement-overview) and [Technologies](deploy/overview).
 
 ## Start with Zero Trust implementation guidance
 
 - [Implement Zero Trust solutions](implement-overview)
-- [Review technology pillars](deploy/overview)
-- [Secure SecOps](deploy/visibility-automation-orchestration)
+- [Review technologies](deploy/overview)
+- [SecOps implementation patterns](/en-us/security/saf/disciplines/security-operations/implementation-patterns)
+- [Integrated SecOps with Zero Trust](deploy/visibility-automation-orchestration)
 
 ## Product and platform guidance
 

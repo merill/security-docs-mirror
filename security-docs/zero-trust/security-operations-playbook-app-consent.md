@@ -17,7 +17,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 manager: CelesteDG
-ms.date: 2025-03-12T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.collection:
 - msftsolution-secops
 ms.topic: how-to

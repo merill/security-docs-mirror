@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: brenduns
 author: garycentric
 description: Not all endpoints are managed or even owned by the organization, leading to different device configurations and software patch levels. In a Zero Trust approach, the same security policies are applied regardless of the type of device or who owns it.
-ms.date: 2025-06-25T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: best-practice
@@ -33,13 +33,13 @@ monikers: []
 item_type: Content
 source_path: security-docs/zero-trust/deploy/endpoints.md
 cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
 - https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/1433a524-c01f-4b87-beab-670c040dea4f
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/798bd9d1-9cc5-4fc7-b0e5-8699d1f6ce2a
 spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
 - https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/312f1f05-a431-4193-8a4d-e6245d5966de
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/b5dc5f65-34a8-4bfc-9917-97d1e20c88b2
 platformId: 054690e1-4ac6-945a-bdb5-532619a097ed
 ---
 
@@ -68,10 +68,10 @@ Before most organizations start the Zero Trust journey, their endpoint security 
 
 When implementing an end-to-end Zero Trust framework for securing endpoints, we recommend you focus first on the three initial deployment objectives. After those are completed, focus on the fourth objective:
 
-1. [**Endpoints are registered with cloud identity providers**](/en-us/security/zero-trust/deploy/endpoints#i-endpoints-are-registered-with-a-cloud-identity-providers). In order to monitor security and risk across multiple endpoints used by any one person, you need [visibility](https://aka.ms/ZTCrossPillars) to all devices and access points that might have access to your resources. On registered devices you can then enforce a baseline of security that also provides users a biometric or PIN based method for authentication to help eliminate reliance on passwords.
+1. [**Endpoints are registered with cloud identity providers**](/en-us/security/zero-trust/deploy/endpoints#1-register-endpoints-with-a-cloud-identity-provider). In order to monitor security and risk across multiple endpoints used by any one person, you need [visibility](https://aka.ms/ZTCrossPillars) to all devices and access points that might have access to your resources. On registered devices you can then enforce a baseline of security that also provides users a biometric or PIN based method for authentication to help eliminate reliance on passwords.
 2. [**Access is only granted to cloud-managed and compliant endpoints and apps**](https://aka.ms/ZTCrossPillars). Set compliance rules to ensure that devices meet minimum security requirements before access is granted. Also, create remediation rules and notifications for noncompliant devices so that people know how to resolve compliance issues.
-3. [**Data loss prevention (DLP) policies are enforced for corporate devices and BYOD**](/en-us/security/zero-trust/deploy/endpoints#iii-data-loss-prevention-dlp-policies-are-enforced-for-corporate-devices-and-byod). Control what the user can do with the data after they have access. For instance, restrict file saving to untrusted locations (like a local disk), or restrict copy-and-paste sharing with a consumer communication app or chat app to protect data.
-4. [**Endpoint threat detection is used to monitor device risk**](/en-us/security/zero-trust/deploy/endpoints#iv-endpoint-threat-detection-is-used-to-monitor-device-risk). Aim for a single pane of glass solution to manage all endpoints in a consistent way. Use a security information and event management (SIEM) solution to route endpoint logs and transactions such that you get fewer, but actionable, alerts.
+3. [**Data loss prevention (DLP) policies are enforced for corporate devices and BYOD**](/en-us/security/zero-trust/deploy/endpoints#3-deploy-policies-that-enforce-data-loss-prevention-dlp-for-corporate-devices-and-byod). Control what the user can do with the data after they have access. For instance, restrict file saving to untrusted locations (like a local disk), or restrict copy-and-paste sharing with a consumer communication app or chat app to protect data.
+4. [**Endpoint threat detection is used to monitor device risk**](/en-us/security/zero-trust/deploy/endpoints#4-monitor-device-risk-with-endpoint-threat-detection). Aim for a single pane of glass solution to manage all endpoints in a consistent way. Use a security information and event management (SIEM) solution to route endpoint logs and transactions such that you get fewer, but actionable, alerts.
 
 As a final task, examine Zero Trust principles for IoT and operational technology networks.
 

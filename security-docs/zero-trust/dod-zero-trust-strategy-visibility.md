@@ -11,7 +11,7 @@ author: jricketts
 description: Learn how to minimize attack surface, reduce risks, enable collaboration, safeguard data, and disrupt adversaries.
 ms.service: security
 ms.topic: best-practice
-ms.date: 2024-04-10T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.subservice: zero-trust
 manager: martinco
 ms.reviewer: andrmass

@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: raynew
 author: rayne-wiselman
 description: Use the Microsoft security adoption model to engage business leaders in security strategy, integration, and governance.
-ms.date: 2026-05-24T00:00:00.0000000Z
+ms.date: 2026-11-05T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -50,6 +50,8 @@ The Security Strategy, Integration, and Governance discipline establishes:
 
 As part of establishing this discipline, security leaders must be able to engage business stakeholders effectively. This article provides guidance and actionable insights to help security leaders communicate with business leaders, align priorities, and drive sustained security transformation.
 
+For quick orientation and onboarding context, start with the [SAF disciplines overview](security-adoption-discipline-overview) and [Security roles and responsibilities in SAF](security-adoption-roles).
+
 This video from the [CISO Workshop](workshop-business-security-leaders-video#engaging-business-leaders-on-security) illustrates the use of communication techniques in action:
 
 ## Why communicate with business leaders?
@@ -75,7 +77,7 @@ Security leaders must:
 
 Digital transformation and AI fundamentally changed how organizations operate. These shifts introduce continuous change in business models, processes, and assets. As a result:
 
-- The assets that security teams must protection are constantly evolving.
+- The assets that security teams must protect are constantly evolving.
 - Traditional perimeter‑based or compliance‑driven security models no longer meet requirements for cloud adoption, agility, user experience, and AI usage.
 - Threats evolve faster and exploit new dependencies across technology pillars such as identity, data, applications, and infrastructure.
 
@@ -91,11 +93,14 @@ Business leaders and boards should understand the following core tenets.
 
 | **Tenet** | **Details** |
 | --- | --- |
-| **Security is everyone's responsibility** | Everyday actions create security risk across the business.**Individuals** introduce risk through behaviors such as clicking malicious links, mishandling sensitive data, or sharing credentials.**Business leaders** can unintentionally amplify risk through decisions, such as approving releases without security review or constraining budgets required for basic system maintenance.**Board members and senior leaders** often have a formal fiduciary duty to management organizational risk, including material damage from security incidents. |
+| **Security is everyone's responsibility** | Everyday actions create security risk across the business.**Individuals** introduce risk through behaviors such as clicking malicious links, mishandling sensitive data, or sharing credentials.**Business leaders** can unintentionally amplify risk through decisions, such as approving releases without security review or constraining budgets required for basic system maintenance.**Board members and senior leaders** often have a formal fiduciary duty to manage organizational risk, including material damage from security incidents. |
 | **Most security work isn't done by the security team** | Technology, engineering, and operations teams implement most security controls in practice.The security team acts as a bodyguard, helping others protect themselves, anticipating risks others may not see, and focusing on high‑impact threats.In addition, security teams can't protect what they don't understand, making integration with business and technology operations essential. |
 | **Security is a continuous journey** | Perfect security isn't achievable. Organizations are complex systems that have accumulated technical debt over years that now represents security risk. Threat actors are persistent, well‑funded, and highly motivated. True resilience requires sustained investment in system quality, modernization, and maintenance. |
+| **Security decisions require clear ownership** | Security outcomes improve when organizations define explicit decision rights, accountable owners, and clear escalation paths for risk acceptance and exceptions. For role model guidance, see [Security roles and responsibilities in SAF](security-adoption-roles). |
 
 Establishing strong feedback loops between security, business, and technology teams help leaders prioritize security investments based on real threat activity and real business impact.
+
+Those feedback loops are most effective when they use measurable outcomes, such as KPI/OKR-style scorecards and operational metrics from [Security Posture Management](security-adoption-discipline-posture) and [SecOps](security-adoption-discipline-security-operations).
 
 ## Get the right level of business support
 
@@ -117,6 +122,22 @@ Here are some tips for communicating security to business leaders:
 - **Avoid jargon**: Use concepts from risk management, safety, or physical security. If new terms are necessary, explain them plainly.
 - **Use relatable analogies**: Draw on everyday experiences, prior roles, or industry contexts
 - **Personalize where appropriate**: Connect security articles to the audience’s responsibilities, goals, or concerns
+
+## Build healthy security friction
+
+Security transformation works best when security and business leaders intentionally create the **right level of friction** in decisions.
+
+Too little friction causes avoidable risk (for example, unchecked releases, weak exceptions, or unreviewed access changes). Too much friction slows delivery, erodes trust, and encourages bypass behavior.
+
+Use these practices to keep friction healthy:
+
+- Make friction purposeful: apply stronger controls where business impact and attacker opportunity are highest.
+- Time-box decisions: set clear review windows for exceptions and high-risk changes so teams can move with clarity.
+- Share accountability: asset and process owners remain accountable for risk decisions, while security provides guidance and challenge.
+- Prefer guardrails over gatekeeping: use policy, automation, and reusable patterns so teams can make safe decisions quickly.
+- Measure both outcomes: track risk reduction and delivery impact so controls can be tuned over time.
+
+The goal is not to remove friction. The goal is to keep enough friction to improve decision quality while preserving business velocity.
 
 ## Align with executive perspectives
 
