@@ -12,7 +12,7 @@ description: Secure generative AI systems with Microsoft's AI Red Teaming 101 se
 ms.service: security
 ms.subservice: ai-red-team
 ms.topic: how-to
-ms.date: 2026-11-16T00:00:00.0000000Z
+ms.date: 2026-11-17T00:00:00.0000000Z
 ai-usage: ai-assisted
 ms.reviewer: sayoung
 ms.custom:
