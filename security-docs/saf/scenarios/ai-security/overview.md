@@ -9,7 +9,7 @@ feedback_help_link_type: ''
 ms.author: mas
 author: MarkSimos
 description: Learn how to secure AI, strengthen security foundations, defend with AI agents, secure AI agents, and use the Microsoft Security Adoption Framework to turn AI-era security priorities into action.
-ms.date: 2026-11-15T00:00:00.0000000Z
+ms.date: 2026-11-17T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -32,11 +32,9 @@ source_path: security-docs/saf/scenarios/ai-security/overview.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 - https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa
-- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 - https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863
-- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
 platformId: 0eb980a5-2e62-c85c-c0c4-dac7943f24f1
 ---
 
@@ -44,19 +42,19 @@ platformId: 0eb980a5-2e62-c85c-c0c4-dac7943f24f1
 
 AI is changing the speed, scale, and economics of cybersecurity. Attackers can discover and exploit weaknesses faster. Organizations are deploying AI agents that can access sensitive data and tools. Security teams must operate at machine speed without giving up human judgment, control, and accountability.
 
-Three connected priorities are emerging for this environment: secure your foundations, defend with agents, and secure your agentic insider. Together, they help organizations adopt AI with confidence while strengthening protection across the existing digital estate.
+Three connected priorities are emerging for this environment: secure your foundations, defend with agents, and secure agentic insiders. Together, they help organizations adopt AI with confidence while strengthening protection across the existing digital estate.
 
 Microsoft security guidance helps organizations turn these priorities into action by connecting business priorities and risk to governance, operating-model changes, roles, security disciplines, and technology implementation.
 
 ## Why security must change for the AI era
 
-AI amplifies existing exposure, enables attacks to operate with greater autonomy, and introduces agents that can act as trusted participants inside the organization. Security must address three connected challenges:
+AI is changing both the environment organizations must protect and the threats they face. Three changes are especially important:
 
-- **AI-amplified exposure:** AI makes existing identity, data, software, infrastructure, and configuration weaknesses easier to find and exploit.
-- **Autonomous attacks:** AI can reduce the time and expertise required to discover, develop, and execute attacks.
-- **Agentic-insider risk:** AI agents can use identities, access data, invoke tools, communicate with services, and take actions that affect business processes.
+- **AI is amplifying existing exposure.** AI can make weaknesses across identity, data, applications, infrastructure, networks, endpoints, software, and configuration easier to discover, faster to exploit, and more consequential.
+- **Attacks are becoming increasingly autonomous.** AI is moving from assisting attackers with individual tasks toward systems that can plan, adapt, and execute more of an attack at machine speed.
+- **Agents are the new insiders.** AI agents can operate continuously with legitimate access to identities, data, applications, tools, services, and other agents. That access can create business impact when an agent behaves as intended, makes a mistake, is manipulated, or is compromised.
 
-Organizations need security capabilities that can keep pace with AI-enabled change and threats while keeping people responsible for policy, risk acceptance, and consequential decisions.
+Organizations need security capabilities that can operate at comparable speed and scale while keeping people responsible for policy, risk acceptance, consequential decisions, and accountability.
 
 ## Strategic security priorities for the AI era
 
@@ -68,9 +66,11 @@ Reduce preventable exposure and strengthen the identity, data, development, infr
 
 ### Defend with agents
 
-Use AI-assisted and agentic capabilities to increase the speed, reach, consistency, and quality of security operations. Redesign suitable workflows so agents perform repeatable analysis and response while people retain judgment, approval authority, and accountability.
+Use AI-assisted and agentic capabilities to increase the speed, reach, consistency, and quality of security operations. Redesign suitable workflows so agents can perform repeatable analysis and response through defined playbooks while people establish guardrails and retain judgment, approval authority, and accountability for consequential actions.
 
-### Secure your agentic insider
+[Microsoft Perception](/en-us/security/agentic-security/agentic-security-overview) provides an agentic security layer for coordinating specialized security agents and playbooks across security operations. It works with the broader Microsoft security platform, including Integrated Security Operations Center (ISOC) in Microsoft Defender, Microsoft Security Copilot, exposure management, threat protection, and other security capabilities.
+
+### Secure agentic insiders
 
 An AI agent isn't a person and isn't inherently malicious, but it can have insider-like access and must be governed and monitored. The "agentic insider" analogy describes an agent that has legitimate access and can take actions with business impact.
 
@@ -93,7 +93,7 @@ Addressing these priorities requires coordinated changes across strategy, govern
 
 Build a clear path from business priorities and security risks to the people, processes, and technology needed to manage them. Use Microsoft security guidance to:
 
-- **Define outcomes and risks.** Identify the business outcomes you’re enabling, the risks that could affect them, and the security outcomes needed to manage those risks.
+- **Define outcomes and risks.** Identify the business outcomes you're enabling, the risks that could affect them, and the security outcomes needed to manage those risks.
 - **Establish governance and accountability.** Define policies, decision rights, responsibilities, delegated authority, and risk ownership.
 - **Design the operating model.** Define how people, AI agents, automation, security teams, technology teams, and business stakeholders work together.
 - **Coordinate security disciplines.** Connect the specialized security work required across identity, data, applications, infrastructure, devices, security operations, AI, and other areas.
@@ -101,9 +101,11 @@ Build a clear path from business priorities and security risks to the people, pr
 - **Implement the controls.** Use Microsoft product guidance and reference architectures to configure, deploy, and operate the required capabilities.
 - **Measure and improve.** Track risk reduction, operational effectiveness, resilience, and business outcomes.
 
-The [Microsoft Security Adoption Framework (SAF)](/en-us/security/saf/) connects these activities through guidance for security strategy, governance, operating models, security disciplines, technologies, and adoption. Zero Trust principles are embedded throughout SAF to guide security decisions across these areas. Learn more in the [Zero Trust Guidance Center](/en-us/security/zero-trust/).
+The [Microsoft Security Adoption Framework (SAF)](/en-us/security/zero-trust/security-adoption-model) connects these activities through guidance for security strategy, governance, operating models, security disciplines, technologies, and adoption. Zero Trust principles are embedded throughout SAF to guide security decisions across these areas. Learn more in the [Zero Trust Guidance Center](/en-us/security/zero-trust/).
 
 ### Implement and operate
+
+Agentic defense depends on connected layers of security capability: broad signals and controls across the technology estate, shared security context that helps interpret those signals, and agents and playbooks that can analyze, decide, and act within defined guardrails. Microsoft security capabilities connect these layers across prevention, exposure reduction, detection, investigation, response, and recovery.
 
 Use Microsoft security capabilities to implement controls, perform analysis, and automate security processes so that you can continuously improve protection and response. These are key examples of relevant Microsoft technologies and guidance:
 
@@ -111,14 +113,14 @@ Use Microsoft security capabilities to implement controls, perform analysis, and
 | --- | --- | --- |
 | **Secure your foundations** | [Microsoft Security Exposure Management](/en-us/security-exposure-management/); [Microsoft Entra](/en-us/entra/); [Microsoft Purview](/en-us/purview/); [Microsoft Defender](/en-us/defender/); Microsoft Intune; [Microsoft Sentinel and integrated security operations](/en-us/azure/sentinel/); [Zero Trust and SFI-aligned guidance](/en-us/security/zero-trust/). | Reduce preventable exposure and strengthen the controls on which AI depends. |
 | **Defend with agents** | [Microsoft Perception](/en-us/security/agentic-security/agentic-security-overview); [Microsoft Security Copilot](/en-us/copilot/security/); [Microsoft Defender](/en-us/defender/); [Microsoft Sentinel and integrated security operations](/en-us/azure/sentinel/); [agent playbooks](/en-us/security/agentic-security/agentic-security-overview), attack disruption, investigation, and governed response. | Increase defensive speed and reach while keeping people in control of consequential decisions. |
-| **Secure your agentic insider** | [Microsoft Agent 365](/en-us/microsoft-agent-365/overview); [Microsoft Entra Agent ID and governance](/en-us/entra/); [Conditional Access](/en-us/entra/); [Microsoft Purview](/en-us/purview/); Microsoft Intune and execution controls; [Microsoft Defender runtime protection](/en-us/defender/); [Global Secure Access](/en-us/entra/). | Discover, govern, constrain, monitor, and respond to agents throughout their lifecycle. |
+| **Secure agentic insiders** | [Microsoft Agent 365](/en-us/microsoft-agent-365/overview); [Microsoft Entra Agent ID and governance](/en-us/entra/); [Conditional Access](/en-us/entra/); [Microsoft Purview](/en-us/purview/); Microsoft Intune and execution controls; [Microsoft Defender runtime protection](/en-us/defender/); [Global Secure Access](/en-us/entra/). | Discover, govern, constrain, monitor, and respond to agents throughout their lifecycle. |
 
-The [Microsoft Zero Trust Workshop](/en-us/security/zero-trust/) can help you assess your current state, align stakeholders, and build a prioritized implementation roadmap. The [Zero Trust Assessment](/en-us/security/zero-trust/) can help you evaluate supported Microsoft 365 and Azure configurations, identify gaps, and provide evidence for planning improvements.
+The [Microsoft Zero Trust Workshop](/en-us/security/zero-trust/workshop-zero-trust-overview) can help you assess your current state, align stakeholders, and build a prioritized implementation roadmap. The [Zero Trust Assessment](/en-us/security/zero-trust/assessment/overview) can help you evaluate supported Microsoft 365 and Azure configurations, identify gaps, and provide evidence for planning improvements.
 
 ## Recommended next steps
 
 Choose the action that best matches your current needs:
 
-- **Plan your security transformation.** Use the [Microsoft Security Adoption Framework](/en-us/security/saf/) to connect business priorities and risk to strategy, governance, operating models, security disciplines, technologies, and implementation.
-- **Establish a baseline and roadmap.** Use the [Microsoft Zero Trust Workshop and Zero Trust Assessment](/en-us/security/zero-trust/) to identify gaps, align stakeholders, and prioritize improvements.
+- **Plan your security transformation.** Use the [Microsoft Security Adoption Framework](/en-us/security/zero-trust/security-adoption-model) to connect business priorities and risk to strategy, governance, operating models, security disciplines, technologies, and implementation.
+- **Establish a baseline and roadmap.** Use the [Microsoft Zero Trust Workshop](/en-us/security/zero-trust/workshop-zero-trust-overview) and [Zero Trust Assessment](/en-us/security/zero-trust/assessment/overview) to identify gaps, align stakeholders, and prioritize improvements.
 - **Choose and implement capabilities.** Explore Microsoft Security product documentation and use the linked product guidance in the preceding sections to plan, configure, deploy, and operate the capabilities that support your priorities.

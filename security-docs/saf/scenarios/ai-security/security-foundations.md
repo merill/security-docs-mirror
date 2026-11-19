@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Secure your foundations with SAF | Microsoft Learn
+title: Secure your foundations | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/security/saf/scenarios/ai-security/security-foundations
 uhfHeaderId: MSDocsHeader-Security
 breadcrumb_path: /security/breadcrumb/toc.json
@@ -8,8 +8,8 @@ feedback_system: Standard
 feedback_help_link_type: ''
 ms.author: mas
 author: MarkSimos
-description: Translate the secure your foundations theme into durable outcomes and use SAF and Microsoft guidance to reduce AI-era risk across identity, data, posture, and governance.
-ms.date: 2026-11-08T00:00:00.0000000Z
+description: Use Microsoft security guidance to reduce exposure, prioritize risk, and strengthen the identities, data, applications, infrastructure, networks, endpoints, and other security foundations that AI depends on.
+ms.date: 2026-11-17T00:00:00.0000000Z
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -31,115 +31,142 @@ item_type: Content
 source_path: security-docs/saf/scenarios/ai-security/security-foundations.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
-- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 - https://authoring-docs-microsoft.poolparty.biz/devrel/43093068-2dda-408b-b3fe-dfd705c84f78
+- https://authoring-docs-microsoft.poolparty.biz/devrel/1ae5c491-970a-4062-8301-6336e69f9026
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
-- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 - https://authoring-docs-microsoft.poolparty.biz/devrel/e453d60d-ba7e-43bc-8028-ec38e6b62512
+- https://authoring-docs-microsoft.poolparty.biz/devrel/f2c3e52e-3667-4e8a-bf11-20b9eaccdc8c
 platformId: 58187395-9971-98b2-9886-4142d2ed6b05
 ---
 
-# Secure your foundations with SAF | Microsoft Learn
+# Secure your foundations | Microsoft Learn
 
-**Secure your foundations** is a current AI security transformation theme. The name can evolve, but the underlying work remains necessary: understand what you have, reduce preventable exposure, protect identities and data, secure development and infrastructure, and establish clear governance before AI adoption increases scale and complexity.
+AI applications and agents depend on the same identities, data, applications, infrastructure, networks, endpoints, development practices, and operations as the rest of the enterprise.
 
-This page translates the theme into durable outcomes and execution paths. It does not create a separate implementation framework. Use the Microsoft Security Adoption Framework (SAF) to organize the work and canonical Microsoft guidance to implement it.
+Attackers can use AI to find weaknesses in these foundations more quickly, exploit them at greater speed and scale, and increase their potential impact. AI adoption also introduces new identities, data flows, applications, agents, tools, connectors, and dependencies that organizations must understand and protect.
 
-## What this theme means
+Securing your foundations does not mean delaying AI until every control is mature. It means continuously identifying and reducing enterprise weaknesses and dependencies that AI can amplify while AI adoption continues.
 
-Secure your foundations means improving the security of the environment that AI depends on and connects to. AI applications and agents inherit risk from existing identity, data, application, infrastructure, network, endpoint, and operational weaknesses. They can also amplify those weaknesses through speed, reach, and automation.
+Organizations must reduce exposure to known attacks, make informed risk decisions, protect critical assets and data, and continuously improve the controls on which AI depends. Security teams, agents, and automation also need shared signals, context, workflows, and controls to detect threats, respond effectively, and recover quickly.
 
-**AI changes the threat landscape and the speed of security work, but it does not replace fundamental security practices.** Organizations need to address new AI-specific risks while continuing to strengthen the identity, data, application, development, infrastructure, network, endpoint, and operational practices that protect the enterprise.
+This work starts with knowing what the organization has, understanding business impact and exposure, applying [Zero Trust principles](/en-us/security/zero-trust/zero-trust-overview), and making steady, measurable progress.
 
-The practical objective is to secure now where risk is urgent, prioritize defenses that reduce the greatest business risk, and improve posture to get ready for AI. It also means treating secure AI and data as a continuous responsibility across the lifecycle, not as a one-time deployment gate.
+## What good looks like
 
-## Durable outcome
+- The organization has reliable visibility into AI applications, agents, identities, data sources, connectors, tools, models, infrastructure, dependencies, and accountable owners.
+- Critical assets and sensitive data are classified by business impact, tagged where appropriate, and protected accordingly.
+- Human, workload, and agent identities use strong authentication, least privilege, lifecycle governance, and protected credentials.
+- Development and platform teams use approved patterns for designing, building, testing, deploying, operating, and recovering AI applications, agents, APIs, models, tools, and dependencies.
+- Security teams can measure exposure, vulnerabilities, configuration, control coverage, and response readiness for business-critical systems and services.
+- Leaders have clearly defined risk ownership, decision rights, exception paths, funding, and measures of progress.
+- Teams use posture findings, incidents, near misses, threat intelligence, assessment results, and operational evidence to continuously improve architecture, controls, and operations.
 
-The durable outcome is an enterprise foundation that can support AI innovation without accepting unmanaged risk.
+Strengthening security foundations requires coordinated changes across strategy, governance, people, processes, and technology. Microsoft provides guidance and technology to help organizations prioritize this work, plan improvements, and implement and operate the controls that reduce risk.
 
-Success looks like:
+## Plan and organize
 
-- AI applications, agents, identities, data sources, connectors, and owners are inventoried and governed.
-- Critical assets and sensitive data are identified, classified, and protected according to business impact.
-- Human, workload, and agent identities use strong authentication, least privilege, and lifecycle governance.
-- Security teams can measure exposure, configuration, vulnerability, and control coverage across the estate.
-- Development and platform teams use secure patterns for AI applications, agents, APIs, models, tools, and dependencies.
-- Business, security, and technology leaders have clear ownership, decision rights, and exception processes.
-- Posture and operational signals drive a continuous improvement loop rather than a point-in-time compliance exercise.
+Planning and organizing foundational security starts with clearly understanding the business outcomes and risks that matter to your organization. Identify the goals for AI adoption, the critical business assets and data those goals depend on, the weaknesses that could cause material business impact, and the roles accountable for managing those risks.
 
-## SAF work
+Use the [Microsoft Security Adoption Framework (SAF)](/en-us/security/zero-trust/security-adoption-model) to translate business outcomes and risks into coordinated security work:
 
-### Business scenarios
+- **Start with the most relevant business scenarios.** Use [Adopt and secure AI and data](/en-us/security/zero-trust/security-adoption-scenario-secure-ai) to define the business and security outcomes for AI adoption and [Strengthen security posture and compliance](/en-us/security/zero-trust/security-adoption-scenario-improve-posture) to establish continuous risk reduction, measurable improvement, and support for applicable compliance requirements.
+- **Organize, plan, and continuously improve the security work.** Use the [Security Integration and Governance (SIG) discipline](/en-us/security/zero-trust/security-adoption-discipline-strategy) to identify the highest-priority security outcomes, clarify ownership and decision rights, and coordinate work across teams. Use the [technical strategy disciplines](/en-us/security/zero-trust/security-adoption-discipline-overview) to plan end-to-end security outcomes across the required capabilities. Apply [SAF technology guidance](/en-us/security/zero-trust/security-adoption-model) across identities, data, applications, AI, endpoints, infrastructure, and networks, and use [Security Posture Management](/en-us/security/zero-trust/security-adoption-discipline-posture) to monitor exposure and control effectiveness, prioritize improvements, and continuously adapt implementation as the environment and risk change.
 
-Use these SAF business scenarios to define scope and expected outcomes:
+The result should be a prioritized security roadmap with clear business and security outcomes, accountable decision owners, end-to-end security requirements, and measurable improvements across the technologies on which AI depends.
 
-- [Adopt and secure AI](/en-us/security/zero-trust/security-adoption-scenario-secure-ai) - Establish the business and security outcomes for AI adoption.
-- [Strengthen posture and compliance](/en-us/security/zero-trust/security-adoption-scenario-improve-posture) - Measure exposure and continuously improve control effectiveness.
-- [Protect critical business assets](/en-us/security/zero-trust/security-adoption-scenario-secure-assets) - Focus security work on the assets and data with the greatest business impact.
-- [Secure and govern privileged access](/en-us/security/zero-trust/security-adoption-scenario-privileged-access) - Protect administrative and other high-impact control paths that AI systems can depend on or invoke.
+## Implement and operate
 
-### Security disciplines
+Put the prioritized roadmap into action by implementing and operating security capabilities across identities, data, applications, AI, endpoints, infrastructure, networks, development practices, and security operations. Use Microsoft security products and implementation guidance together with architecture, operating processes, and accountable ownership to implement and sustain these protections.
 
-Coordinate the work across these SAF disciplines:
+The following five activities provide a practical path for strengthening security foundations as organizations adopt AI and agentic capabilities.
 
-- [Strategy, integration, and governance](/en-us/security/zero-trust/security-adoption-discipline-strategy) sets priorities, policy, funding, risk acceptance, and outcome measures.
-- [Security architecture](/en-us/security/zero-trust/security-adoption-discipline-architecture) defines trust boundaries, control patterns, and end-to-end design across classic and AI systems.
-- [Security posture](/en-us/security/zero-trust/security-adoption-discipline-posture) inventories assets and exposure, prioritizes risk, and measures improvement.
-- [Access and identities](/en-us/security/zero-trust/security-adoption-discipline-identity-access) governs human, workload, and agent identities and applies least privilege.
-- [Data](/en-us/security/zero-trust/security-adoption-discipline-data) discovers, classifies, protects, and governs data used by people, applications, models, and agents.
-- [Development](/en-us/security/zero-trust/security-adoption-discipline-development) integrates threat modeling, secure engineering, testing, and release controls into AI delivery.
-- [Infrastructure](/en-us/security/zero-trust/security-adoption-discipline-infrastructure) secures hosting, compute, platforms, services, and dependencies.
-- [SecOps](/en-us/security/zero-trust/security-adoption-discipline-security-operations) detects active threats and feeds incident learning back into posture and architecture.
+### Establish your security baseline
 
-### Roles and collaboration
+Start by understanding your current security posture, business-critical assets, and the areas where improvement can reduce the most material risk. Use assessments, posture management, architecture reviews, and operational findings to identify gaps and translate the prioritized roadmap into implementation work.
 
-Use [Security roles and responsibilities in SAF](/en-us/security/zero-trust/security-adoption-roles) to assign accountable owners and working relationships.
+Use findings from the [Microsoft Zero Trust Workshop for AI security](/en-us/security/zero-trust/workshop-zero-trust-ai-security), the [Zero Trust Assessment](/en-us/security/zero-trust/assessment/overview), [Microsoft Security Exposure Management](/en-us/security-exposure-management/), and other architecture reviews and assessments to inform the baseline.
 
-The foundation depends on collaboration among:
+Connect findings to the critical assets, sensitive data, business processes, and dependencies they affect. Prioritize improvements based on business impact and security risk, assign accountable decision owners, and track the work through implementation.
 
-- Organizational leadership and governance to set risk appetite and hold outcome owners accountable.
-- Business and AI solution owners to define intended use, criticality, data access, and acceptable behavior.
-- Security strategy, architecture, posture, identity, and data teams to define policy and reusable patterns.
-- Application and product development teams to build and release AI capabilities securely.
-- Technical engineering and operations teams to implement and operate controls across the estate.
-- SecOps teams to monitor, investigate, respond, and drive lessons back into prevention.
+### Discover and prioritize security exposure
 
-### Technologies
+Continuously discover your organization's assets, identities, data, applications, AI systems, agents, and dependencies. Assess the vulnerabilities, misconfigurations, attack paths, and other exposures that could affect them.
 
-Apply controls across the complete technology estate:
+Use [Microsoft Security Exposure Management](/en-us/security-exposure-management/) to understand how individual weaknesses combine into meaningful attack paths and where remediation can reduce the most risk. Prioritize findings by using threat context, exploitability, business impact, critical dependencies, and the relationships among assets and controls.
 
-- [AI](/en-us/security/saf/technologies/ai/overview)
-- [Identity](/en-us/security/zero-trust/deploy/identity)
-- [Endpoints](/en-us/security/zero-trust/deploy/endpoints)
-- [Applications](/en-us/security/zero-trust/deploy/applications)
-- [Data](/en-us/security/zero-trust/deploy/data)
-- [Infrastructure](/en-us/security/zero-trust/deploy/infrastructure)
-- [Network](/en-us/security/zero-trust/deploy/networks)
+Use [Microsoft Perception](https://www.microsoft.com/security/business/microsoft-perception-agentic-system) agents and playbooks, where applicable, to help prioritize exposure, coordinate suitable remediation work, and verify progress. Automate repeatable work through defined playbooks and guardrails while people remain responsible for priorities, risk decisions, exceptions, approval of high-impact actions, and accountability.
 
-Do not isolate AI from these dependencies. The secure foundation is the combination of controls across them.
+Where supported, use compensating controls and temporary protections to reduce reachable attack paths or limit exploitation while teams complete patching, privilege reduction, configuration changes, or architectural improvements. Temporary protection should reduce immediate exposure, not replace permanent remediation.
 
-## Implementation and product guidance
+For AI, maintain visibility into approved, experimental, custom-built, embedded, and unsanctioned applications and agents. Follow [Discover AI apps and data](/en-us/security/security-for-ai/discover) and use relevant Microsoft security posture capabilities to identify AI usage, data exposure, cloud risks, and control gaps.
 
-Use [Microsoft secure Zero Trust implementation solutions](/en-us/security/zero-trust/implement-overview) to connect the scenarios, disciplines, and technologies to technical implementation. Start with the following canonical guidance:
+### Protect your foundations and AI
 
-1. [Build a strong AI security posture](/en-us/security/security-for-ai/posture) to establish the overall approach and priorities.
-2. [Prepare for AI security](/en-us/security/security-for-ai/prepare) to strengthen identity, device, data, and threat protection foundations.
-3. [Discover AI apps and data](/en-us/security/security-for-ai/discover) to understand the AI estate and associated data paths.
-4. [Protect AI apps and data](/en-us/security/security-for-ai/protect) to apply controls to AI usage, applications, and information.
-5. [Govern AI for compliance](/en-us/security/security-for-ai/govern) to sustain policy, compliance, and accountable use.
-6. [Secure AI with Zero Trust](/en-us/security/saf/technologies/ai/overview) to apply Zero Trust across AI systems and their dependencies.
-7. [AI security in the Microsoft Zero Trust Workshop](/en-us/security/zero-trust/workshop-zero-trust-ai-security) to align stakeholders and build an implementation plan.
-8. [Zero Trust assessment](/en-us/security/zero-trust/assessment/overview) to measure current capabilities and identify improvement priorities.
+Strengthen the security foundations that business applications, cloud services, AI systems, and agents depend on. Apply protections across identities, devices, data, applications, development, infrastructure, networks, and threat protection based on business impact, exposure, and risk.
 
-Use focused implementation guidance where the risk requires it:
+Follow [Prepare for AI security](/en-us/security/security-for-ai/prepare) and [Protect AI apps and data](/en-us/security/security-for-ai/protect) to apply AI-specific protections alongside existing security controls. Protect prompts and context, grounding data, outputs, connected data sources, agent identities and permissions, tools, connectors, and other data flows from oversharing, misuse, manipulation, and unauthorized access.
 
-- [Secure identity to get ready for AI](/en-us/security/zero-trust/sfi/secure-identity-to-get-ready-for-ai)
-- [Least privilege for AI agents](/en-us/security/zero-trust/sfi/least-privilege-for-ai-agents)
-- [Safe Secrets Standard](/en-us/security/zero-trust/sfi/safe-secrets-standard)
-- [Complete production infrastructure inventory](/en-us/security/zero-trust/sfi/complete-production-infrastructure-inventory)
-- [Complete AI threat modeling](/en-us/security/zero-trust/sfi/threat-modeling-ai)
-- [Protect the software supply chain](/en-us/security/zero-trust/sfi/protect-software-supply-chain)
-- [Use Zero Trust security to prepare for AI companions, including Microsoft Copilots](/en-us/security/zero-trust/copilots/apply-zero-trust-copilots-overview)
+Follow [Prepare your organization for AI security](/en-us/security/security-for-ai/prepare) and [Protect AI applications and data](/en-us/security/security-for-ai/protect) to apply AI-specific protections alongside established security controls.
 
-Keep detailed configuration steps in their canonical product documentation. Use this theme page to explain the outcome, organize ownership through SAF, and route teams to the right implementation guidance.
+Protect:
+
+- Human, workload, and agent identities and credentials.
+- Prompts, context, memory, grounding data, outputs, and connected data sources.
+- Applications, models, APIs, tools, connectors, plugins, and agent-to-agent interactions.
+- Development environments, software dependencies, build and deployment pipelines, runtimes, and platforms.
+- Endpoints, infrastructure, networks, browsers, cloud services, and external dependencies.
+
+Apply the Zero Trust principles of **verify explicitly**, **use least privilege**, and **assume compromise (assume breach)** as AI systems and agents introduce new identities, permissions, data flows, models, tools, memory, connectors, and autonomous actions.
+
+Apply least privilege to agent identities, data access, connected tools, and actions. Protect credentials and secrets, maintain accurate production inventories, and integrate threat modeling and software supply-chain o design, development, testing, deployment, and change management.
+
+Use data classification, access controls, data loss prevention, monitoring, and other safeguards to reduce oversharing, unauthorized access, manipulation, and leakage through prompts, grounding data, outputs, connected data sources, and agent actions.
+
+Use Microsoft security products and approved implementation patterns to automate and enforce these protections where practical. Maintain defined paths for exceptions and explicit risk acceptance when standard controls can't be applied.
+
+### Integrate security operations (SecOps/SOC)
+
+Integrate security operations (SecOps) to bring signals, threat intelligence, exposure context, detection, investigation, response, and recovery together. This integration reduces gaps, handoffs, and slowdowns across security processes.
+
+[Integrated Security Operations Center (ISOC)](https://www.microsoft.com/security/business/solutions/integrated-security-operations-center) in Microsoft Defender brings XDR and SIEM capabilities, threat intelligence, automation, and AI together in the Microsoft Defender portal. Shared signals, context, and workflows help security teams and agents detect, investigate, prioritize, and respond to threats across the environment.
+
+This integrated approach connects pre-breach exposure reduction with post-breach detection, investigation, response, and recovery.
+
+Use integrated security operations to:
+
+- Bring together signals from Microsoft and non-Microsoft environments.
+- Correlate activity across identities, endpoints, applications, data, cloud infrastructure, networks, and AI systems.
+- Give practitioners, agents, and automation the context needed to investigate and act.
+- Connect exposure-management findings to detection, response, remediation, and recovery workflows.
+- Feed lessons from incidents and investigations back into architecture, posture management, and security priorities.
+
+With this integration you can use automation, playbooks, and AI agents to replace suitable repetitive manual work and accelerate operations.
+
+### Govern change and improve continuously
+
+Review material changes to business processes, identities, data, applications, AI systems and agents, models, tools, permissions, connectors, infrastructure, and external dependencies. Use appropriate reassessment, testing, approval, documentation, and monitoring when changes affect risk.
+
+Use posture and exposure findings, incidents, near misses, threat intelligence, assessment results, operational evidence, and user feedback to continuously improve architecture, controls, implementation patterns, policies, training, and the prioritized roadmap.
+
+## Measure progress
+
+Use a small set of outcome measures that leaders and practitioners can act on. Example measures include:
+
+- Percentage of AI applications and agents with accountable owners, risk classifications, and documented dependencies.
+- Percentage of critical assets and sensitive data paths covered by required identity, data, development, infrastructure, monitoring, response, and recovery controls.
+- Time to identify, assign, contain, and remediate high-risk exposure findings.
+- Age of unresolved or explicitly accepted exceptions.
+- Coverage of strong authentication, least privilege, credential and secret management, secure development, logging, monitoring, and incident response for material AI systems.
+- Change in exposure, control effectiveness, and resilience over time, including improvements driven by incidents, exercises, assessments, and operational findings.
+
+## Recommended next steps
+
+Strengthening security foundations is a continuous process. You don't need to start with every activity at once. Choose the actions that best match your current priorities, use the findings from each to inform the others, and update the roadmap as business needs, technology, and threats change.
+
+- **Identify and reduce your most important exposures.** Use [Microsoft Security Exposure Management](/en-us/security-exposure-management/) and [Microsoft Perception](/en-us/security/agentic-security/agentic-security-overview) to help prioritize exposure, coordinate suitable remediation work through governed agents and playbooks, and verify progress while keeping people accountable for consequential decisions.
+- **Modernize security operations.** Use the [Security Operations (SecOps/SOC) discipline](/en-us/security/zero-trust/security-adoption-model) guidance in SAF and [Integrated Security Operations Center (ISOC)](https://www.microsoft.com/security/business/solutions/integrated-security-operations-center) to connect exposure reduction with detection, investigation, response, and recovery. Use shared signals, context, automation, playbooks, and AI to help people and agents work together across security operations.
+- **Build a prioritized Zero Trust roadmap.** Use the [Microsoft Zero Trust Workshop](/en-us/security/zero-trust/workshop-zero-trust-overview) to bring business, technology, and security stakeholders together, combine business context with technical assessment evidence, and create a prioritized implementation roadmap.
+- **Assess your current configuration.** Use the [Zero Trust Assessment](/en-us/security/zero-trust/assessment/overview) to evaluate supported Microsoft 365 and Azure configurations, identify gaps, and add technical evidence to planning and improvement activities.
+
+Use the [Microsoft Security Adoption Framework (SAF)](/en-us/security/zero-trust/security-adoption-model) to connect these activities as part of one security program rather than treating individual assessments, products, or projects as separate efforts. Start with the action that addresses your most important current need, then use what you learn to update the roadmap and guide the next cycle of implementation, operation, measurement, and improvement.
