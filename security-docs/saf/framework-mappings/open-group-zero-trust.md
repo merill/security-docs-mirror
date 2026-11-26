@@ -9,7 +9,8 @@ feedback_help_link_type: ''
 ms.author: mas
 author: MarkSimos
 description: Map The Open Group Zero Trust capabilities, security roles, and Architecture Building Blocks to Microsoft Security Adoption Framework work and Microsoft technology examples.
-ms.date: 2026-11-09T00:00:00.0000000Z
+ms.date: 2026-11-24T00:00:00.0000000Z
+ms.custom: msecd-doc-authoring-1030
 ms.service: security
 ms.subservice: zero-trust
 ms.topic: concept-article
@@ -103,7 +104,7 @@ The following mappings connect selected ABBs to Microsoft technologies that can 
 | **ACSOP-1.3.7** | Technical Anomaly Platform (machine learning, reverse engineering, and related analytics) | 3 | Microsoft Defender; Microsoft Defender for Cloud |
 | **ACSOP-1.3.8** | Behavior Anomaly Platform (UEBA) | 3 | Microsoft Defender; Microsoft Sentinel |
 | **ACSOP-1.3.9** | Threat Intelligence Platform (TIP) | 3 | Microsoft Defender Threat Intelligence; Microsoft Security Copilot |
-| **ACSOP-1.3.10** | SecOps AI and Agent Platform | 3 | Microsoft Security Copilot; Project Perception (preview) |
+| **ACSOP-1.3.10** | SecOps AI and Agent Platform | 3 | Microsoft Security Copilot; Microsoft Perception |
 
 The Microsoft Security Architecture Design Session for SecOps/SOC also includes guidance related to ACSOP-1.1 SecOps Core Reactive Processes and ACSOP-1.2 SecOps Proactive Processes ABBs.
 
